@@ -1,0 +1,432 @@
+index,author,title,isbn,kind,matched_title,matched_author,goodreads_rating,goodreads_ratings_count,goodreads_url,confidence,status,notes
+0,"Abercrombie, Joe",The First Law Trilogy,9780316361194,omnibus,,,4.53,11469,,n/a (existing),already_present,
+1,"Adams, Douglas",The Hitchhiker's Guide to the Galaxy,,series,,,,,,,not_found,no --source dataset supplied to match against
+2,"Adams, Richard",Watership Down,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+3,"Anderson, Gentry; Ladebauche, John, IV",Nova Roma 2,,series,,,,,,,not_found,no --source dataset supplied to match against
+4,"Anderson, Gentry",Nova Roma,,series,,,,,,,not_found,no --source dataset supplied to match against
+5,"Asimov, Isaac",The Complete Robot,,collection,,,,,,,not_found,no --source dataset supplied to match against
+6,"Asimov, Isaac",The Foundation Novels,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+7,"Asimov, Isaac","I, Robot",,series,,,,,,,not_found,no --source dataset supplied to match against
+8,"Asimov, Isaac",The Caves of Steel,,series,,,,,,,not_found,no --source dataset supplied to match against
+9,"Asimov, Isaac",The Naked Sun,,series,,,,,,,not_found,no --source dataset supplied to match against
+10,"Asimov, Isaac",The Robots of Dawn,,series,,,,,,,not_found,no --source dataset supplied to match against
+11,"Asimov, Isaac",Robots and Empire,,series,,,,,,,not_found,no --source dataset supplied to match against
+12,"Asprin, Robert Lynn",Thieves' World,,anthology,,,,,,,not_found,no --source dataset supplied to match against
+13,"Austen, Jane",Pride and Prejudice,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+14,"Barker, Clive",The Damnation Game,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+15,"Barker, Clive",The Hellbound Heart,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+16,"Beagle, Peter S.",The Last Unicorn,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+17,"Beauregard, Aron",Son of the Slob,,series,,,,,,,not_found,no --source dataset supplied to match against
+18,"Beauregard, Aron",The Slob,,series,,,,,,,not_found,no --source dataset supplied to match against
+19,"Bengtsson, Frans G.",The Long Ships,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+20,"Bester, Alfred",The Demolished Man,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+21,"Blackwood, Algernon",The Willows,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+22,"Bradbury, Ray",Fahrenheit 451,,standalone,,,3.97,2866000,,n/a (existing),already_present,
+23,"Bradbury, Ray",Something Wicked This Way Comes,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+24,"Bradbury, Ray",The Illustrated Man,,collection,,,,,,,not_found,no --source dataset supplied to match against
+25,"Brontë, Emily",Wuthering Heights,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+26,"Brooks, Terry",The Sword of Shannara,,series,,,,,,,not_found,no --source dataset supplied to match against
+27,"Brooks, Terry",The Elfstones of Shannara,,series,,,,,,,not_found,no --source dataset supplied to match against
+28,"Brooks, Terry",The Wishsong of Shannara,,series,,,,,,,not_found,no --source dataset supplied to match against
+29,"Buehlman, Christopher",Between Two Fires,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+30,"Burroughs, Edgar Rice",Barsoom Series,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+31,"Burroughs, Edgar Rice",Pellucidar Series,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+32,"Burroughs, Edgar Rice",Tarzan of the Apes,,series,,,,,,,not_found,no --source dataset supplied to match against
+33,"Butcher, Jim",The Dresden Files Collection 1 (1-6),,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+34,"Campbell, John W.",Frozen Hell,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+35,"Campbell, John W.",Who Goes There?,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+36,"Card, Orson Scott",Ender's Game,,series,,,4.31,1477000,,n/a (existing),already_present,
+37,"Cervantes, Miguel de",Don Quijote de la Mancha,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+38,"Cervantes, Miguel de",Don Quixote (trans. Edith Grossman),,standalone,,,,,,,not_found,no --source dataset supplied to match against
+39,"Cervantes, Miguel de",O engenhoso fidalgo D. Quixote de La Mancha: primeiro livro,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+40,"Cervantes, Miguel de",O engenhoso fidalgo D. Quixote de La Mancha: segundo livro,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+41,"Chambers, Robert W.",The King in Yellow,,collection,,,,,,,not_found,no --source dataset supplied to match against
+42,"Chandler, Raymond",The Long Goodbye,,series,,,,,,,not_found,no --source dataset supplied to match against
+43,"Chandler, Raymond",The Big Sleep,,series,,,,,,,not_found,no --source dataset supplied to match against
+44,"Charrette, Robert N.",Never Deal with a Dragon,,series,,,,,,,not_found,no --source dataset supplied to match against
+45,"Charrette, Robert N.",Choose Your Enemies Carefully,,series,,,,,,,not_found,no --source dataset supplied to match against
+46,"Charrette, Robert N.",Find Your Own Truth,,series,,,,,,,not_found,no --source dataset supplied to match against
+47,"Christie, Agatha",Murder on the Orient Express,,series,,,,,,,not_found,no --source dataset supplied to match against
+48,"Christie, Agatha",And Then There Were None,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+49,"Christie, Agatha",The Murder of Roger Ackroyd,,series,,,,,,,not_found,no --source dataset supplied to match against
+50,"Clarke, Arthur C.",2001: A Space Odyssey,,series,,,4.18,344000,,n/a (existing),already_present,
+51,"Clarke, Arthur C.",Childhood's End,,standalone,,,4.12,174000,,n/a (existing),already_present,
+52,"Clarke, Susanna",Piranesi,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+53,"Clavell, James",Shogun,,series,,,,,,,not_found,no --source dataset supplied to match against
+54,"Connelly, Michael",The Poet,,series,,,,,,,not_found,no --source dataset supplied to match against
+55,"Conrad, Joseph",Heart of Darkness,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+56,"Cook, Glen",The Black Company,,series,,,,,,,not_found,no --source dataset supplied to match against
+57,"Cook, Glen",Shadows Linger,,series,,,,,,,not_found,no --source dataset supplied to match against
+58,"Cook, Glen",The White Rose,,series,,,,,,,not_found,no --source dataset supplied to match against
+59,"Cornwell, Bernard",Sharpe's Eagle,,series,,,,,,,not_found,no --source dataset supplied to match against
+60,"Cornwell, Bernard",The Winter King,,series,,,,,,,not_found,no --source dataset supplied to match against
+61,"Cornwell, Bernard",Enemy of God,,series,,,,,,,not_found,no --source dataset supplied to match against
+62,"Cornwell, Bernard",Excalibur,,series,,,,,,,not_found,no --source dataset supplied to match against
+63,"Crichton, Michael",Jurassic Park,,series,,,,,,,not_found,no --source dataset supplied to match against
+64,"Crispin, A. C.",The Paradise Snare,,series,,,,,,,not_found,no --source dataset supplied to match against
+65,"Crispin, A. C.",The Hutt Gambit,,series,,,,,,,not_found,no --source dataset supplied to match against
+66,"Crispin, A. C.",Rebel Dawn,,series,,,,,,,not_found,no --source dataset supplied to match against
+67,"Cutter, Nick",The Troop,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+68,"Defoe, Daniel",Robinson Crusoe,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+69,"Denning, Troy",Star by Star,,series,,,,,,,not_found,no --source dataset supplied to match against
+70,"Dent, Lester",The Man of Bronze,,series,,,,,,,not_found,no --source dataset supplied to match against
+71,"Dickens, Charles",A Tale of Two Cities,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+72,"Dick, Philip K.",A Scanner Darkly,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+73,"Dick, Philip K.",The Man in the High Castle,,standalone,,,3.59,236000,,n/a (existing),already_present,
+74,"Dick, Philip K.",Ubik,,standalone,,,4.11,128000,,n/a (existing),already_present,
+75,"Donaldson, Stephen R.",Lord Foul's Bane,,series,,,,,,,not_found,no --source dataset supplied to match against
+76,"Donaldson, Stephen R.",The Illearth War,,series,,,,,,,not_found,no --source dataset supplied to match against
+77,"Donaldson, Stephen R.",The Power That Preserves,,series,,,,,,,not_found,no --source dataset supplied to match against
+78,"Donaldson, Stephen R.",The Wounded Land,,series,,,,,,,not_found,no --source dataset supplied to match against
+79,"Donaldson, Stephen R.",The One Tree,,series,,,,,,,not_found,no --source dataset supplied to match against
+80,"Donaldson, Stephen R.",White Gold Wielder,,series,,,,,,,not_found,no --source dataset supplied to match against
+81,"Dowd, Tom",Burning Bright,,series,,,,,,,not_found,no --source dataset supplied to match against
+82,"Doyle, Arthur Conan",The Complete Sherlock Holmes,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+83,"Dumas, Alexandre",The Count of Monte Cristo,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+84,"Dumas, Alexandre",The Three Musketeers,,series,,,,,,,not_found,no --source dataset supplied to match against
+85,"Eco, Umberto",The Name of the Rose,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+86,"Eddings, David",Pawn of Prophecy,,series,,,,,,,not_found,no --source dataset supplied to match against
+87,"Eddings, David",Queen of Sorcery,,series,,,,,,,not_found,no --source dataset supplied to match against
+88,"Eddings, David",Magician's Gambit,,series,,,,,,,not_found,no --source dataset supplied to match against
+89,"Eddings, David",Castle of Wizardry,,series,,,,,,,not_found,no --source dataset supplied to match against
+90,"Eddings, David",Enchanters' End Game,,series,,,,,,,not_found,no --source dataset supplied to match against
+91,"Eliot, George",Middlemarch,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+92,"Elliott, Kate",King's Dragon,,series,,,,,,,not_found,no --source dataset supplied to match against
+93,"Elliott, Kate",Prince of Dogs,,series,,,,,,,not_found,no --source dataset supplied to match against
+94,"Elliott, Kate",The Burning Stone,,series,,,,,,,not_found,no --source dataset supplied to match against
+95,"Erikson, Steven",The Complete Malazan Book of the Fallen,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+96,"Farland, David",The Sum of All Men,,series,,,,,,,not_found,no --source dataset supplied to match against
+97,"Farland, David",Brotherhood of the Wolf,,series,,,,,,,not_found,no --source dataset supplied to match against
+98,"Farland, David",Wizardborn,,series,,,,,,,not_found,no --source dataset supplied to match against
+99,"Farland, David",The Lair of Bones,,series,,,,,,,not_found,no --source dataset supplied to match against
+100,"Findley, Nigel",2XS,,series,,,,,,,not_found,no --source dataset supplied to match against
+101,"Finney, Jack",The Body Snatchers,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+102,"Fisher, Vardis",Mountain Man,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+103,"Fitzgerald, F. Scott",The Great Gatsby,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+104,"Flynn, Gillian",Gone Girl,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+105,"Follett, Ken",The Pillars of the Earth,,series,,,,,,,not_found,no --source dataset supplied to match against
+106,"Gaskell, Jane",The Serpent,,series,,,,,,,not_found,no --source dataset supplied to match against
+107,"Gaskell, Jane",The Dragon,,series,,,,,,,not_found,no --source dataset supplied to match against
+108,"Gaskell, Jane",Atlan,,series,,,,,,,not_found,no --source dataset supplied to match against
+109,"Gaskell, Jane",The City,,series,,,,,,,not_found,no --source dataset supplied to match against
+110,"Gaskell, Jane",Some Summer Lands,,series,,,,,,,not_found,no --source dataset supplied to match against
+111,"Gemmell, David",Legend,,series,,,,,,,not_found,no --source dataset supplied to match against
+112,"Gemmell, David",The King Beyond the Gate,,series,,,,,,,not_found,no --source dataset supplied to match against
+113,"Gemmell, David",Waylander,,series,,,,,,,not_found,no --source dataset supplied to match against
+114,"George, Elizabeth",A Great Deliverance,,series,,,,,,,not_found,no --source dataset supplied to match against
+115,"Gibson, William",Neuromancer,,series,,,3.89,366000,,n/a (existing),already_present,
+116,"Gibson, William",Count Zero,,series,,,,,,,not_found,no --source dataset supplied to match against
+117,"Gibson, William",Mona Lisa Overdrive,,series,,,,,,,not_found,no --source dataset supplied to match against
+118,"Glukhovsky, Dmitry",Metro 2033,,series,,,,,,,not_found,no --source dataset supplied to match against
+119,"Glukhovsky, Dmitry",Metro 2034,,series,,,,,,,not_found,no --source dataset supplied to match against
+120,"Glukhovsky, Dmitry",Metro 2035,,series,,,,,,,not_found,no --source dataset supplied to match against
+121,"Glut, Donald F.",The Empire Strikes Back,,series,,,,,,,not_found,no --source dataset supplied to match against
+122,"Goethe, Johann Wolfgang von","Faust, Part One",,series,,,,,,,not_found,no --source dataset supplied to match against
+123,"Goethe, Johann Wolfgang von","Faust, Part Two",,series,,,,,,,not_found,no --source dataset supplied to match against
+124,"Golding, William",Lord of the Flies,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+125,"Graves, Robert",Claudius the God,,series,,,,,,,not_found,no --source dataset supplied to match against
+126,"Graves, Robert","I, Claudius",,series,,,,,,,not_found,no --source dataset supplied to match against
+127,"Guthrie, A. B., Jr.",The Big Sky,,series,,,,,,,not_found,no --source dataset supplied to match against
+128,"Haggard, H. Rider",King Solomon's Mines,,series,,,,,,,not_found,no --source dataset supplied to match against
+129,"Haggard, H. Rider",Ultimate Collection,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+130,"Haldeman, Joe",The Forever War,,series,,,4.14,181000,,n/a (existing),already_present,
+131,"Hammett, Dashiell",Red Harvest,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+132,"Hammett, Dashiell",The Maltese Falcon,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+133,"Harrison, Harry",West of Eden,,series,,,,,,,not_found,no --source dataset supplied to match against
+134,"Harrison, Harry",Winter in Eden,,series,,,,,,,not_found,no --source dataset supplied to match against
+135,"Harrison, Harry",Return to Eden,,series,,,,,,,not_found,no --source dataset supplied to match against
+136,"Harris, Robert",Fatherland,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+137,"Harris, Thomas",Red Dragon,,series,,,,,,,not_found,no --source dataset supplied to match against
+138,"Harris, Thomas",The Silence of the Lambs,,series,,,,,,,not_found,no --source dataset supplied to match against
+139,"Heinlein, Robert A.",Starship Troopers,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+140,"Heinlein, Robert A.",Stranger in a Strange Land,,standalone,,,3.92,330000,,n/a (existing),already_present,
+141,"Heinlein, Robert A.",The Moon Is a Harsh Mistress,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+142,"Herbert, Frank",Children of Dune,,series,,,3.95,265000,,n/a (existing),already_present,
+143,"Herbert, Frank",Dune,,series,,,4.29,1640000,,n/a (existing),already_present,
+144,"Herbert, Frank",Dune Messiah,,series,,,3.9,433000,,n/a (existing),already_present,
+145,"Hobb, Robin",Assassin's Apprentice,,series,,,4.19,407000,,n/a (existing),already_present,
+146,"Hobb, Robin",Royal Assassin,,series,,,,,,,not_found,no --source dataset supplied to match against
+147,"Hobb, Robin",Assassin's Quest,,series,,,,,,,not_found,no --source dataset supplied to match against
+148,"Hobb, Robin",Ship of Magic,,series,,,,,,,not_found,no --source dataset supplied to match against
+149,"Hobb, Robin",Mad Ship,,series,,,,,,,not_found,no --source dataset supplied to match against
+150,"Hobb, Robin",Ship of Destiny,,series,,,,,,,not_found,no --source dataset supplied to match against
+151,"Hobb, Robin",Tawny Man Trilogy,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+152,"Howard, Robert E.",The Coming of Conan the Cimmerian,,collection,,,,,,,not_found,no --source dataset supplied to match against
+153,"Howard, Robert E.",The Bloody Crown of Conan,,collection,,,,,,,not_found,no --source dataset supplied to match against
+154,"Howard, Robert E.",The Conquering Sword of Conan,,collection,,,,,,,not_found,no --source dataset supplied to match against
+155,"Howard, Robert E.",Kull: Exile of Atlantis,,collection,,,,,,,not_found,no --source dataset supplied to match against
+156,"Hugo, Victor",Les Misérables,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+157,"Huxley, Aldous",Brave New World,,standalone,,,3.98,2148000,,n/a (existing),already_present,
+158,"Ishiguro, Kazuo",Klara and the Sun,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+159,"Jones, J. V.",A Cavern of Black Ice,,series,,,,,,,not_found,no --source dataset supplied to match against
+160,"Jones, J. V.",A Fortress of Grey Ice,,series,,,,,,,not_found,no --source dataset supplied to match against
+161,"Jones, J. V.",A Sword from Red Ice,,series,,,,,,,not_found,no --source dataset supplied to match against
+162,"Jones, J. V.",Watcher of the Dead,,series,,,,,,,not_found,no --source dataset supplied to match against
+163,"Jones, J. V.",The Book of Words,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+164,"Jones, Stephen Graham",The Buffalo Hunter Hunter,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+165,"Jordan, Robert; Sanderson, Brandon",The Complete Wheel of Time,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+166,"Jordan, Robert",The Eye of the World,,series,,,4.19,605000,,n/a (existing),already_present,
+167,"Kahn, James",Return of the Jedi,,series,,,,,,,not_found,no --source dataset supplied to match against
+168,"Kesey, Ken",One Flew Over the Cuckoo's Nest,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+169,"Ketchum, Jack",The Girl Next Door,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+170,"Keyes, Daniel",Flowers for Algernon,,standalone,,,4.25,839000,,n/a (existing),already_present,
+171,"King, Stephen",11/22/63,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+172,"King, Stephen",The Gunslinger,,series,,,,,,,not_found,no --source dataset supplied to match against
+173,"King, Stephen",The Shining,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+174,"King, Stephen",The Stand,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+175,"L'Amour, Louis",Conagher,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+176,"L'Amour, Louis",Flint,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+177,"L'Amour, Louis",Hondo,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+178,"L'Amour, Louis",Last of the Breed,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+179,"L'Amour, Louis",The Lonesome Gods,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+180,"L'Amour, Louis",The Sacketts 01-17 Collection,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+181,"L'Amour, Louis",The Walking Drum,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+182,"Langan, John",The Fisherman,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+183,"le Carré, John",The Spy Who Came in from the Cold,,series,,,,,,,not_found,no --source dataset supplied to match against
+184,"Lee, Fonda",Jade City,,series,,,,,,,not_found,no --source dataset supplied to match against
+185,"Lee, Fonda",Jade War,,series,,,,,,,not_found,no --source dataset supplied to match against
+186,"Lee, Fonda",Jade Legacy,,series,,,,,,,not_found,no --source dataset supplied to match against
+187,"Lee, Harper",To Kill a Mockingbird,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+188,"London, Jack","The Call of the Wild, White Fang, and Other Stories",A,collection,,,,,,,not_found,no --source dataset supplied to match against
+189,"London, Jack",The Sea-Wolf,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+190,"Lovecraft, H. P.",At the Mountains of Madness,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+191,"Lucas, George",Star Wars: A New Hope,,series,,,,,,,not_found,no --source dataset supplied to match against
+192,"Luceno, James",The Unifying Force,,series,,,,,,,not_found,no --source dataset supplied to match against
+193,"Lumley, Brian",Necroscope,,series,,,,,,,not_found,no --source dataset supplied to match against
+194,"Lumley, Brian",Vamphyri!,,series,,,,,,,not_found,no --source dataset supplied to match against
+195,"Lumley, Brian",The Source,,series,,,,,,,not_found,no --source dataset supplied to match against
+196,"Lynch, Scott",The Lies of Locke Lamora,,series,,,4.3,346000,,n/a (existing),already_present,
+197,"Mano, D. Keith",The Bridge,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+198,"Martin, George R. R.",A Song of Ice and Fire,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+199,"McCammon, Robert R.",Boy's Life,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+200,"McCammon, Robert R.",Swan Song,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+201,"McCarthy, Cormac",Blood Meridian,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+202,"McCarthy, Cormac",The Road,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+203,"McCullough, Colleen",Masters of Rome 1–5,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+204,"McCullough, Colleen",The October Horse,,series,,,,,,,not_found,no --source dataset supplied to match against
+205,"McCullough, Colleen",Antony and Cleopatra,,series,,,,,,,not_found,no --source dataset supplied to match against
+206,"McDowell, Michael",Blackwater,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+207,"McMurtry, Larry",Lonesome Dove,,series,,,,,,,not_found,no --source dataset supplied to match against
+208,"McMurtry, Larry",Streets of Laredo,,series,,,,,,,not_found,no --source dataset supplied to match against
+209,"McMurtry, Larry",Dead Man's Walk,,series,,,,,,,not_found,no --source dataset supplied to match against
+210,"McMurtry, Larry",Comanche Moon,,series,,,,,,,not_found,no --source dataset supplied to match against
+211,"Miéville, China",Perdido Street Station,,series,,,,,,,not_found,no --source dataset supplied to match against
+212,"Miller, John Jackson",Kenobi,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+213,"Miller, Walter M., Jr.",A Canticle for Leibowitz,,series,,,3.99,123000,,n/a (existing),already_present,
+214,"Milne, A. A.",Winnie-the-Pooh,,series,,,,,,,not_found,no --source dataset supplied to match against
+215,"Milton, John",Paradise Lost,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+216,"Mitchell, Margaret",Gone with the Wind,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+217,"Moorcock, Michael",Elric of Melniboné,,series,,,,,,,not_found,no --source dataset supplied to match against
+218,"Moorcock, Michael",The Fortress of the Pearl,,series,,,,,,,not_found,no --source dataset supplied to match against
+219,"Moorcock, Michael",The Sailor on the Seas of Fate,,series,,,,,,,not_found,no --source dataset supplied to match against
+220,"Moorcock, Michael",The Weird of the White Wolf,,series,,,,,,,not_found,no --source dataset supplied to match against
+221,"Moorcock, Michael",The Vanishing Tower,,series,,,,,,,not_found,no --source dataset supplied to match against
+222,"Moorcock, Michael",The Revenge of the Rose,,series,,,,,,,not_found,no --source dataset supplied to match against
+223,"Moorcock, Michael",The Bane of the Black Sword,,series,,,,,,,not_found,no --source dataset supplied to match against
+224,"Moorcock, Michael",Stormbringer,,series,,,,,,,not_found,no --source dataset supplied to match against
+225,"Morgan, Richard K.",Altered Carbon,,series,,,,,,,not_found,no --source dataset supplied to match against
+226,"Murakami, Haruki",1Q84,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+227,"Nabokov, Vladimir",Lolita,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+228,"Nickelsburg, George W. E.; VanderKam, James C.",1 Enoch: The Hermeneia Translation,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+229,"Niven, Larry; Pournelle, Jerry",The Mote in God's Eye,,series,,,,,,,not_found,no --source dataset supplied to match against
+230,"O'Brian, Patrick",Master and Commander,,series,,,,,,,not_found,no --source dataset supplied to match against
+231,"Orwell, George",Nineteen Eighty-Four,,standalone,,,4.2,5723000,,n/a (existing),already_present,
+232,"Orwell, George",Animal Farm,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+233,"Page, Gerald W.; Reinhardt, Hank (eds.)",Heroic Fantasy,,anthology,,,,,,,not_found,no --source dataset supplied to match against
+234,"Peake, Mervyn",The Gormenghast Trilogy,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+235,"Pérez-Reverte, Arturo",Todo Alatriste,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+236,"Perry, Steve",Shadows of the Empire,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+237,"Powers, Tim",The Drawing of the Dark,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+238,"Pratchett, Terry",Reaper Man,,series,,,,,,,not_found,no --source dataset supplied to match against
+239,"Pratchett, Terry",Small Gods,,series,,,,,,,not_found,no --source dataset supplied to match against
+240,"Pratchett, Terry",Soul Music,,series,,,,,,,not_found,no --source dataset supplied to match against
+241,"Pratchett, Terry",The Colour of Magic,,series,,,,,,,not_found,no --source dataset supplied to match against
+242,"Pratchett, Terry",Hogfather,,series,,,,,,,not_found,no --source dataset supplied to match against
+243,"Pratchett, Terry",Thief of Time,,series,,,,,,,not_found,no --source dataset supplied to match against
+244,"Pratchett, Terry",Night Watch,,series,,,,,,,not_found,no --source dataset supplied to match against
+245,"Pratchett, Terry",The Light Fantastic,,series,,,,,,,not_found,no --source dataset supplied to match against
+246,"Pratchett, Terry",Going Postal,,series,,,,,,,not_found,no --source dataset supplied to match against
+247,"Pratchett, Terry",Mort,,series,,,,,,,not_found,no --source dataset supplied to match against
+248,"Pratchett, Terry",Guards! Guards!,,series,,,,,,,not_found,no --source dataset supplied to match against
+249,"Priest, Christopher",Inverted World,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+250,"Punke, Michael",The Revenant,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+251,"Puzo, Mario",The Godfather,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+252,"Pyle, Howard",The Merry Adventures of Robin Hood,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+253,qntm,There Is No Antimemetics Division,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+254,"Rand, Ayn",Atlas Shrugged,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+255,"Rawn, Melanie",Dragon Prince,,series,,,,,,,not_found,no --source dataset supplied to match against
+256,"Rawn, Melanie",The Star Scroll,,series,,,,,,,not_found,no --source dataset supplied to match against
+257,"Rawn, Melanie",Sunrunner's Fire,,series,,,,,,,not_found,no --source dataset supplied to match against
+258,"Rice, Anne",Interview with the Vampire,,series,,,,,,,not_found,no --source dataset supplied to match against
+259,"Robinson, Kim Stanley",Mars Trilogy,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+260,"Ruocchio, Christopher",Empire of Silence,,series,,,,,,,not_found,no --source dataset supplied to match against
+261,"Russell, Eric Frank",Wasp,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+262,"Salinger, J. D.",The Catcher in the Rye,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+263,"Salvatore, R. A.",Vector Prime,,series,,,,,,,not_found,no --source dataset supplied to match against
+264,"Salvatore, R. A.",Homeland,,series,,,,,,,not_found,no --source dataset supplied to match against
+265,"Salvatore, R. A.",Exile,,series,,,,,,,not_found,no --source dataset supplied to match against
+266,"Salvatore, R. A.",Sojourn,,series,,,,,,,not_found,no --source dataset supplied to match against
+267,"Salvatore, R. A.",The Crystal Shard,,series,,,,,,,not_found,no --source dataset supplied to match against
+268,"Salvatore, R. A.",Streams of Silver,,series,,,,,,,not_found,no --source dataset supplied to match against
+269,"Salvatore, R. A.",The Halfling's Gem,,series,,,,,,,not_found,no --source dataset supplied to match against
+270,"Sanderson, Brandon",The Way of Kings,,series,,,4.66,681000,,n/a (existing),already_present,
+271,"Sanderson, Brandon",Words of Radiance,,series,,,4.76,513000,,n/a (existing),already_present,
+272,"Sanderson, Brandon",Edgedancer,,series,,,,,,,not_found,no --source dataset supplied to match against
+273,"Sanderson, Brandon",Oathbringer,,series,,,,,,,not_found,no --source dataset supplied to match against
+274,"Scott, Sir Walter",Ivanhoe,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+275,"Shakespeare, William",Much Ado About Nothing,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+276,"Simmons, Dan",Hyperion,,series,,,4.27,300000,,n/a (existing),already_present,
+277,"Simmons, Dan",The Hyperion Cantos,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+278,"Smith, Scott",The Ruins,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+279,"Steinbeck, John",East of Eden,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+280,"Steinbeck, John",Of Mice and Men,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+281,"Steinbeck, John",The Grapes of Wrath,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+282,"Stewart, George R.",Earth Abides,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+283,"Stoker, Bram",Dracula,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+284,"Stover, Matthew",Luke Skywalker and the Shadows of Mindor,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+285,"Stover, Matthew",Traitor,,series,,,,,,,not_found,no --source dataset supplied to match against
+286,"Strugatsky, Arkady & Boris",Roadside Picnic,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+287,"Suzuki, Koji",Ring,,series,,,,,,,not_found,no --source dataset supplied to match against
+288,"Tolkien, J. R. R.",The Hobbit,,standalone,,,4.29,4321000,,n/a (existing),already_present,
+289,"Tolkien, J. R. R.",The Lord of the Rings,,omnibus,,,4.54,732000,,n/a (existing),already_present,
+290,"Tolkien, J. R. R.",The Silmarillion,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+291,"Triana, Kristopher",Gone to See the River Man,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+292,"Tyers, Kathy",The Truce at Bakura,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+293,"VanderMeer, Jeff",Area X: The Southern Reach Trilogy,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+294,"Verne, Jules",Twenty Thousand Leagues Under the Seas,,series,,,,,,,not_found,no --source dataset supplied to match against
+295,"Vonnegut, Kurt",Slaughterhouse-Five,,standalone,,,4.1,1522000,,n/a (existing),already_present,
+296,"Weir, Andy",Project Hail Mary,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+297,"Weis, Margaret; Hickman, Tracy",Dragons of Autumn Twilight,,series,,,,,,,not_found,no --source dataset supplied to match against
+298,"Weis, Margaret; Hickman, Tracy",Dragons of Winter Night,,series,,,,,,,not_found,no --source dataset supplied to match against
+299,"Weis, Margaret; Hickman, Tracy",Dragons of Spring Dawning,,series,,,,,,,not_found,no --source dataset supplied to match against
+300,"Weis, Margaret; Hickman, Tracy",Time of the Twins,,series,,,,,,,not_found,no --source dataset supplied to match against
+301,"Weis, Margaret; Hickman, Tracy",War of the Twins,,series,,,,,,,not_found,no --source dataset supplied to match against
+302,"Weis, Margaret; Hickman, Tracy",Test of the Twins,,series,,,,,,,not_found,no --source dataset supplied to match against
+303,"Wells, H. G.",The Island of Doctor Moreau,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+304,"Wells, H. G.",The Time Machine,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+305,"White, T. H.",The Once and Future King,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+306,"Williams, Tad",The Dragonbone Chair,,series,,,,,,,not_found,no --source dataset supplied to match against
+307,"Williams, Tad",Stone of Farewell,,series,,,,,,,not_found,no --source dataset supplied to match against
+308,"Williams, Tad",To Green Angel Tower,,series,,,,,,,not_found,no --source dataset supplied to match against
+309,"Williams, Tad",The Heart of What Was Lost,,series,,,,,,,not_found,no --source dataset supplied to match against
+310,"Williams, Tad",The Witchwood Crown,,series,,,,,,,not_found,no --source dataset supplied to match against
+311,"Williams, Tad",Empire of Grass,,series,,,,,,,not_found,no --source dataset supplied to match against
+312,"Williams, Tad",Into the Narrowdark,,series,,,,,,,not_found,no --source dataset supplied to match against
+313,"Williams, Tad",The Navigator's Children,,series,,,,,,,not_found,no --source dataset supplied to match against
+314,"Williams, Tad",Brothers of the Wind,,series,,,,,,,not_found,no --source dataset supplied to match against
+315,"Williams, Walter Jon",Destiny's Way,,series,,,,,,,not_found,no --source dataset supplied to match against
+316,"Wolfe, Gene",On Blue's Waters,,series,,,,,,,not_found,no --source dataset supplied to match against
+317,"Wolfe, Gene",In Green's Jungles,,series,,,,,,,not_found,no --source dataset supplied to match against
+318,"Wolfe, Gene",Return to the Whorl,,series,,,,,,,not_found,no --source dataset supplied to match against
+319,"Wolfe, Gene",The Book of the New Sun,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
+320,"Wolfe, Gene",Nightside the Long Sun,,series,,,,,,,not_found,no --source dataset supplied to match against
+321,"Wolfe, Gene",Lake of the Long Sun,,series,,,,,,,not_found,no --source dataset supplied to match against
+322,"Wolfe, Gene",Caldé of the Long Sun,,series,,,,,,,not_found,no --source dataset supplied to match against
+323,"Wolfe, Gene",Exodus from the Long Sun,,series,,,,,,,not_found,no --source dataset supplied to match against
+324,"Wolverton, Dave",The Courtship of Princess Leia,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+325,"Wyndham, John",The Day of the Triffids,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+326,"Yoshikawa, Eiji",Musashi,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+327,"Zahn, Timothy",Conquerors' Pride,,series,,,,,,,not_found,no --source dataset supplied to match against
+328,"Zahn, Timothy",Conquerors' Heritage,,series,,,,,,,not_found,no --source dataset supplied to match against
+329,"Zahn, Timothy",Conquerors' Legacy,,series,,,,,,,not_found,no --source dataset supplied to match against
+330,"Zahn, Timothy",Allegiance,,series,,,,,,,not_found,no --source dataset supplied to match against
+331,"Zahn, Timothy",Choices of One,,series,,,,,,,not_found,no --source dataset supplied to match against
+332,"Zahn, Timothy",Heir to the Empire,,series,,,,,,,not_found,no --source dataset supplied to match against
+333,"Zahn, Timothy",Dark Force Rising,,series,,,,,,,not_found,no --source dataset supplied to match against
+334,"Zahn, Timothy",The Last Command,,series,,,,,,,not_found,no --source dataset supplied to match against
+335,"Zamyatin, Yevgeny",We,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+336,"Zipes, Jack (ed./trans.)",The Original Folk and Fairy Tales of the Brothers Grimm,,anthology,,,,,,,not_found,no --source dataset supplied to match against
+337,"Zondervan (Lucado, Max; Frazee, Randy, eds.)",The Story: The Bible as One Continuing Story of God and His People,9780310621904,collection,,,,,,,not_found,no --source dataset supplied to match against
+338,"Mithen, Steven","After the Ice: A Global Human History, 20,000–5000 BC",,standalone,,,,,,,not_found,no --source dataset supplied to match against
+339,"Bellwood, Peter",First Farmers: The Origins of Agricultural Societies,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+340,"Reich, David",Who We Are and How We Got Here: Ancient DNA and the New Science of the Human Past,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+341,"Cunliffe, Barry","By Steppe, Desert, and Ocean: The Birth of Eurasia",,standalone,,,,,,,not_found,no --source dataset supplied to match against
+342,"Leick, Gwendolyn",Mesopotamia: The Invention of the City,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+343,"Helle, Sophus (trans.)",Gilgamesh: A New Translation of the Ancient Epic,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+344,"Helle, Sophus (trans.)",Enheduana: The Complete Poems of the World's First Author,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+345,"Haubold, J.; Helle, S.; Jiménez, E.; Wisnom, S. (eds.)",Enuma Elish: The Babylonian Epic of Creation,9781350297197,standalone,,,4.25,20,,n/a (existing),already_present,
+346,"Van De Mieroop, Marc","A History of the Ancient Near East, ca. 3000–323 BC",,standalone,,,,,,,not_found,no --source dataset supplied to match against
+347,"Briant, Pierre",From Cyrus to Alexander: A History of the Persian Empire,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+348,Herodotus,The Histories,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+349,"Murray, Oswyn",Early Greece,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+350,Homer,The Iliad,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+351,Homer,The Odyssey,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+352,"Cartledge, Paul",Ancient Greece: A History in Eleven Cities,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+353,"Kagan, Donald",The Peloponnesian War,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+354,Aeschylus,The Oresteia,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+355,Sophocles,Oedipus the King and Antigone,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+356,"Green, Peter",From Alexander to Actium: The Historical Evolution of the Hellenistic Age,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+357,Plato,The Republic,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+358,"Cornell, Timothy J.",The Beginnings of Rome: Italy and Rome from the Bronze Age to the Punic Wars,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+359,"Beard, Mary",SPQR: A History of Ancient Rome,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+360,"Holland, Tom",Rubicon: The Last Years of the Roman Republic,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+361,"Goldsworthy, Adrian",Caesar: Life of a Colossus,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+362,"Syme, Ronald",The Roman Revolution,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+363,"Goldsworthy, Adrian",Augustus: First Emperor of Rome,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+364,Virgil,The Aeneid,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+365,Suetonius,The Twelve Caesars,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+366,"Harper, Kyle","The Fate of Rome: Climate, Disease, and the End of an Empire",,standalone,,,,,,,not_found,no --source dataset supplied to match against
+367,"Heather, Peter",The Fall of the Roman Empire: A New History of Rome and the Barbarians,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+368,"Gibbon, Edward",The History of the Decline and Fall of the Roman Empire,,multivolume,,,,,,,not_found,no --source dataset supplied to match against
+369,"Brown, Peter","The World of Late Antiquity, AD 150–750",,standalone,,,,,,,not_found,no --source dataset supplied to match against
+370,"Norwich, John Julius",Byzantium: The Early Centuries,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+371,"Psellus, Michael",Fourteen Byzantine Rulers: The Chronographia,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+372,"Komnene, Anna",The Alexiad,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+373,Constantine VII Porphyrogenitus,De Administrando Imperio,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+374,"Norwich, John Julius",Byzantium: The Apogee and Byzantium: The Decline and Fall,,multivolume,,,,,,,not_found,no --source dataset supplied to match against
+375,"Runciman, Steven",The Fall of Constantinople 1453,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+376,"Gies, Frances; Gies, Joseph",Life in a Medieval Castle,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+377,"Gies, Frances; Gies, Joseph",Life in a Medieval Village,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+378,"Gies, Frances; Gies, Joseph",Life in a Medieval City,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+379,"Gies, Frances; Gies, Joseph","Cathedral, Forge, and Waterwheel: Technology and Invention in the Middle Ages",,standalone,,,,,,,not_found,no --source dataset supplied to match against
+380,"Bloch, Marc",Feudal Society,,multivolume,,,,,,,not_found,no --source dataset supplied to match against
+381,"Sumption, Jonathan",The Hundred Years War I: Trial by Battle,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+382,"Wilson, Peter H.",Heart of Europe: A History of the Holy Roman Empire,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+383,"Feng, Li",Early China: A Social and Cultural History,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+384,"Lewis, Mark Edward",The Early Chinese Empires: Qin and Han,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+385,"Luo, Guanzhong",Three Kingdoms,,multivolume,,,,,,,not_found,no --source dataset supplied to match against
+386,"Lewis, Mark Edward",China Between Empires: The Northern and Southern Dynasties,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+387,"Lewis, Mark Edward",China's Cosmopolitan Empire: The Tang Dynasty,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+388,"Kuhn, Dieter",The Age of Confucian Rule: The Song Transformation of China,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+389,"Brook, Timothy",The Troubled Empire: China in the Yuan and Ming Dynasties,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+390,"Cao, Xueqin",The Story of the Stone,,multivolume,,,,,,,not_found,no --source dataset supplied to match against
+391,"Spence, Jonathan D.; Chen, Janet",The Search for Modern China,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+392,"Clements, Jonathan",A Brief History of Japan,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+393,Ō no Yasumaro (comp.),Kojiki: An Account of Ancient Matters,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+394,Sei Shōnagon,The Pillow Book,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+395,Murasaki Shikibu,The Tale of Genji,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+396,Anonymous,The Tale of the Heike,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+397,"Wert, Michael",Samurai: A Concise History,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+398,"Jansen, Marius B.",The Making of Modern Japan,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+399,"Keene, Donald","Emperor of Japan: Meiji and His World, 1852–1912",,standalone,,,,,,,not_found,no --source dataset supplied to match against
+400,"Dower, John W.",Embracing Defeat: Japan in the Wake of World War II,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+401,"Seth, Michael J.","A Concise History of Korea, Volumes I–II",,multivolume,,,3.8,45,,n/a (existing),already_present,
+402,"Hawley, Samuel",The Imjin War: Japan's Sixteenth-Century Invasion of Korea and Attempt to Conquer China,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+403,Lady Hyegyŏng,The Memoirs of Lady Hyegyŏng,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+404,"Kang, Minsoo (trans./ed.)",The Story of Hong Gildong,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+405,"Golden, Peter B.",Central Asia in World History,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+406,"Di Cosmo, Nicola",Ancient China and Its Enemies: The Rise of Nomadic Power in East Asian History,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+407,"Barfield, Thomas J.","The Perilous Frontier: Nomadic Empires and China, 221 BC to AD 1757",,standalone,,,,,,,not_found,no --source dataset supplied to match against
+408,"May, Timothy",The Mongol Empire,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+409,"Kapstein, Matthew T.",The Tibetans,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+410,"van Schaik, Sam",Tibet: A History,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+411,"Beckwith, Christopher I.",The Tibetan Empire in Central Asia,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+412,"Lomax, Derek W.",The Reconquest of Spain,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+413,"Fletcher, Richard",The Quest for El Cid,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+414,"Menéndez Pidal, Ramón",The Cid and His Spain,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+415,"Elliott, J. H.","Imperial Spain, 1469–1716",,standalone,,,,,,,not_found,no --source dataset supplied to match against
+416,"Díaz del Castillo, Bernal",The Conquest of New Spain,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+417,"Stenton, Frank M.",Anglo-Saxon England,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+418,Anonymous,The Anglo-Saxon Chronicle,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+419,"Ackroyd, Peter",Foundation: The History of England from Its Earliest Beginnings to the Tudors,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+420,"Brewer, John","The Sinews of Power: War, Money and the English State, 1688–1783",,standalone,,,,,,,not_found,no --source dataset supplied to match against
+421,"Froissart, Jean",Chronicles,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+422,"Commynes, Philippe de","Memoirs: The Reign of Louis XI, 1461–83",,standalone,,,,,,,not_found,no --source dataset supplied to match against
+423,"Tocqueville, Alexis de",The Old Regime and the French Revolution,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+424,"Schama, Simon",Citizens: A Chronicle of the French Revolution,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+425,"Price, Roger",A Concise History of France,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+426,"Johnson, Paul",A History of the American People,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+427,"McPherson, James M.",Battle Cry of Freedom: The Civil War Era,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+428,"Grant, Ulysses S.",Personal Memoirs,,multivolume,,,,,,,not_found,no --source dataset supplied to match against
+429,"Bailyn, Bernard",The Ideological Origins of the American Revolution,,standalone,,,,,,,not_found,no --source dataset supplied to match against
+430,"Simms, Brendan","Europe: The Struggle for Supremacy, 1453 to the Present",,standalone,,,,,,,not_found,no --source dataset supplied to match against
