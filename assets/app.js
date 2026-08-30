@@ -65,6 +65,77 @@
     if(sortK==="pages") return r.pages!=null ? r.pages : (r.physical!=null ? r.physical : (r.comp_total || -1));
     return (r[sortK]||"").toString().toLowerCase();
   }
+
+  /* ---- genre: built from what's actually in the data, not a hardcoded list ---- */
+  const ALL_GENRES = [...new Set(D.rows.flatMap(r=>r.genre||[]))].sort((a,b)=>a.localeCompare(b));
+  const selectedGenres = new Set();
+  $("genreList").insertAdjacentHTML("beforeend", ALL_GENRES.map(g=>
+    `<label class="gchk"><input type="checkbox" value="${esc(g)}"> ${esc(g)}</label>`
+  ).join(""));
+  $("genreList").addEventListener("change", e=>{
+    if(e.target.type !== "checkbox") return;
+    if(e.target.checked) selectedGenres.add(e.target.value); else selectedGenres.delete(e.target.value);
+    render();
+  });
+  const genreBtn = $("genreBtn"), genreList = $("genreList");
+  genreBtn.addEventListener("click", ()=>{
+    const open = genreList.hidden;
+    genreList.hidden = !open;
+    genreBtn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+
+  /* ---- filters: labels, active-filter chips, clear, count ---- */
+  const CHIP_LABELS = {
+    fs: {fiction:"Fiction", nonfiction:"History canon"},
+    fk: {standalone:"Standalone", series:"Series volume", omnibus:"Omnibus file",
+      multivolume:"Multi-volume work", collection:"Story collection", anthology:"Anthology"},
+    fa: {"1":"Award winners only", "2":"Rated on Goodreads only"}
+  };
+  function activeFilters(){
+    const out = [];
+    const q = $("q").value.trim();
+    if(q) out.push({key:"q", label:`Search: “${q}”`});
+    selectedGenres.forEach(g=>out.push({key:"genre:"+g, label:`Genre: ${g}`}));
+    ["fs","fk","fa"].forEach(id=>{
+      const v = $(id).value;
+      if(v) out.push({key:id, label:`${{fs:"Shelf",fk:"Format",fa:"Awards"}[id]}: ${CHIP_LABELS[id][v]}`});
+    });
+    return out;
+  }
+  function clearFilterKey(key){
+    if(key.indexOf("genre:")===0){
+      const g = key.slice(6);
+      selectedGenres.delete(g);
+      const cb = genreList.querySelector(`input[value="${CSS.escape(g)}"]`);
+      if(cb) cb.checked = false;
+    } else $(key).value = "";
+    render();
+  }
+  document.getElementById("clearFilters").addEventListener("click", ()=>{
+    ["q","fs","fk","fa"].forEach(id=>{ $(id).value = ""; });
+    selectedGenres.clear();
+    genreList.querySelectorAll("input[type=checkbox]").forEach(cb=>cb.checked=false);
+    render();
+  });
+  $("activeFilters").addEventListener("click", e=>{
+    const chip = e.target.closest(".chip");
+    if(chip) clearFilterKey(chip.dataset.key);
+  });
+  function renderFilterChrome(){
+    const active = activeFilters();
+    const panelCount = ["fs","fk","fa"].filter(id=>$(id).value).length + (selectedGenres.size ? 1 : 0);
+    $("activeFilters").innerHTML = active.map(f=>
+      `<button type="button" class="chip" data-key="${f.key}" aria-label="Remove filter: ${esc(f.label)}">${esc(f.label)} <span aria-hidden="true">×</span></button>`
+    ).join("");
+    $("activeFilters").hidden = active.length === 0;
+    $("clearFilters").hidden = active.length === 0;
+    $("filtersToggle").textContent = panelCount ? `Filters (${panelCount})` : "Filters";
+    genreBtn.classList.toggle("on", selectedGenres.size > 0);
+    genreBtn.textContent = selectedGenres.size === 0 ? "All genres"
+      : selectedGenres.size === 1 ? `Genre: ${[...selectedGenres][0]}`
+      : `Genres: ${selectedGenres.size} selected`;
+    return active.length > 0;
+  }
   function render(){
     const q  = $("q").value.toLowerCase().trim();
     const fs = $("fs").value, fk = $("fk").value, fa = $("fa").value;
@@ -73,11 +144,15 @@
       if(fk && r.kind!==fk) return false;
       if(fa==="1" && !(r.awards && r.awards.length)) return false;
       if(fa==="2" && !r.gr) return false;
+      if(selectedGenres.size && !(r.genre||[]).some(g=>selectedGenres.has(g))) return false;
       if(!q) return true;
       return [r.author,r.title,r.group,r.publisher,r.edition,r.notes,r.isbn].join(" ").toLowerCase().includes(q);
     });
     rs.sort((a,b)=>{ const x=sortVal(a), y=sortVal(b); return (x>y?1:x<y?-1:0)*sortDir; });
-    $("cnt").textContent = `${rs.length} of ${D.rows.length} entries`;
+    const anyFilterActive = renderFilterChrome();
+    $("cnt").textContent = anyFilterActive
+      ? `${rs.length} of ${D.rows.length} entries`
+      : `${D.rows.length} entries`;
     $("tb").innerHTML = rs.length ? rs.map(r=>`<tr>
       <td><span class="tag ${r.shelf}">${r.shelf==="fiction"?"Fiction":"History"}</span></td>
       <td>${esc(r.author)}</td>
@@ -113,6 +188,11 @@
     });
   });
   ["q","fs","fk","fa"].forEach(id=>$(id).addEventListener("input", render));
+  const filtersToggle = $("filtersToggle"), filterPanel = $("filterPanel");
+  filtersToggle.addEventListener("click", ()=>{
+    const open = filterPanel.classList.toggle("is-open");
+    filtersToggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
   render();
 
   /* ---- canon ---- */

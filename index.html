@@ -73,27 +73,36 @@
   <div class="shead"><span class="idx">03</span><h2>Full catalogue</h2>
     <p class="note">Every entry from both source lists, one row each. Click a column heading to sort.</p></div>
   <div class="controls">
-    <input type="search" id="q" placeholder="Search author, title, series, publisher, notes…" aria-label="Search the catalogue">
-    <select id="fs" aria-label="Filter by shelf">
-      <option value="">Both shelves</option><option value="fiction">Fiction only</option>
-      <option value="nonfiction">History canon only</option>
-    </select>
-    <select id="fk" aria-label="Filter by type">
-      <option value="">All types</option><option value="standalone">Standalone</option>
-      <option value="series">Series volume</option><option value="omnibus">Omnibus file</option>
-      <option value="multivolume">Multi-volume work</option>
-      <option value="collection">Story collection</option><option value="anthology">Anthology</option>
-    </select>
-    <select id="fa" aria-label="Filter by award or rating">
-      <option value="">Awards: all books</option><option value="1">Award winners only</option>
-      <option value="2">Rated on Goodreads only</option>
-    </select>
-    <span class="count" id="cnt"></span>
+    <input type="search" id="q" placeholder="Search the catalogue…" aria-label="Search the catalogue">
+    <button type="button" id="filtersToggle" class="filters-toggle" aria-expanded="false" aria-controls="filterPanel">Filters</button>
+    <div class="filterpanel" id="filterPanel">
+      <button type="button" id="genreBtn" class="genre-btn" aria-expanded="false" aria-controls="genreList">All genres</button>
+      <fieldset class="genrelist" id="genreList" hidden>
+        <legend class="sr-only">Filter by genre — select any number</legend>
+      </fieldset>
+      <select id="fs" aria-label="Filter by shelf">
+        <option value="">Both shelves</option><option value="fiction">Fiction only</option>
+        <option value="nonfiction">History canon only</option>
+      </select>
+      <select id="fk" aria-label="Filter by format">
+        <option value="">All formats</option><option value="standalone">Standalone</option>
+        <option value="series">Series volume</option><option value="omnibus">Omnibus file</option>
+        <option value="multivolume">Multi-volume work</option>
+        <option value="collection">Story collection</option><option value="anthology">Anthology</option>
+      </select>
+      <select id="fa" aria-label="Filter by award or rating">
+        <option value="">Awards: all books</option><option value="1">Award winners only</option>
+        <option value="2">Rated on Goodreads only</option>
+      </select>
+      <button type="button" id="clearFilters" class="clear-filters" hidden>Clear filters</button>
+    </div>
+    <span class="count" id="cnt" aria-live="polite"></span>
   </div>
+  <div class="activefilters" id="activeFilters" aria-live="polite"></div>
   <div class="tblwrap"><table id="tbl">
     <thead><tr>
       <th data-k="shelf">Shelf</th><th data-k="author">Author</th><th data-k="title">Title</th>
-      <th data-k="group">Series / section</th><th data-k="vol">Vol</th><th data-k="kind">Type</th>
+      <th data-k="group">Series / section</th><th data-k="vol">Vol</th><th data-k="kind">Format</th>
       <th data-k="pages" class="num">Pages</th><th data-k="grr" class="num">Rating</th>
       <th data-k="nawards" class="num">Awards</th><th data-k="edition">Edition used</th>
       <th data-k="publisher">Publisher</th><th data-k="year" class="num">Year</th>

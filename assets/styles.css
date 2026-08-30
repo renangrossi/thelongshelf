@@ -87,12 +87,50 @@ section{padding:64px 0 0;scroll-margin-top:calc(var(--hdr) + 18px)}
   color:var(--faint);display:block;margin-top:8px;line-height:1.4}
 
 /* ---------- table ---------- */
-.controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;align-items:center}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;align-items:center}
 input[type=search],select{background:var(--panel);border:1px solid var(--line);color:var(--paper);
   padding:9px 12px;font-family:var(--body);font-size:15px;border-radius:2px}
 input[type=search]{flex:1;min-width:220px}
 input[type=search]:focus,select:focus{outline:2px solid var(--gold);outline-offset:1px}
-.count{font-family:var(--mono);font-size:11px;color:var(--faint)}
+.count{font-family:var(--mono);font-size:11px;color:var(--faint);white-space:nowrap}
+.filterpanel{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+/* Toggle button that groups the filter dropdowns into a drawer on narrow screens.
+   Hidden by default (desktop/tablet show the filters inline); see the max-width:640px
+   block below, which is the only place it becomes visible. */
+.filters-toggle{display:none;background:var(--panel);border:1px solid var(--line);color:var(--paper);
+  padding:9px 12px;font-family:var(--body);font-size:15px;border-radius:2px;cursor:pointer}
+.filters-toggle:hover,.filters-toggle:focus-visible{border-color:var(--gold)}
+.clear-filters{background:none;border:0;color:var(--gold);font-family:var(--mono);font-size:11px;
+  letter-spacing:.04em;cursor:pointer;padding:4px 2px;text-decoration:underline;text-underline-offset:3px}
+.clear-filters:hover,.clear-filters:focus-visible{color:var(--paper)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0,0,0,0);white-space:nowrap;border:0}
+/* Genre is multi-select, so it's a toggle button (styled like the other filter controls)
+   that opens a checkbox list below the whole controls row — a plain block in normal flow
+   rather than a floating/absolute popover, so it can never end up clipped or overlapping
+   the sticky table header the way position:sticky + overflow interactions did before. */
+.genre-btn{background:var(--panel);border:1px solid var(--line);color:var(--paper);
+  padding:9px 12px;font-family:var(--body);font-size:15px;border-radius:2px;cursor:pointer}
+.genre-btn:hover,.genre-btn:focus-visible{border-color:var(--gold)}
+.genre-btn.on{color:var(--gold);border-color:var(--gold)}
+/* Lives right after the Genre button in the DOM (not after the whole controls row) so
+   keyboard/tab order reaches it immediately on open, matching the visual order. flex-basis
+   100% makes it drop to its own full-width line within .filterpanel's flex-wrap instead of
+   needing position:absolute. */
+.genrelist{display:none;flex-wrap:wrap;gap:2px 16px;flex:1 1 100%;margin:6px 0 0;padding:14px 16px;
+  border:1px solid var(--line);background:var(--panel2)}
+.genrelist:not([hidden]){display:flex}
+.genrelist legend{padding:0}
+.gchk{display:flex;align-items:center;gap:7px;font-size:14px;color:var(--ink);
+  padding:4px 0;cursor:pointer;white-space:nowrap}
+.gchk input{accent-color:var(--gold);width:14px;height:14px;cursor:pointer}
+.gchk:hover{color:var(--paper)}
+.activefilters{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.chip{display:inline-flex;align-items:center;gap:6px;background:var(--panel2);border:1px solid var(--line);
+  color:var(--ink);font-family:var(--mono);font-size:10.5px;letter-spacing:.03em;
+  padding:4px 8px;border-radius:2px;cursor:pointer}
+.chip span{color:var(--gold);font-size:12px;line-height:1}
+.chip:hover,.chip:focus-visible{border-color:var(--gold);color:var(--paper)}
 /* overflow-x:auto makes this element the scroll container that any position:sticky
    descendant anchors to. It never scrolled vertically before (height:auto just grows to
    fit content), so the sticky header had no real scrollport to stick within and instead
@@ -196,5 +234,17 @@ footer{margin-top:80px;padding-top:26px;border-top:1px solid var(--line);
   .shead{grid-template-columns:1fr}
   .shead .idx{padding-top:0} .shead .note{grid-column:1}
   .tblwrap{max-height:min(64vh,560px)}
+}
+/* Below this width the search box plus three dropdowns no longer fit as one clean row.
+   Collapse the dropdowns into a toggleable drawer instead of letting them wrap awkwardly
+   two-or-three-to-a-line; the search box and result count stay visible either way. */
+@media(max-width:640px){
+  .filters-toggle{display:inline-flex;align-items:center;gap:4px}
+  .filterpanel{display:none;width:100%;order:3;margin-top:4px;padding:12px;
+    border:1px solid var(--line);background:var(--panel2)}
+  .filterpanel.is-open{display:flex}
+  .filterpanel select,.filterpanel .genre-btn{flex:1;min-width:150px}
+  .clear-filters{width:100%;text-align:left}
+  .genrelist{gap:2px 14px}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}.spine:hover{transform:none}}
