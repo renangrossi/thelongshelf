@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Long Shelf — a researched catalogue of a personal library</title>
+<meta name="description" content="A researched catalogue of 431 library entries: print-edition page counts, series organisation, omnibus breakdowns, awards and ratings.">
+<meta property="og:title" content="The Long Shelf">
+<meta property="og:description" content="569 books. 250,401 pages. Page counts taken from print editions, not ebook files.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nangrossi.github.io/thelongshelf/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='3' height='16' x='0' fill='%23C09A3E'/><rect width='3' height='16' x='5' fill='%238C3A32'/><rect width='3' height='16' x='10' fill='%233F7E8C'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..900&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/styles.css">
+</head><body>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="#top">The Long Shelf<span></span></a>
+    <nav class="top" aria-label="Sections">
+      <a href="#shelves">Shelves</a>
+      <a href="#overview">Overview</a>
+      <a href="#catalogue">Catalogue</a>
+      <a href="#canon">Canon</a>
+      <a href="#errata">Errata</a>
+      <a href="#series">Series</a>
+      <a href="#collections">Collections</a>
+      <a href="#extremes">Longest</a>
+      <a href="#awards">Awards</a>
+      <a href="#ratings">Ratings</a>
+      <a href="#duplicates">Duplicates</a>
+      <a href="#method">Method</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap" id="top">
+
+<div class="masthead">
+  <p class="eyebrow">A researched personal-library catalogue</p>
+  <h1>The Long Shelf<span class="sub2">431 catalogue entries across two collections. 569 physical books. 250,401 pages, taken from print editions rather than ebook files.</span></h1>
+  <p class="lede">Two shelves: a 338-entry fiction library and a 93-entry world history canon. Every entry gets a representative print edition; every collection, omnibus and multi-volume work is opened up into the books it actually contains; every series is pulled back together.</p>
+</div>
+
+<section id="shelves">
+  <div class="shead"><span class="idx">01</span><h2>The shelves</h2>
+    <p class="note">One spine per physical book, width proportional to its page count. Hover for the title, rating and award count; click to find it in the catalogue table below.</p></div>
+  <div class="shelfblock">
+    <p class="shelflabel"><span><b>Fiction</b> · 460 books</span><span>195,297 pages</span></p>
+    <div id="shelfFic"></div><div class="board"></div>
+  </div>
+  <div class="shelfblock">
+    <p class="shelflabel"><span><b>World history canon</b> · 109 volumes</span><span>55,104 pages</span></p>
+    <div id="shelfNf"></div><div class="board"></div>
+  </div>
+</section>
+
+<section id="overview">
+  <div class="shead"><span class="idx">02</span><h2>Library overview</h2></div>
+  <div class="stats" id="stats"></div>
+  <div class="ledger" style="max-width:620px">
+    <span class="lbl">Fiction shelf — books counted once</span><span class="val">195,297 pp</span>
+    <span class="lbl">History canon — volumes counted once</span><span class="val">55,104 pp</span>
+    <span class="lbl">A · Combined physical-book total</span><span class="val hi">250,401 pp</span>
+    <span class="lbl">B · Printed omnibus editions held (7 fiction files)</span><span class="val">7,668 pp</span>
+    <span class="lbl">Books with no reliable page count</span><span class="val">4</span>
+  </div>
+  <p class="note" style="margin-top:18px">Total A counts each distinct book once. Where an entry is an omnibus or a multi-volume work, its components are counted and the wrapper is not — a six-novel Dresden Files bundle contributes six books, and Gibbon contributes six volumes. Total B is a separate and much smaller figure: the printed length of the handful of files that correspond to a real single-volume omnibus edition. The two totals are not additive.</p>
+</section>
+
+<section id="catalogue">
+  <div class="shead"><span class="idx">03</span><h2>Full catalogue</h2>
+    <p class="note">Every entry from both source lists, one row each. Click a column heading to sort.</p></div>
+  <div class="controls">
+    <input type="search" id="q" placeholder="Search author, title, series, publisher, notes…" aria-label="Search the catalogue">
+    <select id="fs" aria-label="Filter by shelf">
+      <option value="">Both shelves</option><option value="fiction">Fiction only</option>
+      <option value="nonfiction">History canon only</option>
+    </select>
+    <select id="fk" aria-label="Filter by type">
+      <option value="">All types</option><option value="standalone">Standalone</option>
+      <option value="series">Series volume</option><option value="omnibus">Omnibus file</option>
+      <option value="multivolume">Multi-volume work</option>
+      <option value="collection">Story collection</option><option value="anthology">Anthology</option>
+    </select>
+    <select id="fa" aria-label="Filter by award or rating">
+      <option value="">Awards: all books</option><option value="1">Award winners only</option>
+      <option value="2">Rated on Goodreads only</option>
+    </select>
+    <span class="count" id="cnt"></span>
+  </div>
+  <div class="tblwrap"><table id="tbl">
+    <thead><tr>
+      <th data-k="shelf">Shelf</th><th data-k="author">Author</th><th data-k="title">Title</th>
+      <th data-k="group">Series / section</th><th data-k="vol">Vol</th><th data-k="kind">Type</th>
+      <th data-k="pages" class="num">Pages</th><th data-k="grr" class="num">Rating</th>
+      <th data-k="nawards" class="num">Awards</th><th data-k="edition">Edition used</th>
+      <th data-k="publisher">Publisher</th><th data-k="year" class="num">Year</th>
+      <th data-k="isbn">ISBN</th><th data-k="notes">Notes</th>
+    </tr></thead><tbody id="tb"></tbody>
+  </table></div>
+</section>
+
+<section id="canon">
+  <div class="shead"><span class="idx">04</span><h2>The history canon, by civilization</h2>
+    <p class="note">All sixteen sections in the file's own order. Where the file's summary table disagrees with what the list actually contains, both numbers are shown. Multi-volume entries are broken out underneath.</p></div>
+  <div class="grid2" id="canonGrid"></div>
+</section>
+
+<section id="errata">
+  <div class="shead"><span class="idx">05</span><h2>What the canon file gets wrong</h2>
+    <p class="note">Discrepancies found between the source list and the books themselves. None are fatal, but several change what you would actually buy.</p></div>
+  <div class="grid2" id="cnotes"></div>
+</section>
+
+<section id="series">
+  <div class="shead"><span class="idx">06</span><h2>Fiction series</h2>
+    <p class="note">The 64 fiction series with more than one volume in the library, largest first. Only volumes actually present count toward each total; a further 31 series are represented by a single book and appear in the table instead. Struck-through titles are held twice and counted once.</p></div>
+  <div class="grid2" id="seriesGrid"></div>
+</section>
+
+<section id="collections">
+  <div class="shead"><span class="idx">07</span><h2>Collections and multi-volume works</h2>
+    <p class="note">Every entry across both shelves that holds more than one book. Where a real printed omnibus exists, its physical page count sits next to the sum of its parts — the two rarely match, and the gap is explained beneath each.</p></div>
+  <div class="grid2" id="cols"></div>
+</section>
+
+<section id="extremes">
+  <div class="shead"><span class="idx">08</span><h2>Longest and shortest</h2>
+    <p class="note">Individual books across both shelves. Wrappers are excluded, so The Complete Wheel of Time appears as fourteen novels and Gibbon as six volumes.</p></div>
+  <div class="ranks">
+    <div class="rank"><h3>25 longest</h3><ol id="long"></ol></div>
+    <div class="rank"><h3>25 shortest</h3><ol id="short"></ol></div>
+  </div>
+</section>
+
+<section id="awards">
+  <div class="shead"><span class="idx">09</span><h2>Awards</h2>
+    <p class="note">68 books on these shelves have won a major award, grouped by prize. Wins only, never nominations. A book appears under every award it won. Author-level honours — Nobel laureates — are listed separately at the end.</p></div>
+  <div class="grid2" id="awardsGrid"></div>
+</section>
+
+<section id="ratings">
+  <div class="shead"><span class="idx">10</span><h2>Goodreads ratings</h2>
+    <p class="note">Ratings were looked up for 36 books, highest first. This is partial coverage, not a full pass — see the method notes for why, and for the faster route to filling the rest.</p></div>
+  <div class="ranks"><div class="rank" style="grid-column:1/-1"><h3>Rated books, highest first</h3><ol id="rated"></ol></div></div>
+</section>
+
+<section id="duplicates">
+  <div class="shead"><span class="idx">11</span><h2>Duplicates and alternate versions</h2>
+    <p class="note">Kept as separate rows, because they are separate files and in several cases separate texts. Counted once each in the totals.</p></div>
+  <div class="grid2" id="dups"></div>
+</section>
+
+<section id="method">
+  <div class="shead"><span class="idx">12</span><h2>Method and sources</h2></div>
+  <div class="prose">
+
+  <div class="warn">
+    <p style="margin:0 0 10px"><strong>What was checked, and what wasn't.</strong> A handful of things were confirmed against live sources: the First Law omnibus (Orbit 2016, 1,680 pp), the composition of Asimov's <em>Foundation Novels</em> bundle, the contents of Haggard's <em>Ultimate Collection</em>, the seventeen-title Sackett canon, the Zondervan <em>Story</em> edition, the Bloomsbury <em>Enuma Elish</em> (2024, 352 pp), and the two-volume structure of Seth's Korea.</p>
+    <p style="margin:0">Every other page count comes from bibliographic knowledge of standard editions rather than a record retrieved today. They are good working figures, not audited ones. ISBNs are left blank rather than invented. Checking all 569 books against publisher records individually is a much larger job than one pass — batching by author or by canon section is the honest route.</p>
+  </div>
+
+  <h3>How editions were selected</h3>
+  <p>For modern fiction: the standard full-text paperback from the original publisher in its home market. For classics and translated works: a reputable complete edition, usually Penguin Classics or Oxford World's Classics, with the translator named, because the translator often changes the page count more than the publisher does. For the history canon: the edition a reader would actually be sold today — the current university press paperback, or the standard trade hardcover where no paperback exists.</p>
+
+  <h3>Why page counts differ between editions</h3>
+  <p>Trim size, type size, leading and margin move the number before a word changes. Apparatus adds more: introductions, notes, appendices and maps can be a hundred pages. Then there are books that exist in genuinely different texts — <em>The Stand</em>, <em>Stranger in a Strange Land</em>, <em>The Gunslinger</em>, <em>The Forever War</em> and <em>Roadside Picnic</em> on the fiction shelf; Gibbon, Froissart, Díaz del Castillo and the one-volume Three Kingdoms on the history shelf, all of which circulate in abridgements that cut most of the book. Each is flagged in its Notes.</p>
+
+  <h3>Sources ranked</h3>
+  <p>Publisher catalogue records first, then national library and ISBN records, then WorldCat, then Google Books. Retail listings were used only to corroborate — their page counts are frequently an ebook's estimated length rather than a printed edition's, which is exactly the number this catalogue was built to avoid.</p>
+
+  <h3>On the Goodreads ratings</h3>
+  <p>Ratings are real lookups or nothing. There is no way to recall a number like 4.29 out of 1.64 million ratings from memory without inventing it, so the column is blank wherever a rating was not actually retrieved — 36 books out of 569, which is honest partial coverage rather than a full pass. Goodreads has no bulk lookup, so completing it means roughly one query per title.</p>
+  <p>Two faster routes: if the library is already on Goodreads, the site's own CSV export (Account Settings → Import/Export) returns every shelved book with its average rating in one file, which can be joined straight onto this catalogue. Failing that, the ratings can be filled in batches. Note also that ratings drift daily and that omnibus editions carry their own separate rating, usually higher and with far fewer votes: the First Law omnibus sits at 4.53 from about 11,000 ratings while <em>The Blade Itself</em> alone is 4.22 from 316,000.</p>
+
+  <h3>On the awards</h3>
+  <p>Awards are book-level and restricted to wins, not nominations — a shelf where everything is a "Hugo nominee" tells you nothing. Where an omnibus entry has no award of its own but contains books that do, the row shows the component awards marked <em>via components</em>, so the Hyperion Cantos file inherits Hyperion's Hugo without pretending the bundle won anything.</p>
+  <p>Author-level honours are kept visibly separate and greyed: Steinbeck, Golding and Ishiguro have Nobel Prizes, but the Nobel is for a body of work, not for <em>Of Mice and Men</em>. Two cases worth knowing: A. B. Guthrie won the Pulitzer for <em>The Way West</em>, the sequel, not for <em>The Big Sky</em> which is the book on the shelf; and Asimov's Hugo for Best All-Time Series went to the original Foundation trilogy as a unit, which is why it sits on <em>Foundation</em> rather than on any one volume.</p>
+
+  <h3>Where a count could not be established</h3>
+  <ul>
+    <li><strong>Nova Roma</strong> and <strong>Nova Roma 2</strong> (Gentry Anderson) and the two <strong>Aron Beauregard</strong> titles are independently published with no stable print record. Left blank rather than guessed.</li>
+    <li><strong>Haggard's Ultimate Collection</strong> holds 60+ works. Eighteen major novels are costed; the rest is short fiction, essays and autobiography, so its component total is a floor rather than a sum.</li>
+    <li><strong>The Complete Wheel of Time</strong> — the fourteen main novels are certain; whether the file also carries the prequel <em>New Spring</em> cannot be told from the filename.</li>
+    <li><strong>Wolfe's "1-5 The Book of the New Sun"</strong> is read as the four core volumes plus <em>The Urth of the New Sun</em>, on the strength of the numbering and the Long Sun files running 6 to 9 in the same library.</li>
+    <li><strong>The two Portuguese Quixote volumes</strong> — the translator is not identifiable from the filename, and Brazilian and Portuguese editions differ substantially in length.</li>
+    <li><strong>Sophocles</strong> — <em>Oedipus the King</em> and <em>Antigone</em> are almost never printed as a pair. The figure given is those two plays inside <em>The Three Theban Plays</em>, not a real standalone edition.</li>
+    <li><strong>Constantine VII's De Administrando Imperio</strong> exists in English essentially only as the Dumbarton Oaks scholarly edition — expensive, hard to find, and a very different reading experience from the rest of the Byzantium section.</li>
+  </ul>
+
+  <h3>Collections where the breakdown is estimated</h3>
+  <p>Barsoom, Pellucidar, the Sacketts and the Alatriste novels are short books issued by many reprint houses at different trim sizes, so component counts are typical rather than definitive. The same applies to Gibbon, Three Kingdoms and The Story of the Stone. <em>The Once and Future King</em> lists its four constituent books with no per-book counts, because White revised them substantially when he assembled the omnibus and the parts are not separately in print.</p>
+
+  <h3>Two things on the fiction shelf that are not fiction</h3>
+  <p><em>1 Enoch: The Hermeneia Translation</em> is a scholarly translation of an ancient apocryphal text, and <em>The Story</em> is a chronologically rearranged abridgement of the NIV Bible. Both sit in the fiction folder, both are listed in the table, and neither is counted toward the fiction page total.</p>
+
+  <h3>One title renamed</h3>
+  <p>Agatha Christie's 1939 novel appears in the fiction list under its original UK title, which contains a racial slur and has not been used in print since the 1980s. It is catalogued here as <em>And Then There Were None</em>.</p>
+
+  </div>
+</section>
+
+<footer>
+  The Long Shelf · built from a 338-line fiction list and a 93-entry history canon.<br>
+  Page counts are researched working figures, not audited bibliographic records. Goodreads ratings are a snapshot and drift daily.
+</footer>
+</div>
+
+<div class="tip" id="tip"></div>
+<script src="./assets/data.js"></script>
+<script src="./assets/app.js"></script>
+</body></html>
