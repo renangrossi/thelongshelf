@@ -93,12 +93,20 @@ input[type=search],select{background:var(--panel);border:1px solid var(--line);c
 input[type=search]{flex:1;min-width:220px}
 input[type=search]:focus,select:focus{outline:2px solid var(--gold);outline-offset:1px}
 .count{font-family:var(--mono);font-size:11px;color:var(--faint)}
-.tblwrap{overflow-x:auto;border:1px solid var(--line);background:var(--panel)}
+/* overflow-x:auto makes this element the scroll container that any position:sticky
+   descendant anchors to. It never scrolled vertically before (height:auto just grows to
+   fit content), so the sticky header had no real scrollport to stick within and instead
+   painted itself at a constant "container-top + 60px" offset — permanently overlapping
+   the first rows of the table. Giving it an explicit max-height + overflow-y:auto makes
+   it a genuine scroll container so position:sticky works as intended. */
+.tblwrap{overflow:auto;max-height:min(72vh,720px);border:1px solid var(--line);background:var(--panel);
+  overscroll-behavior:contain}
 table{border-collapse:collapse;width:100%;font-size:14px;min-width:1120px}
 th{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
   text-align:left;padding:12px;background:var(--panel2);color:var(--faint);cursor:pointer;
-  white-space:nowrap;border-bottom:1px solid var(--line);position:sticky;top:var(--hdr);z-index:2}
-th:hover{color:var(--paper)} th.on{color:var(--gold)}
+  white-space:nowrap;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
+th:hover{color:var(--paper)} th:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+th.on{color:var(--gold)}
 td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 tr:last-child td{border-bottom:none}
 tbody tr:hover{background:#20242D}
@@ -187,6 +195,6 @@ footer{margin-top:80px;padding-top:26px;border-top:1px solid var(--line);
   .brand span{display:none}
   .shead{grid-template-columns:1fr}
   .shead .idx{padding-top:0} .shead .note{grid-column:1}
-  th{position:static}
+  .tblwrap{max-height:min(64vh,560px)}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}.spine:hover{transform:none}}

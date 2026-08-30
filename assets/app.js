@@ -78,7 +78,7 @@
     });
     rs.sort((a,b)=>{ const x=sortVal(a), y=sortVal(b); return (x>y?1:x<y?-1:0)*sortDir; });
     $("cnt").textContent = `${rs.length} of ${D.rows.length} entries`;
-    $("tb").innerHTML = rs.map(r=>`<tr>
+    $("tb").innerHTML = rs.length ? rs.map(r=>`<tr>
       <td><span class="tag ${r.shelf}">${r.shelf==="fiction"?"Fiction":"History"}</span></td>
       <td>${esc(r.author)}</td>
       <td class="t-title">${esc(r.title)}${r.ncomp?` <span class="k">· ${r.ncomp} books</span>`:""}</td>
@@ -92,15 +92,26 @@
       <td class="muted">${esc(r.publisher)||"—"}</td>
       <td class="num muted">${esc(r.year)||"—"}</td>
       <td class="muted" style="font-family:var(--mono);font-size:11px">${esc(r.isbn)||"—"}</td>
-      <td class="notecell">${esc(r.notes)||""}</td></tr>`).join("");
+      <td class="notecell">${esc(r.notes)||""}</td></tr>`).join("")
+      : `<tr><td colspan="14" class="muted" style="text-align:center;padding:26px 12px">No entries match these filters.</td></tr>`;
   }
-  document.querySelectorAll("#tbl th").forEach(th=>th.addEventListener("click",()=>{
+  function sortBy(th){
     const k = th.dataset.k;
     if(sortK===k) sortDir *= -1;
     else { sortK = k; sortDir = (k==="pages"||k==="grr"||k==="nawards") ? -1 : 1; }
-    document.querySelectorAll("#tbl th").forEach(x=>x.classList.remove("on"));
-    th.classList.add("on"); render();
-  }));
+    document.querySelectorAll("#tbl th").forEach(x=>{ x.classList.remove("on"); x.removeAttribute("aria-sort"); });
+    th.classList.add("on");
+    th.setAttribute("aria-sort", sortDir>0 ? "ascending" : "descending");
+    render();
+  }
+  document.querySelectorAll("#tbl th").forEach(th=>{
+    th.setAttribute("tabindex","0");
+    th.setAttribute("role","button");
+    th.addEventListener("click",()=>sortBy(th));
+    th.addEventListener("keydown",e=>{
+      if(e.key==="Enter" || e.key===" "){ e.preventDefault(); sortBy(th); }
+    });
+  });
   ["q","fs","fk","fa"].forEach(id=>$(id).addEventListener("input", render));
   render();
 
