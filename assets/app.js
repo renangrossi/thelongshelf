@@ -175,7 +175,7 @@
       <td>${esc(r.author)}</td>
       <td class="t-title">${esc(r.title)}${r.ncomp?` <span class="k">· ${r.ncomp} books</span>`:""}</td>
       <td class="muted">${esc(r.group)||"—"}</td>
-      <td class="num muted">${esc(r.vol)||"—"}</td>
+      <td class="num muted volcell">${esc(r.vol)||"—"}</td>
       <td class="k">${KIND[r.kind]||r.kind}</td>
       <td class="genrecell">${genreCell(r)}</td>
       <td class="num">${pagesCell(r)}</td>

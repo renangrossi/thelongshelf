@@ -143,17 +143,37 @@ input[type=search]:focus,select:focus{outline:2px solid var(--gold);outline-offs
    it a genuine scroll container so position:sticky works as intended. */
 .tblwrap{overflow:auto;max-height:min(72vh,720px);border:1px solid var(--line);background:var(--panel);
   overscroll-behavior:contain}
-table{border-collapse:collapse;width:100%;font-size:14px;min-width:1260px}
+/* table-layout:fixed + the <colgroup> in index.html give each column an explicit,
+   deliberate width instead of the browser sizing every column to its single widest cell
+   across all 431 rows — that auto-layout behavior was why e.g. Vol (mostly "1", "2", "13")
+   rendered ~170px wide, driven by one outlier value like "6 (Icewind Dale 3)". No width:100%
+   here on purpose: with fixed layout, width:100% would proportionally stretch/shrink every
+   column to fill the wrapper, which would silently undo the deliberate per-column widths at
+   any viewport narrower than their sum — instead the table takes its natural width from the
+   column widths, and .tblwrap's existing overflow:auto scrolls it exactly like before. */
+/* table-layout:fixed only actually distributes the <colgroup> widths below when the table
+   has a definite `width` — a `min-width`-only table falls back to sizing columns from
+   content again, silently undoing every deliberate width choice below. */
+table{border-collapse:collapse;table-layout:fixed;font-size:14px;width:1692px}
 th{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
   text-align:left;padding:12px;background:var(--panel2);color:var(--faint);cursor:pointer;
-  white-space:nowrap;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
+  border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
 th:hover{color:var(--paper)} th:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
 th.on{color:var(--gold)}
+td,th{overflow-wrap:break-word}
 td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 tr:last-child td{border-bottom:none}
 tbody tr:hover{background:#20242D}
 .t-title{font-weight:600}
-.num{font-family:var(--mono);text-align:right;white-space:nowrap;font-size:13px}
+/* font-size is td-only: th.num used to inherit this too, quietly rendering "Rating"/"Pages"/
+   "Year" headers at 13px instead of the other headers' 9.5px — invisible while th forced
+   white-space:nowrap, but it's what was making "Rating" wrap once headers could wrap. */
+.num{font-family:var(--mono);text-align:right}
+td.num{font-size:13px}
+/* Vol is almost always "1"/"2"/"13" but a handful of rows carry a longer parenthetical
+   annotation (e.g. "4 (Icewind Dale 1)"); a slightly smaller size keeps that rare case
+   to ~3 wrapped lines instead of 5, without touching the numbers everyone actually reads. */
+.volcell{font-size:10px}
 .muted{color:var(--faint)}
 .star{font-family:var(--mono);color:var(--gold)}
 .awards{max-width:230px}
