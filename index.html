@@ -76,10 +76,12 @@
     <input type="search" id="q" placeholder="Search the catalogue…" aria-label="Search the catalogue">
     <button type="button" id="filtersToggle" class="filters-toggle" aria-expanded="false" aria-controls="filterPanel">Filters</button>
     <div class="filterpanel" id="filterPanel">
-      <button type="button" id="genreBtn" class="genre-btn" aria-expanded="false" aria-controls="genreList">All genres</button>
-      <fieldset class="genrelist" id="genreList" hidden>
-        <legend class="sr-only">Filter by genre — select any number</legend>
-      </fieldset>
+      <div class="genredrop" id="genreDrop">
+        <button type="button" id="genreBtn" class="genre-btn" aria-haspopup="true" aria-expanded="false" aria-controls="genreList">Genre<span class="caret" aria-hidden="true"> ▾</span></button>
+        <fieldset class="genrelist" id="genreList" hidden>
+          <legend class="sr-only">Filter by genre — select any number</legend>
+        </fieldset>
+      </div>
       <select id="fs" aria-label="Filter by shelf">
         <option value="">Both shelves</option><option value="fiction">Fiction only</option>
         <option value="nonfiction">History canon only</option>
@@ -103,6 +105,7 @@
     <thead><tr>
       <th data-k="shelf">Shelf</th><th data-k="author">Author</th><th data-k="title">Title</th>
       <th data-k="group">Series / section</th><th data-k="vol">Vol</th><th data-k="kind">Format</th>
+      <th data-k="genre">Genre</th>
       <th data-k="pages" class="num">Pages</th><th data-k="grr" class="num">Rating</th>
       <th data-k="nawards" class="num">Awards</th><th data-k="edition">Edition used</th>
       <th data-k="publisher">Publisher</th><th data-k="year" class="num">Year</th>

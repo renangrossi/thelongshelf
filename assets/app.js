@@ -59,6 +59,8 @@
   const awardCell = r => !r.awards || !r.awards.length ? `<span class="muted">—</span>`
     : r.awards.map(a=>`<span class="aw${a.indexOf("Author:")===0?" auth":""}">${esc(a)}</span>`).join("")
       + (r.awards_via ? `<span class="k">via components</span>` : "");
+  const genreCell = r => !r.genre || !r.genre.length ? `<span class="muted">—</span>`
+    : esc(r.genre.join(" · "));
   function sortVal(r){
     if(sortK==="grr") return r.gr ? r.gr[0] : -1;
     if(sortK==="nawards") return r.awards ? r.awards.length : 0;
@@ -77,11 +79,25 @@
     if(e.target.checked) selectedGenres.add(e.target.value); else selectedGenres.delete(e.target.value);
     render();
   });
-  const genreBtn = $("genreBtn"), genreList = $("genreList");
-  genreBtn.addEventListener("click", ()=>{
-    const open = genreList.hidden;
-    genreList.hidden = !open;
-    genreBtn.setAttribute("aria-expanded", open ? "true" : "false");
+  const genreDrop = $("genreDrop"), genreBtn = $("genreBtn"), genreList = $("genreList");
+  function openGenreDrop(){
+    genreList.hidden = false;
+    genreBtn.setAttribute("aria-expanded", "true");
+  }
+  function closeGenreDrop(returnFocus){
+    if(genreList.hidden) return;
+    genreList.hidden = true;
+    genreBtn.setAttribute("aria-expanded", "false");
+    if(returnFocus) genreBtn.focus();
+  }
+  genreBtn.addEventListener("click", ()=> genreList.hidden ? openGenreDrop() : closeGenreDrop(false));
+  // Dropdown stays open while ticking boxes; only these three things close it, matching
+  // standard multi-select-popover behavior (a plain click on a checkbox must NOT close it).
+  document.addEventListener("click", e=>{
+    if(!genreList.hidden && !genreDrop.contains(e.target)) closeGenreDrop(false);
+  });
+  genreDrop.addEventListener("keydown", e=>{
+    if(e.key === "Escape" && !genreList.hidden){ e.preventDefault(); closeGenreDrop(true); }
   });
 
   /* ---- filters: labels, active-filter chips, clear, count ---- */
@@ -131,9 +147,10 @@
     $("clearFilters").hidden = active.length === 0;
     $("filtersToggle").textContent = panelCount ? `Filters (${panelCount})` : "Filters";
     genreBtn.classList.toggle("on", selectedGenres.size > 0);
-    genreBtn.textContent = selectedGenres.size === 0 ? "All genres"
+    const genreLabel = selectedGenres.size === 0 ? "Genre"
       : selectedGenres.size === 1 ? `Genre: ${[...selectedGenres][0]}`
       : `Genres: ${selectedGenres.size} selected`;
+    genreBtn.innerHTML = `${esc(genreLabel)}<span class="caret" aria-hidden="true"> ▾</span>`;
     return active.length > 0;
   }
   function render(){
@@ -146,7 +163,7 @@
       if(fa==="2" && !r.gr) return false;
       if(selectedGenres.size && !(r.genre||[]).some(g=>selectedGenres.has(g))) return false;
       if(!q) return true;
-      return [r.author,r.title,r.group,r.publisher,r.edition,r.notes,r.isbn].join(" ").toLowerCase().includes(q);
+      return [r.author,r.title,r.group,r.publisher,r.edition,r.notes,r.isbn,(r.genre||[]).join(" ")].join(" ").toLowerCase().includes(q);
     });
     rs.sort((a,b)=>{ const x=sortVal(a), y=sortVal(b); return (x>y?1:x<y?-1:0)*sortDir; });
     const anyFilterActive = renderFilterChrome();
@@ -160,6 +177,7 @@
       <td class="muted">${esc(r.group)||"—"}</td>
       <td class="num muted">${esc(r.vol)||"—"}</td>
       <td class="k">${KIND[r.kind]||r.kind}</td>
+      <td class="genrecell">${genreCell(r)}</td>
       <td class="num">${pagesCell(r)}</td>
       <td class="num">${grCell(r)}</td>
       <td class="awards">${awardCell(r)}</td>
@@ -168,7 +186,7 @@
       <td class="num muted">${esc(r.year)||"—"}</td>
       <td class="muted" style="font-family:var(--mono);font-size:11px">${esc(r.isbn)||"—"}</td>
       <td class="notecell">${esc(r.notes)||""}</td></tr>`).join("")
-      : `<tr><td colspan="14" class="muted" style="text-align:center;padding:26px 12px">No entries match these filters.</td></tr>`;
+      : `<tr><td colspan="15" class="muted" style="text-align:center;padding:26px 12px">No entries match these filters.</td></tr>`;
   }
   function sortBy(th){
     const k = th.dataset.k;

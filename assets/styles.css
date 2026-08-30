@@ -105,26 +105,30 @@ input[type=search]:focus,select:focus{outline:2px solid var(--gold);outline-offs
 .clear-filters:hover,.clear-filters:focus-visible{color:var(--paper)}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
   clip:rect(0,0,0,0);white-space:nowrap;border:0}
-/* Genre is multi-select, so it's a toggle button (styled like the other filter controls)
-   that opens a checkbox list below the whole controls row — a plain block in normal flow
-   rather than a floating/absolute popover, so it can never end up clipped or overlapping
-   the sticky table header the way position:sticky + overflow interactions did before. */
+/* Genre is multi-select: a toggle button opens a floating checklist popover, positioned
+   relative to .genredrop. This is a real position:absolute overlay — safe here (unlike the
+   old sticky-header bug) because nothing inside it is position:sticky and none of its
+   ancestors (.controls, .filterpanel, .wrap) set overflow, so it can never get clipped or
+   hijack another element's sticky containing block. It sits right after the Genre button
+   in the DOM (not after the whole controls row) so keyboard/tab order reaches it immediately
+   on open, matching the visual order. */
+.genredrop{position:relative}
 .genre-btn{background:var(--panel);border:1px solid var(--line);color:var(--paper);
-  padding:9px 12px;font-family:var(--body);font-size:15px;border-radius:2px;cursor:pointer}
+  padding:9px 12px;font-family:var(--body);font-size:15px;border-radius:2px;cursor:pointer;
+  white-space:nowrap}
 .genre-btn:hover,.genre-btn:focus-visible{border-color:var(--gold)}
 .genre-btn.on{color:var(--gold);border-color:var(--gold)}
-/* Lives right after the Genre button in the DOM (not after the whole controls row) so
-   keyboard/tab order reaches it immediately on open, matching the visual order. flex-basis
-   100% makes it drop to its own full-width line within .filterpanel's flex-wrap instead of
-   needing position:absolute. */
-.genrelist{display:none;flex-wrap:wrap;gap:2px 16px;flex:1 1 100%;margin:6px 0 0;padding:14px 16px;
-  border:1px solid var(--line);background:var(--panel2)}
+.genre-btn .caret{color:var(--faint);font-size:11px}
+.genrelist{display:none;flex-direction:column;gap:0;position:absolute;top:calc(100% + 6px);left:0;
+  z-index:15;min-width:230px;max-width:min(320px,90vw);max-height:280px;overflow-y:auto;
+  padding:8px 6px;border:1px solid var(--line);background:var(--panel2);
+  box-shadow:0 12px 34px rgba(0,0,0,.6)}
 .genrelist:not([hidden]){display:flex}
 .genrelist legend{padding:0}
-.gchk{display:flex;align-items:center;gap:7px;font-size:14px;color:var(--ink);
-  padding:4px 0;cursor:pointer;white-space:nowrap}
-.gchk input{accent-color:var(--gold);width:14px;height:14px;cursor:pointer}
-.gchk:hover{color:var(--paper)}
+.gchk{display:flex;align-items:center;gap:9px;font-size:14px;color:var(--ink);
+  padding:7px 8px;cursor:pointer;white-space:nowrap;border-radius:2px}
+.gchk input{accent-color:var(--gold);width:14px;height:14px;cursor:pointer;flex:none}
+.gchk:hover,.gchk:focus-within{color:var(--paper);background:var(--panel)}
 .activefilters{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
 .chip{display:inline-flex;align-items:center;gap:6px;background:var(--panel2);border:1px solid var(--line);
   color:var(--ink);font-family:var(--mono);font-size:10.5px;letter-spacing:.03em;
@@ -139,7 +143,7 @@ input[type=search]:focus,select:focus{outline:2px solid var(--gold);outline-offs
    it a genuine scroll container so position:sticky works as intended. */
 .tblwrap{overflow:auto;max-height:min(72vh,720px);border:1px solid var(--line);background:var(--panel);
   overscroll-behavior:contain}
-table{border-collapse:collapse;width:100%;font-size:14px;min-width:1120px}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:1260px}
 th{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
   text-align:left;padding:12px;background:var(--panel2);color:var(--faint);cursor:pointer;
   white-space:nowrap;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
@@ -153,6 +157,7 @@ tbody tr:hover{background:#20242D}
 .muted{color:var(--faint)}
 .star{font-family:var(--mono);color:var(--gold)}
 .awards{max-width:230px}
+.genrecell{max-width:190px;font-size:13px;color:var(--ink)}
 .aw{display:block;font-family:var(--mono);font-size:10px;line-height:1.35;color:#D6C58F;margin-bottom:3px}
 .aw.auth{color:var(--faint)}
 .notecell{max-width:340px;font-size:13px;color:var(--ink);line-height:1.5}
@@ -243,8 +248,8 @@ footer{margin-top:80px;padding-top:26px;border-top:1px solid var(--line);
   .filterpanel{display:none;width:100%;order:3;margin-top:4px;padding:12px;
     border:1px solid var(--line);background:var(--panel2)}
   .filterpanel.is-open{display:flex}
-  .filterpanel select,.filterpanel .genre-btn{flex:1;min-width:150px}
+  .filterpanel select,.filterpanel .genredrop{flex:1;min-width:150px}
+  .filterpanel .genre-btn{width:100%}
   .clear-filters{width:100%;text-align:left}
-  .genrelist{gap:2px 14px}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}.spine:hover{transform:none}}
