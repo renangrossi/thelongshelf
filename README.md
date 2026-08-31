@@ -2,7 +2,7 @@
 
 A researched catalogue of a personal library — 431 entries, 569 physical books, 250,401 pages.
 
-Live at **https://nangrossi.github.io/thelongshelf/**
+Live at **https://renangrossi.github.io/thelongshelf/**
 
 ## What it is
 
