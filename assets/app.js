@@ -49,11 +49,82 @@
 
   /* ---- table ---- */
   let sortK = "shelf", sortDir = 1;
-  const pagesCell = r =>
-    r.pages != null ? nf(r.pages)
+
+  /* Vol: "k of X" is shown only where X is verified from the catalogue's own vol values —
+     never invented and never derived from outside knowledge of the real series. Within a
+     group, gather every row whose vol is a plain integer or a plain "A–B" range; if their
+     combined coverage is an exact, gapless 1..max run, X=max is verified (an overlap from
+     an intentional duplicate — e.g. "The Eye of the World" cataloged both alone and inside
+     The Complete Wheel of Time — is fine, since it doesn't create a gap). Anything else
+     aborts the whole group rather than guessing: a real gap (Discworld, Shadowrun — only
+     some volumes held, true total unknown), a decimal (Stormlight Archive's "2.5"), or a
+     compound label (Drizzt's "4 (Icewind Dale 1)") all leave every row in that group
+     exactly as it already was. Note this also correctly reuses `group` for the history
+     canon's roman-numeral section headers, which bundle many unrelated books: sections
+     with no real sub-series in them never produce ≥2 contributing rows, so nothing fires;
+     sections that do contain a real multi-volume work (e.g. "VII · China"'s five-volume
+     History of Imperial China) get verified exactly like a fiction series would. */
+  const RANGE_RE = /^(\d+)\s*[–-]\s*(\d+)$/, INT_RE = /^\d+$/;
+  const volTotal = new Map();
+  {
+    const groups = {};
+    D.rows.forEach(r=>{ if(r.group) (groups[r.group] = groups[r.group]||[]).push(r); });
+    for(const rows of Object.values(groups)){
+      const contributing = [];
+      let weird = false;
+      for(const r of rows){
+        const v = (r.vol||"").trim();
+        if(v==="" || v==="—") continue;
+        const rm = v.match(RANGE_RE);
+        if(rm){ contributing.push({r, lo:+rm[1], hi:+rm[2]}); continue; }
+        if(INT_RE.test(v)){ contributing.push({r, lo:+v, hi:+v}); continue; }
+        if(/^\d/.test(v)) weird = true; // e.g. "2.5", "60+", "4 (Icewind Dale 1)"
+      }
+      if(weird || contributing.length < 2) continue;
+      const covered = new Set();
+      for(const c of contributing) for(let n=c.lo; n<=c.hi; n++) covered.add(n);
+      const max = Math.max(...covered);
+      let gap = false;
+      for(let n=1; n<=max; n++) if(!covered.has(n)) gap = true;
+      if(gap) continue;
+      for(const c of contributing) if(c.lo===c.hi) volTotal.set(c.r, max);
+    }
+  }
+  const volCell = r => {
+    const v = (r.vol||"").trim();
+    if(!v) return "—";
+    const x = volTotal.get(r);
+    return x ? `${esc(v)} of ${x}` : esc(v);
+  };
+
+  /* Pages: the 30 omnibus/collection rows that carry ncomp+comp_total get their real
+     per-book breakdown from D.collections (matched 1:1 by title+author — verified against
+     every current row, none unmatched), numbered from the row's own vol range start so a
+     row like "Byzantium: The Apogee and Byzantium: The Decline and Fall" (vol "2–3") reads
+     "2: …  3: …" rather than restarting at 1. A component with no known page count (2 of
+     the 30 rows have exactly one) shows "—" rather than an invented figure; the total is
+     the existing comp_total, already the sum of the known components only. */
+  const collByKey = new Map(D.collections.map(c => [c.title+"|"+c.author, c]));
+  const pageBreakdown = r => {
+    if(!r.ncomp || r.comp_total==null) return null;
+    const c = collByKey.get(r.title+"|"+r.author);
+    if(!c) return null;
+    const rm = (r.vol||"").trim().match(RANGE_RE);
+    const start = (rm && (+rm[2]-+rm[1]+1)===c.comps.length) ? +rm[1] : 1;
+    const lines = c.comps.map((comp,i)=>`${start+i}: ${comp.pages!=null?nf(comp.pages):"—"}`);
+    lines.push(`Total: ${nf(r.comp_total)}`);
+    return lines;
+  };
+  const pagesCell = r => {
+    const bd = pageBreakdown(r);
+    if(bd) return `<span class="pgbreak">${bd.map((l,i)=>
+        `<span${i===bd.length-1?' class="pgtotal"':""}>${esc(l)}</span>`).join("")}</span>`
+      + (r.physical!=null ? `<span class="pgphys muted">bound: ${nf(r.physical)} pp</span>` : "");
+    return r.pages != null ? nf(r.pages)
     : r.physical != null ? `${nf(r.physical)}<br><span class="muted" style="font-size:11px">omnibus</span>`
     : r.comp_total ? `<span class="muted">${nf(r.comp_total)}</span><br><span class="muted" style="font-size:11px">sum of ${r.ncomp}</span>`
     : `<span class="muted">—</span>`;
+  };
   const grCell = r => !r.gr ? `<span class="muted">—</span>`
     : `<span class="star">${r.gr[0].toFixed(2)}</span><br><span class="muted" style="font-size:11px">${shortN(r.gr[1])}</span>`;
   const awardCell = r => !r.awards || !r.awards.length ? `<span class="muted">—</span>`
@@ -175,7 +246,7 @@
       <td>${esc(r.author)}</td>
       <td class="t-title">${esc(r.title)}${r.ncomp?` <span class="k">· ${r.ncomp} books</span>`:""}</td>
       <td class="muted">${esc(r.group)||"—"}</td>
-      <td class="num muted volcell">${esc(r.vol)||"—"}</td>
+      <td class="num muted volcell">${volCell(r)}</td>
       <td class="k">${KIND[r.kind]||r.kind}</td>
       <td class="genrecell">${genreCell(r)}</td>
       <td class="num">${pagesCell(r)}</td>
