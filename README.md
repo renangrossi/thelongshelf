@@ -8,8 +8,8 @@ Live at **https://renangrossi.github.io/thelongshelf/**
 
 Two shelves catalogued to the same standard:
 
-- a 352-entry fiction library
-- a 105-entry world history canon
+- a 338-entry fiction library
+- a 119-entry world history canon
 
 Every entry gets a representative **print** edition — page counts come from physical books, never from EPUB or Kindle location counts. Omnibuses, collections and multi-volume works are opened up into the books they actually contain, series are regrouped, duplicates are flagged, and 68 award-winning books are listed by prize.
 
