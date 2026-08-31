@@ -355,6 +355,33 @@
     <ol class="books">${d.items.map(i=>`<li><span class="bt">${esc(i)}</span></li>`).join("")}</ol>
     <p class="cardnote">${esc(d.note)}</p></div>`).join("");
 
+  /* ---- reading orders: sequences transcribed from the source library's own
+     reading-order notes, not derived from the catalogue. An item is only
+     ever linked to a row when its title matches one exactly; anything else
+     is shown as not yet catalogued rather than guessed at. ---- */
+  if ($("readingOrders") && D.readingOrders) {
+    $("readingOrders").innerHTML = D.readingOrders.map(ro=>{
+      const n = ro.groups.reduce((s,g)=>s+g.items.length,0);
+      const have = ro.groups.reduce((s,g)=>s+g.items.filter(i=>i.match).length,0);
+      return `<div class="card">
+      <h3>${esc(ro.title)}</h3>
+      <div class="meta">${have} of ${n} already catalogued · from ${esc(ro.source)}</div>
+      ${ro.groups.map(g=>`<div class="rogroup">
+        ${g.heading?`<h4>${esc(g.heading)}</h4>`:""}
+        <ol class="books">${g.items.map(i=>
+          i.match
+            ? `<li class="ro-hit" data-title="${esc(i.match)}"><span class="bt">${esc(i.label)}</span></li>`
+            : `<li class="ro-miss"><span class="bt">${esc(i.label)}</span><span class="ro-tag">not yet catalogued</span></li>`
+        ).join("")}</ol></div>`).join("")}
+      </div>`;
+    }).join("");
+    $("readingOrders").addEventListener("click", e=>{
+      const li = e.target.closest(".ro-hit"); if(!li) return;
+      $("q").value = li.dataset.title; render();
+      $("catalogue").scrollIntoView({behavior:"smooth", block:"start"});
+    });
+  }
+
   /* ---- nav scroll-spy ---- */
   const links = [...document.querySelectorAll("nav.top a")];
   const map = new Map(links.map(a=>[a.getAttribute("href").slice(1), a]));

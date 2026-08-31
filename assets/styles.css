@@ -256,6 +256,17 @@ ul.sub .sp{font-family:var(--mono);font-size:11px;color:var(--faint);margin-left
 .awlist .wa{font-family:var(--mono);font-size:10.5px;color:var(--faint);display:block}
 .awlist .wx{font-family:var(--mono);font-size:10.5px;color:#D6C58F;display:block;margin-top:2px}
 
+/* ---------- reading orders ---------- */
+.rogroup{margin-top:14px}
+.rogroup:first-child{margin-top:0}
+.rogroup h4{font-family:var(--mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--gold);margin:0 0 4px;font-weight:500}
+li.ro-hit{cursor:pointer}
+li.ro-hit:hover .bt{color:var(--gold)}
+li.ro-miss .bt{color:var(--faint)}
+.ro-tag{font-family:var(--mono);font-size:9px;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--faint);white-space:nowrap;margin-left:auto;padding-left:8px}
+
 /* ---------- ranks ---------- */
 .ranks{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
 .rank{background:var(--panel);padding:20px}
