@@ -364,7 +364,7 @@
         <ol class="books">${g.items.map(i=>
           i.match
             ? `<li class="ro-hit" data-title="${esc(i.match)}"><span class="bt">${esc(i.label)}</span></li>`
-            : `<li class="ro-miss"><span class="bt">${esc(i.label)}</span><span class="ro-tag">not yet catalogued</span></li>`
+            : `<li class="ro-miss"><span class="bt">${esc(i.label)}</span><span class="ro-tag">${i.owned===false?"not owned":"not yet catalogued"}</span></li>`
         ).join("")}</ol></div>`).join("")}
       </div>`;
     }).join("");
