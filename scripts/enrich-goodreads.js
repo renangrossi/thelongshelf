@@ -89,7 +89,13 @@ const COLUMN_ALIASES = {
   isbn: ["isbn", "ISBN"],
   isbn13: ["isbn13", "ISBN13"],
   title: ["title", "Title"],
-  author: ["author", "Author", "Author l-f"],
+  // "Author l-f" (Goodreads' own "Last, First" column) has to come before "Author"
+  // ("First Last") — the catalogue's own author field is "Last, First", and
+  // authorLastName() only takes what's before the first comma. Against "Author" that
+  // silently mis-extracts a single-word first name as the whole "last name" (e.g.
+  // "Jane Austen" -> "jane austen", never reduced to "austen"), which was turning real
+  // matches into false "author did not match" ambiguous results.
+  author: ["Author l-f", "author", "Author"],
   rating: ["average_rating", "Average Rating", "rating"],
   ratings_count: ["ratings_count", "Ratings Count", "ratings count", "num_ratings"],
   book_id: ["book_id", "Book Id", "id"],

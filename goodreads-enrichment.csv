@@ -1,432 +1,262 @@
-index,author,title,isbn,kind,matched_title,matched_author,goodreads_rating,goodreads_ratings_count,goodreads_url,confidence,status,notes
-0,"Abercrombie, Joe",The First Law Trilogy,9780316361194,omnibus,,,4.53,11469,,n/a (existing),already_present,
-1,"Adams, Douglas",The Hitchhiker's Guide to the Galaxy,,series,,,,,,,not_found,no --source dataset supplied to match against
-2,"Adams, Richard",Watership Down,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-3,"Anderson, Gentry; Ladebauche, John, IV",Nova Roma 2,,series,,,,,,,not_found,no --source dataset supplied to match against
-4,"Anderson, Gentry",Nova Roma,,series,,,,,,,not_found,no --source dataset supplied to match against
-5,"Asimov, Isaac",The Complete Robot,,collection,,,,,,,not_found,no --source dataset supplied to match against
-6,"Asimov, Isaac",The Foundation Novels,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-7,"Asimov, Isaac","I, Robot",,series,,,,,,,not_found,no --source dataset supplied to match against
-8,"Asimov, Isaac",The Caves of Steel,,series,,,,,,,not_found,no --source dataset supplied to match against
-9,"Asimov, Isaac",The Naked Sun,,series,,,,,,,not_found,no --source dataset supplied to match against
-10,"Asimov, Isaac",The Robots of Dawn,,series,,,,,,,not_found,no --source dataset supplied to match against
-11,"Asimov, Isaac",Robots and Empire,,series,,,,,,,not_found,no --source dataset supplied to match against
-12,"Asprin, Robert Lynn",Thieves' World,,anthology,,,,,,,not_found,no --source dataset supplied to match against
-13,"Austen, Jane",Pride and Prejudice,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-14,"Barker, Clive",The Damnation Game,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-15,"Barker, Clive",The Hellbound Heart,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-16,"Beagle, Peter S.",The Last Unicorn,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-17,"Beauregard, Aron",Son of the Slob,,series,,,,,,,not_found,no --source dataset supplied to match against
-18,"Beauregard, Aron",The Slob,,series,,,,,,,not_found,no --source dataset supplied to match against
-19,"Bengtsson, Frans G.",The Long Ships,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-20,"Bester, Alfred",The Demolished Man,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-21,"Blackwood, Algernon",The Willows,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-22,"Bradbury, Ray",Fahrenheit 451,,standalone,,,3.97,2866000,,n/a (existing),already_present,
-23,"Bradbury, Ray",Something Wicked This Way Comes,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-24,"Bradbury, Ray",The Illustrated Man,,collection,,,,,,,not_found,no --source dataset supplied to match against
-25,"Brontë, Emily",Wuthering Heights,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-26,"Brooks, Terry",The Sword of Shannara,,series,,,,,,,not_found,no --source dataset supplied to match against
-27,"Brooks, Terry",The Elfstones of Shannara,,series,,,,,,,not_found,no --source dataset supplied to match against
-28,"Brooks, Terry",The Wishsong of Shannara,,series,,,,,,,not_found,no --source dataset supplied to match against
-29,"Buehlman, Christopher",Between Two Fires,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-30,"Burroughs, Edgar Rice",Barsoom Series,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-31,"Burroughs, Edgar Rice",Pellucidar Series,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-32,"Burroughs, Edgar Rice",Tarzan of the Apes,,series,,,,,,,not_found,no --source dataset supplied to match against
-33,"Butcher, Jim",The Dresden Files Collection 1 (1-6),,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-34,"Campbell, John W.",Frozen Hell,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-35,"Campbell, John W.",Who Goes There?,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-36,"Card, Orson Scott",Ender's Game,,series,,,4.31,1477000,,n/a (existing),already_present,
-37,"Cervantes, Miguel de",Don Quijote de la Mancha,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-38,"Cervantes, Miguel de",Don Quixote (trans. Edith Grossman),,standalone,,,,,,,not_found,no --source dataset supplied to match against
-39,"Cervantes, Miguel de",O engenhoso fidalgo D. Quixote de La Mancha: primeiro livro,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-40,"Cervantes, Miguel de",O engenhoso fidalgo D. Quixote de La Mancha: segundo livro,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-41,"Chambers, Robert W.",The King in Yellow,,collection,,,,,,,not_found,no --source dataset supplied to match against
-42,"Chandler, Raymond",The Long Goodbye,,series,,,,,,,not_found,no --source dataset supplied to match against
-43,"Chandler, Raymond",The Big Sleep,,series,,,,,,,not_found,no --source dataset supplied to match against
-44,"Charrette, Robert N.",Never Deal with a Dragon,,series,,,,,,,not_found,no --source dataset supplied to match against
-45,"Charrette, Robert N.",Choose Your Enemies Carefully,,series,,,,,,,not_found,no --source dataset supplied to match against
-46,"Charrette, Robert N.",Find Your Own Truth,,series,,,,,,,not_found,no --source dataset supplied to match against
-47,"Christie, Agatha",Murder on the Orient Express,,series,,,,,,,not_found,no --source dataset supplied to match against
-48,"Christie, Agatha",And Then There Were None,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-49,"Christie, Agatha",The Murder of Roger Ackroyd,,series,,,,,,,not_found,no --source dataset supplied to match against
-50,"Clarke, Arthur C.",2001: A Space Odyssey,,series,,,4.18,344000,,n/a (existing),already_present,
-51,"Clarke, Arthur C.",Childhood's End,,standalone,,,4.12,174000,,n/a (existing),already_present,
-52,"Clarke, Susanna",Piranesi,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-53,"Clavell, James",Shogun,,series,,,,,,,not_found,no --source dataset supplied to match against
-54,"Connelly, Michael",The Poet,,series,,,,,,,not_found,no --source dataset supplied to match against
-55,"Conrad, Joseph",Heart of Darkness,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-56,"Cook, Glen",The Black Company,,series,,,,,,,not_found,no --source dataset supplied to match against
-57,"Cook, Glen",Shadows Linger,,series,,,,,,,not_found,no --source dataset supplied to match against
-58,"Cook, Glen",The White Rose,,series,,,,,,,not_found,no --source dataset supplied to match against
-59,"Cornwell, Bernard",Sharpe's Eagle,,series,,,,,,,not_found,no --source dataset supplied to match against
-60,"Cornwell, Bernard",The Winter King,,series,,,,,,,not_found,no --source dataset supplied to match against
-61,"Cornwell, Bernard",Enemy of God,,series,,,,,,,not_found,no --source dataset supplied to match against
-62,"Cornwell, Bernard",Excalibur,,series,,,,,,,not_found,no --source dataset supplied to match against
-63,"Crichton, Michael",Jurassic Park,,series,,,,,,,not_found,no --source dataset supplied to match against
-64,"Crispin, A. C.",The Paradise Snare,,series,,,,,,,not_found,no --source dataset supplied to match against
-65,"Crispin, A. C.",The Hutt Gambit,,series,,,,,,,not_found,no --source dataset supplied to match against
-66,"Crispin, A. C.",Rebel Dawn,,series,,,,,,,not_found,no --source dataset supplied to match against
-67,"Cutter, Nick",The Troop,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-68,"Defoe, Daniel",Robinson Crusoe,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-69,"Denning, Troy",Star by Star,,series,,,,,,,not_found,no --source dataset supplied to match against
-70,"Dent, Lester",The Man of Bronze,,series,,,,,,,not_found,no --source dataset supplied to match against
-71,"Dickens, Charles",A Tale of Two Cities,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-72,"Dick, Philip K.",A Scanner Darkly,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-73,"Dick, Philip K.",The Man in the High Castle,,standalone,,,3.59,236000,,n/a (existing),already_present,
-74,"Dick, Philip K.",Ubik,,standalone,,,4.11,128000,,n/a (existing),already_present,
-75,"Donaldson, Stephen R.",Lord Foul's Bane,,series,,,,,,,not_found,no --source dataset supplied to match against
-76,"Donaldson, Stephen R.",The Illearth War,,series,,,,,,,not_found,no --source dataset supplied to match against
-77,"Donaldson, Stephen R.",The Power That Preserves,,series,,,,,,,not_found,no --source dataset supplied to match against
-78,"Donaldson, Stephen R.",The Wounded Land,,series,,,,,,,not_found,no --source dataset supplied to match against
-79,"Donaldson, Stephen R.",The One Tree,,series,,,,,,,not_found,no --source dataset supplied to match against
-80,"Donaldson, Stephen R.",White Gold Wielder,,series,,,,,,,not_found,no --source dataset supplied to match against
-81,"Dowd, Tom",Burning Bright,,series,,,,,,,not_found,no --source dataset supplied to match against
-82,"Doyle, Arthur Conan",The Complete Sherlock Holmes,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-83,"Dumas, Alexandre",The Count of Monte Cristo,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-84,"Dumas, Alexandre",The Three Musketeers,,series,,,,,,,not_found,no --source dataset supplied to match against
-85,"Eco, Umberto",The Name of the Rose,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-86,"Eddings, David",Pawn of Prophecy,,series,,,,,,,not_found,no --source dataset supplied to match against
-87,"Eddings, David",Queen of Sorcery,,series,,,,,,,not_found,no --source dataset supplied to match against
-88,"Eddings, David",Magician's Gambit,,series,,,,,,,not_found,no --source dataset supplied to match against
-89,"Eddings, David",Castle of Wizardry,,series,,,,,,,not_found,no --source dataset supplied to match against
-90,"Eddings, David",Enchanters' End Game,,series,,,,,,,not_found,no --source dataset supplied to match against
-91,"Eliot, George",Middlemarch,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-92,"Elliott, Kate",King's Dragon,,series,,,,,,,not_found,no --source dataset supplied to match against
-93,"Elliott, Kate",Prince of Dogs,,series,,,,,,,not_found,no --source dataset supplied to match against
-94,"Elliott, Kate",The Burning Stone,,series,,,,,,,not_found,no --source dataset supplied to match against
-95,"Erikson, Steven",The Complete Malazan Book of the Fallen,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-96,"Farland, David",The Sum of All Men,,series,,,,,,,not_found,no --source dataset supplied to match against
-97,"Farland, David",Brotherhood of the Wolf,,series,,,,,,,not_found,no --source dataset supplied to match against
-98,"Farland, David",Wizardborn,,series,,,,,,,not_found,no --source dataset supplied to match against
-99,"Farland, David",The Lair of Bones,,series,,,,,,,not_found,no --source dataset supplied to match against
-100,"Findley, Nigel",2XS,,series,,,,,,,not_found,no --source dataset supplied to match against
-101,"Finney, Jack",The Body Snatchers,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-102,"Fisher, Vardis",Mountain Man,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-103,"Fitzgerald, F. Scott",The Great Gatsby,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-104,"Flynn, Gillian",Gone Girl,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-105,"Follett, Ken",The Pillars of the Earth,,series,,,,,,,not_found,no --source dataset supplied to match against
-106,"Gaskell, Jane",The Serpent,,series,,,,,,,not_found,no --source dataset supplied to match against
-107,"Gaskell, Jane",The Dragon,,series,,,,,,,not_found,no --source dataset supplied to match against
-108,"Gaskell, Jane",Atlan,,series,,,,,,,not_found,no --source dataset supplied to match against
-109,"Gaskell, Jane",The City,,series,,,,,,,not_found,no --source dataset supplied to match against
-110,"Gaskell, Jane",Some Summer Lands,,series,,,,,,,not_found,no --source dataset supplied to match against
-111,"Gemmell, David",Legend,,series,,,,,,,not_found,no --source dataset supplied to match against
-112,"Gemmell, David",The King Beyond the Gate,,series,,,,,,,not_found,no --source dataset supplied to match against
-113,"Gemmell, David",Waylander,,series,,,,,,,not_found,no --source dataset supplied to match against
-114,"George, Elizabeth",A Great Deliverance,,series,,,,,,,not_found,no --source dataset supplied to match against
-115,"Gibson, William",Neuromancer,,series,,,3.89,366000,,n/a (existing),already_present,
-116,"Gibson, William",Count Zero,,series,,,,,,,not_found,no --source dataset supplied to match against
-117,"Gibson, William",Mona Lisa Overdrive,,series,,,,,,,not_found,no --source dataset supplied to match against
-118,"Glukhovsky, Dmitry",Metro 2033,,series,,,,,,,not_found,no --source dataset supplied to match against
-119,"Glukhovsky, Dmitry",Metro 2034,,series,,,,,,,not_found,no --source dataset supplied to match against
-120,"Glukhovsky, Dmitry",Metro 2035,,series,,,,,,,not_found,no --source dataset supplied to match against
-121,"Glut, Donald F.",The Empire Strikes Back,,series,,,,,,,not_found,no --source dataset supplied to match against
-122,"Goethe, Johann Wolfgang von","Faust, Part One",,series,,,,,,,not_found,no --source dataset supplied to match against
-123,"Goethe, Johann Wolfgang von","Faust, Part Two",,series,,,,,,,not_found,no --source dataset supplied to match against
-124,"Golding, William",Lord of the Flies,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-125,"Graves, Robert",Claudius the God,,series,,,,,,,not_found,no --source dataset supplied to match against
-126,"Graves, Robert","I, Claudius",,series,,,,,,,not_found,no --source dataset supplied to match against
-127,"Guthrie, A. B., Jr.",The Big Sky,,series,,,,,,,not_found,no --source dataset supplied to match against
-128,"Haggard, H. Rider",King Solomon's Mines,,series,,,,,,,not_found,no --source dataset supplied to match against
-129,"Haggard, H. Rider",Ultimate Collection,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-130,"Haldeman, Joe",The Forever War,,series,,,4.14,181000,,n/a (existing),already_present,
-131,"Hammett, Dashiell",Red Harvest,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-132,"Hammett, Dashiell",The Maltese Falcon,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-133,"Harrison, Harry",West of Eden,,series,,,,,,,not_found,no --source dataset supplied to match against
-134,"Harrison, Harry",Winter in Eden,,series,,,,,,,not_found,no --source dataset supplied to match against
-135,"Harrison, Harry",Return to Eden,,series,,,,,,,not_found,no --source dataset supplied to match against
-136,"Harris, Robert",Fatherland,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-137,"Harris, Thomas",Red Dragon,,series,,,,,,,not_found,no --source dataset supplied to match against
-138,"Harris, Thomas",The Silence of the Lambs,,series,,,,,,,not_found,no --source dataset supplied to match against
-139,"Heinlein, Robert A.",Starship Troopers,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-140,"Heinlein, Robert A.",Stranger in a Strange Land,,standalone,,,3.92,330000,,n/a (existing),already_present,
-141,"Heinlein, Robert A.",The Moon Is a Harsh Mistress,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-142,"Herbert, Frank",Children of Dune,,series,,,3.95,265000,,n/a (existing),already_present,
-143,"Herbert, Frank",Dune,,series,,,4.29,1640000,,n/a (existing),already_present,
-144,"Herbert, Frank",Dune Messiah,,series,,,3.9,433000,,n/a (existing),already_present,
-145,"Hobb, Robin",Assassin's Apprentice,,series,,,4.19,407000,,n/a (existing),already_present,
-146,"Hobb, Robin",Royal Assassin,,series,,,,,,,not_found,no --source dataset supplied to match against
-147,"Hobb, Robin",Assassin's Quest,,series,,,,,,,not_found,no --source dataset supplied to match against
-148,"Hobb, Robin",Ship of Magic,,series,,,,,,,not_found,no --source dataset supplied to match against
-149,"Hobb, Robin",Mad Ship,,series,,,,,,,not_found,no --source dataset supplied to match against
-150,"Hobb, Robin",Ship of Destiny,,series,,,,,,,not_found,no --source dataset supplied to match against
-151,"Hobb, Robin",Tawny Man Trilogy,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-152,"Howard, Robert E.",The Coming of Conan the Cimmerian,,collection,,,,,,,not_found,no --source dataset supplied to match against
-153,"Howard, Robert E.",The Bloody Crown of Conan,,collection,,,,,,,not_found,no --source dataset supplied to match against
-154,"Howard, Robert E.",The Conquering Sword of Conan,,collection,,,,,,,not_found,no --source dataset supplied to match against
-155,"Howard, Robert E.",Kull: Exile of Atlantis,,collection,,,,,,,not_found,no --source dataset supplied to match against
-156,"Hugo, Victor",Les Misérables,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-157,"Huxley, Aldous",Brave New World,,standalone,,,3.98,2148000,,n/a (existing),already_present,
-158,"Ishiguro, Kazuo",Klara and the Sun,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-159,"Jones, J. V.",A Cavern of Black Ice,,series,,,,,,,not_found,no --source dataset supplied to match against
-160,"Jones, J. V.",A Fortress of Grey Ice,,series,,,,,,,not_found,no --source dataset supplied to match against
-161,"Jones, J. V.",A Sword from Red Ice,,series,,,,,,,not_found,no --source dataset supplied to match against
-162,"Jones, J. V.",Watcher of the Dead,,series,,,,,,,not_found,no --source dataset supplied to match against
-163,"Jones, J. V.",The Book of Words,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-164,"Jones, Stephen Graham",The Buffalo Hunter Hunter,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-165,"Jordan, Robert; Sanderson, Brandon",The Complete Wheel of Time,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-166,"Jordan, Robert",The Eye of the World,,series,,,4.19,605000,,n/a (existing),already_present,
-167,"Kahn, James",Return of the Jedi,,series,,,,,,,not_found,no --source dataset supplied to match against
-168,"Kesey, Ken",One Flew Over the Cuckoo's Nest,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-169,"Ketchum, Jack",The Girl Next Door,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-170,"Keyes, Daniel",Flowers for Algernon,,standalone,,,4.25,839000,,n/a (existing),already_present,
-171,"King, Stephen",11/22/63,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-172,"King, Stephen",The Gunslinger,,series,,,,,,,not_found,no --source dataset supplied to match against
-173,"King, Stephen",The Shining,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-174,"King, Stephen",The Stand,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-175,"L'Amour, Louis",Conagher,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-176,"L'Amour, Louis",Flint,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-177,"L'Amour, Louis",Hondo,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-178,"L'Amour, Louis",Last of the Breed,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-179,"L'Amour, Louis",The Lonesome Gods,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-180,"L'Amour, Louis",The Sacketts 01-17 Collection,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-181,"L'Amour, Louis",The Walking Drum,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-182,"Langan, John",The Fisherman,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-183,"le Carré, John",The Spy Who Came in from the Cold,,series,,,,,,,not_found,no --source dataset supplied to match against
-184,"Lee, Fonda",Jade City,,series,,,,,,,not_found,no --source dataset supplied to match against
-185,"Lee, Fonda",Jade War,,series,,,,,,,not_found,no --source dataset supplied to match against
-186,"Lee, Fonda",Jade Legacy,,series,,,,,,,not_found,no --source dataset supplied to match against
-187,"Lee, Harper",To Kill a Mockingbird,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-188,"London, Jack","The Call of the Wild, White Fang, and Other Stories",A,collection,,,,,,,not_found,no --source dataset supplied to match against
-189,"London, Jack",The Sea-Wolf,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-190,"Lovecraft, H. P.",At the Mountains of Madness,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-191,"Lucas, George",Star Wars: A New Hope,,series,,,,,,,not_found,no --source dataset supplied to match against
-192,"Luceno, James",The Unifying Force,,series,,,,,,,not_found,no --source dataset supplied to match against
-193,"Lumley, Brian",Necroscope,,series,,,,,,,not_found,no --source dataset supplied to match against
-194,"Lumley, Brian",Vamphyri!,,series,,,,,,,not_found,no --source dataset supplied to match against
-195,"Lumley, Brian",The Source,,series,,,,,,,not_found,no --source dataset supplied to match against
-196,"Lynch, Scott",The Lies of Locke Lamora,,series,,,4.3,346000,,n/a (existing),already_present,
-197,"Mano, D. Keith",The Bridge,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-198,"Martin, George R. R.",A Song of Ice and Fire,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-199,"McCammon, Robert R.",Boy's Life,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-200,"McCammon, Robert R.",Swan Song,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-201,"McCarthy, Cormac",Blood Meridian,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-202,"McCarthy, Cormac",The Road,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-203,"McCullough, Colleen",Masters of Rome 1–5,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-204,"McCullough, Colleen",The October Horse,,series,,,,,,,not_found,no --source dataset supplied to match against
-205,"McCullough, Colleen",Antony and Cleopatra,,series,,,,,,,not_found,no --source dataset supplied to match against
-206,"McDowell, Michael",Blackwater,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-207,"McMurtry, Larry",Lonesome Dove,,series,,,,,,,not_found,no --source dataset supplied to match against
-208,"McMurtry, Larry",Streets of Laredo,,series,,,,,,,not_found,no --source dataset supplied to match against
-209,"McMurtry, Larry",Dead Man's Walk,,series,,,,,,,not_found,no --source dataset supplied to match against
-210,"McMurtry, Larry",Comanche Moon,,series,,,,,,,not_found,no --source dataset supplied to match against
-211,"Miéville, China",Perdido Street Station,,series,,,,,,,not_found,no --source dataset supplied to match against
-212,"Miller, John Jackson",Kenobi,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-213,"Miller, Walter M., Jr.",A Canticle for Leibowitz,,series,,,3.99,123000,,n/a (existing),already_present,
-214,"Milne, A. A.",Winnie-the-Pooh,,series,,,,,,,not_found,no --source dataset supplied to match against
-215,"Milton, John",Paradise Lost,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-216,"Mitchell, Margaret",Gone with the Wind,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-217,"Moorcock, Michael",Elric of Melniboné,,series,,,,,,,not_found,no --source dataset supplied to match against
-218,"Moorcock, Michael",The Fortress of the Pearl,,series,,,,,,,not_found,no --source dataset supplied to match against
-219,"Moorcock, Michael",The Sailor on the Seas of Fate,,series,,,,,,,not_found,no --source dataset supplied to match against
-220,"Moorcock, Michael",The Weird of the White Wolf,,series,,,,,,,not_found,no --source dataset supplied to match against
-221,"Moorcock, Michael",The Vanishing Tower,,series,,,,,,,not_found,no --source dataset supplied to match against
-222,"Moorcock, Michael",The Revenge of the Rose,,series,,,,,,,not_found,no --source dataset supplied to match against
-223,"Moorcock, Michael",The Bane of the Black Sword,,series,,,,,,,not_found,no --source dataset supplied to match against
-224,"Moorcock, Michael",Stormbringer,,series,,,,,,,not_found,no --source dataset supplied to match against
-225,"Morgan, Richard K.",Altered Carbon,,series,,,,,,,not_found,no --source dataset supplied to match against
-226,"Murakami, Haruki",1Q84,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-227,"Nabokov, Vladimir",Lolita,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-228,"Nickelsburg, George W. E.; VanderKam, James C.",1 Enoch: The Hermeneia Translation,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-229,"Niven, Larry; Pournelle, Jerry",The Mote in God's Eye,,series,,,,,,,not_found,no --source dataset supplied to match against
-230,"O'Brian, Patrick",Master and Commander,,series,,,,,,,not_found,no --source dataset supplied to match against
-231,"Orwell, George",Nineteen Eighty-Four,,standalone,,,4.2,5723000,,n/a (existing),already_present,
-232,"Orwell, George",Animal Farm,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-233,"Page, Gerald W.; Reinhardt, Hank (eds.)",Heroic Fantasy,,anthology,,,,,,,not_found,no --source dataset supplied to match against
-234,"Peake, Mervyn",The Gormenghast Trilogy,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-235,"Pérez-Reverte, Arturo",Todo Alatriste,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-236,"Perry, Steve",Shadows of the Empire,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-237,"Powers, Tim",The Drawing of the Dark,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-238,"Pratchett, Terry",Reaper Man,,series,,,,,,,not_found,no --source dataset supplied to match against
-239,"Pratchett, Terry",Small Gods,,series,,,,,,,not_found,no --source dataset supplied to match against
-240,"Pratchett, Terry",Soul Music,,series,,,,,,,not_found,no --source dataset supplied to match against
-241,"Pratchett, Terry",The Colour of Magic,,series,,,,,,,not_found,no --source dataset supplied to match against
-242,"Pratchett, Terry",Hogfather,,series,,,,,,,not_found,no --source dataset supplied to match against
-243,"Pratchett, Terry",Thief of Time,,series,,,,,,,not_found,no --source dataset supplied to match against
-244,"Pratchett, Terry",Night Watch,,series,,,,,,,not_found,no --source dataset supplied to match against
-245,"Pratchett, Terry",The Light Fantastic,,series,,,,,,,not_found,no --source dataset supplied to match against
-246,"Pratchett, Terry",Going Postal,,series,,,,,,,not_found,no --source dataset supplied to match against
-247,"Pratchett, Terry",Mort,,series,,,,,,,not_found,no --source dataset supplied to match against
-248,"Pratchett, Terry",Guards! Guards!,,series,,,,,,,not_found,no --source dataset supplied to match against
-249,"Priest, Christopher",Inverted World,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-250,"Punke, Michael",The Revenant,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-251,"Puzo, Mario",The Godfather,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-252,"Pyle, Howard",The Merry Adventures of Robin Hood,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-253,qntm,There Is No Antimemetics Division,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-254,"Rand, Ayn",Atlas Shrugged,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-255,"Rawn, Melanie",Dragon Prince,,series,,,,,,,not_found,no --source dataset supplied to match against
-256,"Rawn, Melanie",The Star Scroll,,series,,,,,,,not_found,no --source dataset supplied to match against
-257,"Rawn, Melanie",Sunrunner's Fire,,series,,,,,,,not_found,no --source dataset supplied to match against
-258,"Rice, Anne",Interview with the Vampire,,series,,,,,,,not_found,no --source dataset supplied to match against
-259,"Robinson, Kim Stanley",Mars Trilogy,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-260,"Ruocchio, Christopher",Empire of Silence,,series,,,,,,,not_found,no --source dataset supplied to match against
-261,"Russell, Eric Frank",Wasp,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-262,"Salinger, J. D.",The Catcher in the Rye,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-263,"Salvatore, R. A.",Vector Prime,,series,,,,,,,not_found,no --source dataset supplied to match against
-264,"Salvatore, R. A.",Homeland,,series,,,,,,,not_found,no --source dataset supplied to match against
-265,"Salvatore, R. A.",Exile,,series,,,,,,,not_found,no --source dataset supplied to match against
-266,"Salvatore, R. A.",Sojourn,,series,,,,,,,not_found,no --source dataset supplied to match against
-267,"Salvatore, R. A.",The Crystal Shard,,series,,,,,,,not_found,no --source dataset supplied to match against
-268,"Salvatore, R. A.",Streams of Silver,,series,,,,,,,not_found,no --source dataset supplied to match against
-269,"Salvatore, R. A.",The Halfling's Gem,,series,,,,,,,not_found,no --source dataset supplied to match against
-270,"Sanderson, Brandon",The Way of Kings,,series,,,4.66,681000,,n/a (existing),already_present,
-271,"Sanderson, Brandon",Words of Radiance,,series,,,4.76,513000,,n/a (existing),already_present,
-272,"Sanderson, Brandon",Edgedancer,,series,,,,,,,not_found,no --source dataset supplied to match against
-273,"Sanderson, Brandon",Oathbringer,,series,,,,,,,not_found,no --source dataset supplied to match against
-274,"Scott, Sir Walter",Ivanhoe,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-275,"Shakespeare, William",Much Ado About Nothing,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-276,"Simmons, Dan",Hyperion,,series,,,4.27,300000,,n/a (existing),already_present,
-277,"Simmons, Dan",The Hyperion Cantos,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-278,"Smith, Scott",The Ruins,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-279,"Steinbeck, John",East of Eden,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-280,"Steinbeck, John",Of Mice and Men,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-281,"Steinbeck, John",The Grapes of Wrath,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-282,"Stewart, George R.",Earth Abides,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-283,"Stoker, Bram",Dracula,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-284,"Stover, Matthew",Luke Skywalker and the Shadows of Mindor,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-285,"Stover, Matthew",Traitor,,series,,,,,,,not_found,no --source dataset supplied to match against
-286,"Strugatsky, Arkady & Boris",Roadside Picnic,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-287,"Suzuki, Koji",Ring,,series,,,,,,,not_found,no --source dataset supplied to match against
-288,"Tolkien, J. R. R.",The Hobbit,,standalone,,,4.29,4321000,,n/a (existing),already_present,
-289,"Tolkien, J. R. R.",The Lord of the Rings,,omnibus,,,4.54,732000,,n/a (existing),already_present,
-290,"Tolkien, J. R. R.",The Silmarillion,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-291,"Triana, Kristopher",Gone to See the River Man,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-292,"Tyers, Kathy",The Truce at Bakura,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-293,"VanderMeer, Jeff",Area X: The Southern Reach Trilogy,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-294,"Verne, Jules",Twenty Thousand Leagues Under the Seas,,series,,,,,,,not_found,no --source dataset supplied to match against
-295,"Vonnegut, Kurt",Slaughterhouse-Five,,standalone,,,4.1,1522000,,n/a (existing),already_present,
-296,"Weir, Andy",Project Hail Mary,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-297,"Weis, Margaret; Hickman, Tracy",Dragons of Autumn Twilight,,series,,,,,,,not_found,no --source dataset supplied to match against
-298,"Weis, Margaret; Hickman, Tracy",Dragons of Winter Night,,series,,,,,,,not_found,no --source dataset supplied to match against
-299,"Weis, Margaret; Hickman, Tracy",Dragons of Spring Dawning,,series,,,,,,,not_found,no --source dataset supplied to match against
-300,"Weis, Margaret; Hickman, Tracy",Time of the Twins,,series,,,,,,,not_found,no --source dataset supplied to match against
-301,"Weis, Margaret; Hickman, Tracy",War of the Twins,,series,,,,,,,not_found,no --source dataset supplied to match against
-302,"Weis, Margaret; Hickman, Tracy",Test of the Twins,,series,,,,,,,not_found,no --source dataset supplied to match against
-303,"Wells, H. G.",The Island of Doctor Moreau,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-304,"Wells, H. G.",The Time Machine,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-305,"White, T. H.",The Once and Future King,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-306,"Williams, Tad",The Dragonbone Chair,,series,,,,,,,not_found,no --source dataset supplied to match against
-307,"Williams, Tad",Stone of Farewell,,series,,,,,,,not_found,no --source dataset supplied to match against
-308,"Williams, Tad",To Green Angel Tower,,series,,,,,,,not_found,no --source dataset supplied to match against
-309,"Williams, Tad",The Heart of What Was Lost,,series,,,,,,,not_found,no --source dataset supplied to match against
-310,"Williams, Tad",The Witchwood Crown,,series,,,,,,,not_found,no --source dataset supplied to match against
-311,"Williams, Tad",Empire of Grass,,series,,,,,,,not_found,no --source dataset supplied to match against
-312,"Williams, Tad",Into the Narrowdark,,series,,,,,,,not_found,no --source dataset supplied to match against
-313,"Williams, Tad",The Navigator's Children,,series,,,,,,,not_found,no --source dataset supplied to match against
-314,"Williams, Tad",Brothers of the Wind,,series,,,,,,,not_found,no --source dataset supplied to match against
-315,"Williams, Walter Jon",Destiny's Way,,series,,,,,,,not_found,no --source dataset supplied to match against
-316,"Wolfe, Gene",On Blue's Waters,,series,,,,,,,not_found,no --source dataset supplied to match against
-317,"Wolfe, Gene",In Green's Jungles,,series,,,,,,,not_found,no --source dataset supplied to match against
-318,"Wolfe, Gene",Return to the Whorl,,series,,,,,,,not_found,no --source dataset supplied to match against
-319,"Wolfe, Gene",The Book of the New Sun,,omnibus,,,,,,,not_found,no --source dataset supplied to match against
-320,"Wolfe, Gene",Nightside the Long Sun,,series,,,,,,,not_found,no --source dataset supplied to match against
-321,"Wolfe, Gene",Lake of the Long Sun,,series,,,,,,,not_found,no --source dataset supplied to match against
-322,"Wolfe, Gene",Caldé of the Long Sun,,series,,,,,,,not_found,no --source dataset supplied to match against
-323,"Wolfe, Gene",Exodus from the Long Sun,,series,,,,,,,not_found,no --source dataset supplied to match against
-324,"Wolverton, Dave",The Courtship of Princess Leia,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-325,"Wyndham, John",The Day of the Triffids,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-326,"Yoshikawa, Eiji",Musashi,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-327,"Zahn, Timothy",Conquerors' Pride,,series,,,,,,,not_found,no --source dataset supplied to match against
-328,"Zahn, Timothy",Conquerors' Heritage,,series,,,,,,,not_found,no --source dataset supplied to match against
-329,"Zahn, Timothy",Conquerors' Legacy,,series,,,,,,,not_found,no --source dataset supplied to match against
-330,"Zahn, Timothy",Allegiance,,series,,,,,,,not_found,no --source dataset supplied to match against
-331,"Zahn, Timothy",Choices of One,,series,,,,,,,not_found,no --source dataset supplied to match against
-332,"Zahn, Timothy",Heir to the Empire,,series,,,,,,,not_found,no --source dataset supplied to match against
-333,"Zahn, Timothy",Dark Force Rising,,series,,,,,,,not_found,no --source dataset supplied to match against
-334,"Zahn, Timothy",The Last Command,,series,,,,,,,not_found,no --source dataset supplied to match against
-335,"Zamyatin, Yevgeny",We,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-336,"Zipes, Jack (ed./trans.)",The Original Folk and Fairy Tales of the Brothers Grimm,,anthology,,,,,,,not_found,no --source dataset supplied to match against
-337,"Zondervan (Lucado, Max; Frazee, Randy, eds.)",The Story: The Bible as One Continuing Story of God and His People,9780310621904,collection,,,,,,,not_found,no --source dataset supplied to match against
-338,"Mithen, Steven","After the Ice: A Global Human History, 20,000–5000 BC",,standalone,,,,,,,not_found,no --source dataset supplied to match against
-339,"Bellwood, Peter",First Farmers: The Origins of Agricultural Societies,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-340,"Reich, David",Who We Are and How We Got Here: Ancient DNA and the New Science of the Human Past,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-341,"Cunliffe, Barry","By Steppe, Desert, and Ocean: The Birth of Eurasia",,standalone,,,,,,,not_found,no --source dataset supplied to match against
-342,"Leick, Gwendolyn",Mesopotamia: The Invention of the City,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-343,"Helle, Sophus (trans.)",Gilgamesh: A New Translation of the Ancient Epic,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-344,"Helle, Sophus (trans.)",Enheduana: The Complete Poems of the World's First Author,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-345,"Haubold, J.; Helle, S.; Jiménez, E.; Wisnom, S. (eds.)",Enuma Elish: The Babylonian Epic of Creation,9781350297197,standalone,,,4.25,20,,n/a (existing),already_present,
-346,"Van De Mieroop, Marc","A History of the Ancient Near East, ca. 3000–323 BC",,standalone,,,,,,,not_found,no --source dataset supplied to match against
-347,"Briant, Pierre",From Cyrus to Alexander: A History of the Persian Empire,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-348,Herodotus,The Histories,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-349,"Murray, Oswyn",Early Greece,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-350,Homer,The Iliad,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-351,Homer,The Odyssey,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-352,"Cartledge, Paul",Ancient Greece: A History in Eleven Cities,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-353,"Kagan, Donald",The Peloponnesian War,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-354,Aeschylus,The Oresteia,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-355,Sophocles,Oedipus the King and Antigone,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-356,"Green, Peter",From Alexander to Actium: The Historical Evolution of the Hellenistic Age,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-357,Plato,The Republic,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-358,"Cornell, Timothy J.",The Beginnings of Rome: Italy and Rome from the Bronze Age to the Punic Wars,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-359,"Beard, Mary",SPQR: A History of Ancient Rome,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-360,"Holland, Tom",Rubicon: The Last Years of the Roman Republic,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-361,"Goldsworthy, Adrian",Caesar: Life of a Colossus,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-362,"Syme, Ronald",The Roman Revolution,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-363,"Goldsworthy, Adrian",Augustus: First Emperor of Rome,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-364,Virgil,The Aeneid,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-365,Suetonius,The Twelve Caesars,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-366,"Harper, Kyle","The Fate of Rome: Climate, Disease, and the End of an Empire",,standalone,,,,,,,not_found,no --source dataset supplied to match against
-367,"Heather, Peter",The Fall of the Roman Empire: A New History of Rome and the Barbarians,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-368,"Gibbon, Edward",The History of the Decline and Fall of the Roman Empire,,multivolume,,,,,,,not_found,no --source dataset supplied to match against
-369,"Brown, Peter","The World of Late Antiquity, AD 150–750",,standalone,,,,,,,not_found,no --source dataset supplied to match against
-370,"Norwich, John Julius",Byzantium: The Early Centuries,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-371,"Psellus, Michael",Fourteen Byzantine Rulers: The Chronographia,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-372,"Komnene, Anna",The Alexiad,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-373,Constantine VII Porphyrogenitus,De Administrando Imperio,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-374,"Norwich, John Julius",Byzantium: The Apogee and Byzantium: The Decline and Fall,,multivolume,,,,,,,not_found,no --source dataset supplied to match against
-375,"Runciman, Steven",The Fall of Constantinople 1453,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-376,"Gies, Frances; Gies, Joseph",Life in a Medieval Castle,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-377,"Gies, Frances; Gies, Joseph",Life in a Medieval Village,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-378,"Gies, Frances; Gies, Joseph",Life in a Medieval City,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-379,"Gies, Frances; Gies, Joseph","Cathedral, Forge, and Waterwheel: Technology and Invention in the Middle Ages",,standalone,,,,,,,not_found,no --source dataset supplied to match against
-380,"Bloch, Marc",Feudal Society,,multivolume,,,,,,,not_found,no --source dataset supplied to match against
-381,"Sumption, Jonathan",The Hundred Years War I: Trial by Battle,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-382,"Wilson, Peter H.",Heart of Europe: A History of the Holy Roman Empire,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-383,"Feng, Li",Early China: A Social and Cultural History,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-384,"Lewis, Mark Edward",The Early Chinese Empires: Qin and Han,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-385,"Luo, Guanzhong",Three Kingdoms,,multivolume,,,,,,,not_found,no --source dataset supplied to match against
-386,"Lewis, Mark Edward",China Between Empires: The Northern and Southern Dynasties,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-387,"Lewis, Mark Edward",China's Cosmopolitan Empire: The Tang Dynasty,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-388,"Kuhn, Dieter",The Age of Confucian Rule: The Song Transformation of China,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-389,"Brook, Timothy",The Troubled Empire: China in the Yuan and Ming Dynasties,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-390,"Cao, Xueqin",The Story of the Stone,,multivolume,,,,,,,not_found,no --source dataset supplied to match against
-391,"Spence, Jonathan D.; Chen, Janet",The Search for Modern China,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-392,"Clements, Jonathan",A Brief History of Japan,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-393,Ō no Yasumaro (comp.),Kojiki: An Account of Ancient Matters,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-394,Sei Shōnagon,The Pillow Book,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-395,Murasaki Shikibu,The Tale of Genji,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-396,Anonymous,The Tale of the Heike,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-397,"Wert, Michael",Samurai: A Concise History,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-398,"Jansen, Marius B.",The Making of Modern Japan,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-399,"Keene, Donald","Emperor of Japan: Meiji and His World, 1852–1912",,standalone,,,,,,,not_found,no --source dataset supplied to match against
-400,"Dower, John W.",Embracing Defeat: Japan in the Wake of World War II,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-401,"Seth, Michael J.","A Concise History of Korea, Volumes I–II",,multivolume,,,3.8,45,,n/a (existing),already_present,
-402,"Hawley, Samuel",The Imjin War: Japan's Sixteenth-Century Invasion of Korea and Attempt to Conquer China,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-403,Lady Hyegyŏng,The Memoirs of Lady Hyegyŏng,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-404,"Kang, Minsoo (trans./ed.)",The Story of Hong Gildong,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-405,"Golden, Peter B.",Central Asia in World History,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-406,"Di Cosmo, Nicola",Ancient China and Its Enemies: The Rise of Nomadic Power in East Asian History,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-407,"Barfield, Thomas J.","The Perilous Frontier: Nomadic Empires and China, 221 BC to AD 1757",,standalone,,,,,,,not_found,no --source dataset supplied to match against
-408,"May, Timothy",The Mongol Empire,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-409,"Kapstein, Matthew T.",The Tibetans,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-410,"van Schaik, Sam",Tibet: A History,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-411,"Beckwith, Christopher I.",The Tibetan Empire in Central Asia,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-412,"Lomax, Derek W.",The Reconquest of Spain,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-413,"Fletcher, Richard",The Quest for El Cid,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-414,"Menéndez Pidal, Ramón",The Cid and His Spain,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-415,"Elliott, J. H.","Imperial Spain, 1469–1716",,standalone,,,,,,,not_found,no --source dataset supplied to match against
-416,"Díaz del Castillo, Bernal",The Conquest of New Spain,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-417,"Stenton, Frank M.",Anglo-Saxon England,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-418,Anonymous,The Anglo-Saxon Chronicle,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-419,"Ackroyd, Peter",Foundation: The History of England from Its Earliest Beginnings to the Tudors,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-420,"Brewer, John","The Sinews of Power: War, Money and the English State, 1688–1783",,standalone,,,,,,,not_found,no --source dataset supplied to match against
-421,"Froissart, Jean",Chronicles,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-422,"Commynes, Philippe de","Memoirs: The Reign of Louis XI, 1461–83",,standalone,,,,,,,not_found,no --source dataset supplied to match against
-423,"Tocqueville, Alexis de",The Old Regime and the French Revolution,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-424,"Schama, Simon",Citizens: A Chronicle of the French Revolution,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-425,"Price, Roger",A Concise History of France,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-426,"Johnson, Paul",A History of the American People,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-427,"McPherson, James M.",Battle Cry of Freedom: The Civil War Era,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-428,"Grant, Ulysses S.",Personal Memoirs,,multivolume,,,,,,,not_found,no --source dataset supplied to match against
-429,"Bailyn, Bernard",The Ideological Origins of the American Revolution,,standalone,,,,,,,not_found,no --source dataset supplied to match against
-430,"Simms, Brendan","Europe: The Struggle for Supremacy, 1453 to the Present",,standalone,,,,,,,not_found,no --source dataset supplied to match against
+longshelf_title,longshelf_author,goodreads_title,goodreads_author,rating,ratings_count,match_status,source,confidence
+Pride and Prejudice,"Austen, Jane",Pride and Prejudice,Jane Austen,4.3,4994782,verified,goodreads.com/book/show/129915654,"high (classic, minor edition variance only)"
+The Damnation Game,"Barker, Clive",The Damnation Game,Clive Barker,3.84,18910,verified,goodreads.com/book/show/34605,high
+Son of the Slob,"Beauregard, Aron",Son of the Slob,Aron Beauregard,3.67,3370,verified,goodreads.com/book/show/58650545,high
+The Slob,"Beauregard, Aron",The Slob,Aron Beauregard,3.31,13506,verified,goodreads.com/book/show/55989293 (or /en/book/show),"medium (search summary showed 3.26-3.38 range across pages, used most-cited figure)"
+The Long Ships,"Bengtsson, Frans G.",The Long Ships,Frans G. Bengtsson,4.27,,ambiguous,goodreads.com/book/show/438452,low (count not confirmed from snippet)
+The Demolished Man,"Bester, Alfred",The Demolished Man,Alfred Bester,3.96,34528,verified,goodreads.com/book/show/76740,high
+The Willows,"Blackwood, Algernon",The Willows,Algernon Blackwood,4.07,13499,verified,goodreads.com/en/book/show/1335601,high
+Something Wicked This Way Comes,"Bradbury, Ray",Something Wicked This Way Comes,Ray Bradbury,3.9,130062,verified,goodreads.com/book/show/248596,high
+The Illustrated Man,"Bradbury, Ray",The Illustrated Man,Ray Bradbury,4.13,110229,verified,goodreads.com/en/book/show/24830,"high (search also surfaced an unrelated Study Guide edition, correctly excluded)"
+Wuthering Heights,"Bronte, Emily",Wuthering Heights,Emily Bronte,3.9,1646792,verified,goodreads.com/book/show/32929156 (work aggregate),"high (classic, minor edition variance)"
+Between Two Fires,"Buehlman, Christopher",Between Two Fires,Christopher Buehlman,4.18,98838,verified,goodreads.com/book/show/13543121,high
+The King in Yellow,"Chambers, Robert W.",The King in Yellow,Robert W. Chambers,3.51,32434,verified,goodreads.com/book/show/32277642,medium (this is a collection row - multiple King in Yellow editions/collections exist; used the plainly-titled one)
+And Then There Were None,"Christie, Agatha",And Then There Were None,Agatha Christie,4.27,1638803,verified,goodreads.com/book/show/16299.And_Then_There_Were_None,high
+Piranesi,"Clarke, Susanna",Piranesi,Susanna Clarke,4.2,447243,verified,goodreads.com/book/show/50202953-piranesi,high
+Heart of Darkness,"Conrad, Joseph",Heart of Darkness,Joseph Conrad,3.43,574141,verified,goodreads.com/book/show/4900.Heart_of_Darkness,high
+The Troop,"Cutter, Nick",The Troop,Nick Cutter,3.82,106105,verified,goodreads.com/book/show/17571466-the-troop,high
+Robinson Crusoe,"Defoe, Daniel",Robinson Crusoe,Daniel Defoe,3.68,338269,verified,goodreads.com/book/show/2932.Robinson_Crusoe,high
+A Tale of Two Cities,"Dickens, Charles",A Tale of Two Cities,Charles Dickens,3.88,1032291,verified,goodreads.com/book/show/1953.A_Tale_of_Two_Cities,"high (search also surfaced an unrelated SparkNotes edition, correctly excluded)"
+A Scanner Darkly,"Dick, Philip K.",A Scanner Darkly,Philip K. Dick,4.03,108665,verified,goodreads.com/book/show/14817.A_Scanner_Darkly,"high (search also surfaced an unrelated graphic-novel edition, excluded)"
+The Name of the Rose,"Eco, Umberto",The Name of the Rose,Umberto Eco,4.14,405682,verified,goodreads.com/book/show/119073.The_Name_of_the_Rose,high
+Middlemarch,"Eliot, George",Middlemarch,George Eliot,4.05,186558,verified,goodreads.com/book/show/22327154 (work aggregate),"high (classic, minor edition variance)"
+Mountain Man,"Fisher, Vardis",Mountain Man,Vardis Fisher,4.12,1860,verified,goodreads.com/book/show/110265.Mountain_Man,high
+The Great Gatsby,"Fitzgerald, F. Scott",The Great Gatsby,F. Scott Fitzgerald,3.93,6116374,verified,goodreads.com/work/editions/245494-the-great-gatsby,high
+Gone Girl,"Flynn, Gillian",Gone Girl,Gillian Flynn,4.15,3469343,verified,goodreads.com/en/book/show/19288043-gone-girl,high
+"Faust, Part Two","Goethe, Johann Wolfgang von","Faust, Part Two",Johann Wolfgang von Goethe,3.65,8991,verified,goodreads.com/book/show/14707.Faust_Part_Two,medium (work aggregate; per-translation editions range 3.20-3.74)
+Lord of the Flies,"Golding, William",Lord of the Flies,William Golding,3.7,3229904,verified,goodreads.com/book/show/7624.Lord_of_the_Flies,"high (search also surfaced unrelated Bloom criticism vol. and a Penguin study-notes edition, correctly excluded)"
+Fatherland,"Harris, Robert",Fatherland,Robert Harris,4.03,59403,verified,goodreads.com/book/show/56842.Fatherland,high
+Starship Troopers,"Heinlein, Robert A.",Starship Troopers,Robert A. Heinlein,4,251677,verified,goodreads.com/book/show/17214.Starship_Troopers,high
+The Moon Is a Harsh Mistress,"Heinlein, Robert A.",The Moon Is a Harsh Mistress,Robert A. Heinlein,4.15,139169,verified,goodreads.com/book/show/16690.The_Moon_Is_a_Harsh_Mistress,"high (search also surfaced an unrelated Summary/Study Guide edition, correctly excluded)"
+Kull: Exile of Atlantis,"Howard, Robert E.",Kull: Exile of Atlantis,Robert E. Howard,4.05,2143,verified,goodreads.com/en/book/show/186182.Kull,high
+Les Miserables,"Hugo, Victor",Les Miserables,Victor Hugo,4.02,221767,verified,goodreads.com/book/show/24280.Les_Mis_rables,"high (search also surfaced an unrelated abridged edition, excluded)"
+The Complete Wheel of Time,"Jordan, Robert; Sanderson, Brandon",,,,,not_found,,search did not surface a clear numeric rating for this specific omnibus edition
+One Flew Over the Cuckoo's Nest,"Kesey, Ken",One Flew Over the Cuckoo's Nest,Ken Kesey,4.2,794364,verified,goodreads.com/book/show/12697427-one-flew-over-the-cuckoo-s-nest,"high (search also surfaced unrelated Bloom criticism editions, excluded)"
+The Girl Next Door,"Ketchum, Jack",The Girl Next Door,Jack Ketchum,3.88,,ambiguous,goodreads.com/book/show/179735.The_Girl_Next_Door,low (count not confirmed from snippet)
+11/22/63,"King, Stephen",11/22/63,Stephen King,4.35,657096,verified,goodreads.com/en/book/show/10644930-11-22-63,high
+The Stand,"King, Stephen",The Stand,Stephen King,4.35,858653,verified,goodreads.com/book/show/149267.The_Stand,high
+Conagher,"L'Amour, Louis",Conagher,Louis L'Amour,4.14,4147,verified,goodreads.com/book/show/1123599.Conagher,high
+Flint,"L'Amour, Louis",Flint,Louis L'Amour,4.26,7641,verified,goodreads.com/book/show/57277.Flint,high
+Hondo,"L'Amour, Louis",Hondo,Louis L'Amour,4.06,15222,verified,goodreads.com/book/show/469933.Hondo,high
+The Lonesome Gods,"L'Amour, Louis",The Lonesome Gods,Louis L'Amour,4.23,9590,verified,goodreads.com/book/show/1123549.The_Lonesome_Gods,high
+The Walking Drum,"L'Amour, Louis",The Walking Drum,Louis L'Amour,4.24,10270,verified,goodreads.com/book/show/327548.The_Walking_Drum,high
+The Fisherman,"Langan, John",The Fisherman,John Langan,3.82,49887,verified,goodreads.com/book/show/29901930-the-fisherman,high
+To Kill a Mockingbird,"Lee, Harper",To Kill a Mockingbird,Harper Lee,4.26,7096701,verified,goodreads.com (work aggregate),"high (search also surfaced unrelated summary/analysis editions, correctly excluded)"
+At the Mountains of Madness,"Lovecraft, H. P.",At the Mountains of Madness,H.P. Lovecraft,3.84,48873,verified,goodreads.com/book/show/32767.At_the_Mountains_of_Madness,"medium (catalogue kind=standalone, so used the standalone edition rather than the higher-rated ""...and Other Tales of Terror"" collection or a manga volume, both correctly excluded)"
+The Bridge,"Mano, D. Keith",,,,,not_found,,Goodreads page exists (goodreads.com/book/show/1547120) but search did not surface its numeric rating
+Boy's Life,"McCammon, Robert R.",Boy's Life,Robert McCammon,4.38,32152,verified,goodreads.com/book/show/36505403-boy-s-life,high
+Swan Song,"McCammon, Robert R.",Swan Song,Robert McCammon,4.3,78439,verified,goodreads.com/book/show/11557.Swan_Song,"high (search also surfaced an unrelated Summary/Study Guide edition, correctly excluded)"
+The Road,"McCarthy, Cormac",The Road,Cormac McCarthy,4,931897,verified,goodreads.com/en/book/show/6288.The_Road,high
+Paradise Lost,"Milton, John",Paradise Lost,John Milton,3.86,187890,verified,goodreads.com/book/show/15997.Paradise_Lost (work aggregate),"high (classic, minor edition variance)"
+Lolita,"Nabokov, Vladimir",Lolita,Vladimir Nabokov,3.87,956025,verified,goodreads.com (work aggregate),"high (search also surfaced an unrelated Bloom criticism vol., correctly excluded)"
+1 Enoch: The Hermeneia Translation,"Nickelsburg, George W. E.; VanderKam, James C.",1 Enoch: The Hermeneia Translation,George W.E. Nickelsburg,4.2,,ambiguous,goodreads.com/book/show/13789003-1-enoch,low (rating found but count not confirmed from snippet)
+Animal Farm,"Orwell, George",Animal Farm,George Orwell,4.01,4400000,ambiguous,goodreads.com/book/show/170448.Animal_Farm,"low (count given only as ""over 4.4 million"", not a precise figure)"
+Heroic Fantasy,"Page, Gerald W.; Reinhardt, Hank (eds.)",Heroic Fantasy,Gerald W. Page,4.05,38,verified,goodreads.com/book/show/421169.Heroic_Fantasy,high
+The Drawing of the Dark,"Powers, Tim",The Drawing of the Dark,Tim Powers,3.93,5110,verified,goodreads.com/book/show/209693.The_Drawing_of_the_Dark,high
+Inverted World,"Priest, Christopher",Inverted World,Christopher Priest,3.96,11479,verified,goodreads.com/book/show/142181.The_Inverted_World,high
+The Revenant,"Punke, Michael",The Revenant,Michael Punke,3.97,56216,verified,goodreads.com/en/book/show/22836957-the-revenant,high
+There Is No Antimemetics Division,qntm,There Is No Antimemetics Division,qntm,4,57729,ambiguous,goodreads.com/book/show/54870256-there-is-no-antimemetics-division,medium (search itself flagged a conflicting 4.2 figure from another source; used the more detailed/recent one)
+Wasp,"Russell, Eric Frank",Wasp,Eric Frank Russell,4.05,2656,verified,goodreads.com/en/book/show/335919.Wasp,high
+The Catcher in the Rye,"Salinger, J. D.",The Catcher in the Rye,J.D. Salinger,3.8,4004678,verified,goodreads.com/book/show/5107.The_Catcher_in_the_Rye,"high (search also surfaced unrelated Barron's/study editions, correctly excluded)"
+Much Ado About Nothing,"Shakespeare, William",Much Ado About Nothing,William Shakespeare,4.06,263005,verified,goodreads.com/work/editions/2080738-much-ado-about-nothing,high
+The Ruins,"Smith, Scott",The Ruins,Scott Smith,3.67,59505,verified,goodreads.com/book/show/21726.The_Ruins,high
+East of Eden,"Steinbeck, John",East of Eden,John Steinbeck,4.46,715985,verified,goodreads.com/book/show/4406.East_of_Eden,high
+Of Mice and Men,"Steinbeck, John",Of Mice and Men,John Steinbeck,3.89,2760813,verified,goodreads.com/book/show/890.Of_Mice_and_Men (2002 Penguin Centennial ed.),"high (search also surfaced multiple unrelated study-guide/analysis editions, correctly excluded)"
+Earth Abides,"Stewart, George R.",Earth Abides,George R. Stewart,3.95,,ambiguous,goodreads.com/book/show/93269.Earth_Abides,"low (count not confirmed from snippet; search also surfaced an unrelated Summary/Study Guide edition, correctly excluded)"
+Dracula,"Stoker, Bram",Dracula,Bram Stoker,4.03,1534149,verified,goodreads.com/book/show/17245.Dracula,high
+The Silmarillion,"Tolkien, J. R. R.",The Silmarillion,J.R.R. Tolkien,4.04,339526,verified,goodreads.com/book/show/7332.The_Silmarillion,high
+Gone to See the River Man,"Triana, Kristopher",Gone to See the River Man,Kristopher Triana,3.64,26777,verified,goodreads.com/cs/book/show/52373510-gone-to-see-the-river-man,high
+Project Hail Mary,"Weir, Andy",Project Hail Mary,Andy Weir,4.5,1451424,verified,goodreads.com/book/show/54493401-project-hail-mary,high
+The Time Machine,"Wells, H. G.",The Time Machine,H.G. Wells,3.89,578818,verified,goodreads.com/book/show/2493.The_Time_Machine,high
+The Dragonbone Chair,"Williams, Tad",The Dragonbone Chair,Tad Williams,3.97,79753,verified,goodreads.com/book/show/91981.The_Dragonbone_Chair,high
+The Day of the Triffids,"Wyndham, John",The Day of the Triffids,John Wyndham,4.01,120300,verified,goodreads.com/book/show/530965.The_Day_of_the_Triffids,high
+We,"Zamyatin, Yevgeny",We,Yevgeny Zamyatin,3.87,118603,verified,goodreads.com/book/show/76171.We,high
+On Blue's Waters,"Wolfe, Gene",On Blue's Waters,Gene Wolfe,4.25,2210,verified,goodreads.com/book/show/60214.On_Blue_s_Waters,high
+In Green's Jungles,"Wolfe, Gene",In Green's Jungles,Gene Wolfe,4.32,1978,verified,goodreads.com/book/show/271588.In_Green_s_Jungles,high
+Return to the Whorl,"Wolfe, Gene",Return to the Whorl,Gene Wolfe,4.39,1509,verified,goodreads.com/en/book/show/618260.Return_to_the_Whorl,high
+The Book of the New Sun,"Wolfe, Gene",The Book of the New Sun,Gene Wolfe,4.25,4750,verified,goodreads.com/book/show/968868.The_Book_of_the_New_Sun (1998 SFBC omnibus ed.),medium (catalogue kind=omnibus so used the omnibus edition rating rather than the series-wide 4.06/137305 aggregate)
+Nightside the Long Sun,"Wolfe, Gene",Nightside the Long Sun,Gene Wolfe,4.09,2682,verified,goodreads.com/book/show/1455439.Nightside_the_Long_Sun,high
+Lake of the Long Sun,"Wolfe, Gene",Lake of the Long Sun,Gene Wolfe,4.26,2031,verified,goodreads.com/book/show/1455440.Lake_of_the_Long_Sun,high
+Calde of the Long Sun,"Wolfe, Gene",Calde of the Long Sun,Gene Wolfe,4.09,1854,verified,goodreads.com/book/show/727297.Cald_of_the_Long_Sun,high
+Exodus from the Long Sun,"Wolfe, Gene",Exodus from the Long Sun,Gene Wolfe,4.1,1668,verified,goodreads.com/book/show/755024.Exodus_from_the_Long_Sun,high
+The Story: The Bible as One Continuing Story of God and His People,"Zondervan (Lucado, Max; Frazee, Randy, eds.)",,,,,ambiguous,,multiple editions with materially different ratings (4.26-4.51) found; catalogue copy is a specific church-curriculum printing not clearly identifiable among them
+First Farmers: The Origins of Agricultural Societies,"Bellwood, Peter",First Farmers: The Origins of Agricultural Societies,Peter Bellwood,4.1,70,verified,goodreads.com/book/show/2347859.First_Farmers,high
+"By Steppe, Desert, and Ocean: The Birth of Eurasia","Cunliffe, Barry","By Steppe, Desert, and Ocean: The Birth of Eurasia",Barry Cunliffe,4.26,393,verified,goodreads.com/book/show/26141840-by-steppe-desert-and-ocean,high
+Mesopotamia: The Invention of the City,"Leick, Gwendolyn",Mesopotamia: The Invention of the City,Gwendolyn Leick,3.68,342,verified,goodreads.com/book/show/757503.Mesopotamia,high
+From Cyrus to Alexander: A History of the Persian Empire,"Briant, Pierre",From Cyrus to Alexander: A History of the Persian Empire,Pierre Briant,4.45,114,verified,goodreads.com/book/show/182660.From_Cyrus_to_Alexander,high
+The Histories,Herodotus,The Histories,Herodotus,4.01,57114,verified,goodreads.com/book/show/1362.The_Histories,"high (classic, minor edition variance)"
+The Iliad,Homer,The Iliad,Homer,3.94,534791,verified,goodreads.com/book/show/1371.The_Iliad,"high (classic, minor edition variance)"
+The Odyssey,Homer,The Odyssey,Homer,3.85,1275019,verified,goodreads.com/book/show/1381.The_Odyssey,"high (classic, minor edition variance)"
+The Peloponnesian War,"Kagan, Donald",The Peloponnesian War,Donald Kagan,4.13,5415,verified,goodreads.com/book/show/87539.The_Peloponnesian_War,high
+The Republic,Plato,The Republic,Plato,3.97,232523,verified,goodreads.com/book/show/30289.The_Republic,"high (classic, minor edition variance)"
+SPQR: A History of Ancient Rome,"Beard, Mary",SPQR: A History of Ancient Rome,Mary Beard,4.03,68648,verified,goodreads.com/book/show/28789711-spqr (Paperback ed.),"high (search also surfaced an unrelated summary edition, correctly excluded)"
+Rubicon: The Last Years of the Roman Republic,"Holland, Tom",Rubicon: The Last Years of the Roman Republic,Tom Holland,4.23,29444,verified,goodreads.com/work/editions/87825-rubicon-the-last-years-of-the-roman-republic,"high (confirmed this is the historian, not the actor of the same name)"
+Caesar: Life of a Colossus,"Goldsworthy, Adrian",Caesar: Life of a Colossus,Adrian Goldsworthy,4.22,11451,verified,goodreads.com/book/show/60432.Caesar,high
+The Roman Revolution,"Syme, Ronald",The Roman Revolution,Ronald Syme,4.23,1002,verified,goodreads.com/book/show/167913.The_Roman_Revolution,high
+Augustus: First Emperor of Rome,"Goldsworthy, Adrian",Augustus: First Emperor of Rome,Adrian Goldsworthy,4.27,4029,verified,goodreads.com/book/show/20949792-augustus,high
+The Aeneid,Virgil,The Aeneid,Virgil,3.88,147774,verified,goodreads.com/book/show/12914.The_Aeneid,"high (classic, minor edition variance)"
+The Twelve Caesars,Suetonius,The Twelve Caesars,Suetonius,4.03,18015,verified,goodreads.com/work/editions/372997-de-vita-caesarum (Penguin/Graves ed.),high
+Byzantium: The Early Centuries,"Norwich, John Julius",Byzantium: The Early Centuries,John Julius Norwich,4.35,1964,verified,goodreads.com/book/show/6103.Byzantium,high
+The Fall of Constantinople 1453,"Runciman, Steven",The Fall of Constantinople 1453,Steven Runciman,4.31,1586,verified,goodreads.com/en/book/show/428521.The_Fall_of_Constantinople_1453,high
+Life in a Medieval Castle,"Gies, Frances; Gies, Joseph",Life in a Medieval Castle,Joseph Gies,3.84,1607,verified,goodreads.com/book/show/218073.Life_in_a_Medieval_Castle (1979 paperback),high
+Life in a Medieval Village,"Gies, Frances; Gies, Joseph",Life in a Medieval Village,Frances Gies,3.87,2258,verified,goodreads.com/book/show/600625.Life_in_a_Medieval_Village,high
+Feudal Society,"Bloch, Marc",,,,,ambiguous,,"catalogue row bundles both volumes (ncomp=2); search only surfaced per-volume ratings (Vol.1 4.11/919, Vol.2 4.17/429), not a combined-edition figure"
+The Tale of the Heike,Anonymous,,,,,ambiguous,,"three different translations found (3.98/954, 4.36/109, 4.05/1624) with no way to confirm which one matches the catalogue's held edition"
+Samurai: A Concise History,"Wert, Michael",Samurai: A Concise History,Michael Wert,3.41,315,verified,goodreads.com/en/book/show/41551705-samurai,high
+The Making of Modern Japan,"Jansen, Marius B.",The Making of Modern Japan,Marius B. Jansen,3.88,1269,verified,goodreads.com/book/show/254249.The_Making_of_Modern_Japan,high
+Embracing Defeat: Japan in the Wake of World War II,"Dower, John W.",Embracing Defeat: Japan in the Wake of World War II,John W. Dower,4.16,5343,verified,goodreads.com/book/show/273197.Embracing_Defeat,high
+"The Perilous Frontier: Nomadic Empires and China, 221 BC to AD 1757","Barfield, Thomas J.","The Perilous Frontier: Nomadic Empires and China, 221 BC to AD 1757",Thomas J. Barfield,4.28,87,verified,goodreads.com/en/book/show/718533.The_Perilous_Frontier,high
+The Tibetan Empire in Central Asia,"Beckwith, Christopher I.",The Tibetan Empire in Central Asia,Christopher I. Beckwith,3.56,55,verified,goodreads.com/en/book/show/1282497,high
+The Quest for El Cid,"Fletcher, Richard",The Quest for El Cid,Richard Fletcher,3.76,237,verified,goodreads.com/book/show/261089.The_Quest_for_El_Cid,high
+"The Sinews of Power: War, Money and the English State, 1688-1783","Brewer, John","The Sinews of Power: War, Money and the English State, 1688-1783",John Brewer,3.87,613,verified,goodreads.com/book/show/1187119.The_Sinews_of_Power (work aggregate),"medium (per-edition figures range 3.87-5.00, took the overall work aggregate)"
+The Old Regime and the French Revolution,"Tocqueville, Alexis de",The Old Regime and the French Revolution,Alexis de Tocqueville,4.04,2553,verified,goodreads.com/book/show/448781.The_Old_Regime_and_the_French_Revolution,high
+Citizens: A Chronicle of the French Revolution,"Schama, Simon",Citizens: A Chronicle of the French Revolution,Simon Schama,4.03,6521,verified,goodreads.com/book/show/527523.Citizens,high
+Battle Cry of Freedom: The Civil War Era,"McPherson, James M.",Battle Cry of Freedom: The Civil War Era,James M. McPherson,4.41,34613,verified,goodreads.com/book/show/35100.Battle_Cry_of_Freedom,high
+Frozen Hell,"Campbell, John W.",Frozen Hell,John W. Campbell Jr.,3.72,2172,verified,goodreads.com/book/show/43610618-frozen-hell,"high (name-format-only variant resolved manually: catalogue's ""Campbell, John W."" = source's ""John W. Campbell Jr."")"
+Who Goes There?,"Campbell, John W.",Who Goes There?,John W. Campbell Jr.,3.78,11808,verified,goodreads.com/book/show/6468870-who-goes-there,"high (name-format-only variant, resolved manually; search also surfaced an unrelated ""and Other Stories"" collection, correctly excluded)"
+De Administrando Imperio,Constantine VII Porphyrogenitus,De Administrando Imperio,Constantine VII Porphyrogenitus,4.01,94,verified,goodreads.com/en/book/show/546917,"high (name-format-only variant, resolved manually)"
+The Tale of Genji,Murasaki Shikibu,The Tale of Genji,Murasaki Shikibu,3.71,15262,verified,goodreads.com/book/show/7042.The_Tale_of_Genji,"high (name-format-only variant, resolved manually; search also surfaced an unrelated Student Guide edition, correctly excluded)"
+Tibet: A History,"van Schaik, Sam",Tibet: A History,Sam van Schaik,4.15,364,verified,goodreads.com/book/show/10638859-tibet,"high (name-format-only variant, resolved manually)"
+The Conquest of New Spain,"Diaz del Castillo, Bernal",The Conquest of New Spain,Bernal Diaz del Castillo,4.13,2578,verified,goodreads.com/book/show/108490.The_Conquest_of_New_Spain (Penguin Classics ed.),"high (name-format-only variant, resolved manually)"
+The Hitchhiker's Guide to the Galaxy,"Adams, Douglas",The Hitchhiker's Guide to the Galaxy,Douglas Adams,4.22,2043333,verified,goodreads.com/book/show/11.The_Hitchhiker_s_Guide_to_the_Galaxy,high
+Watership Down,"Adams, Richard",Watership Down,Richard Adams,4.1,514270,verified,goodreads.com/book/show/76620.Watership_Down,high
+The Complete Robot,"Asimov, Isaac",The Complete Robot,Isaac Asimov,4.33,19856,verified,goodreads.com/book/show/50091.The_Complete_Robot,high
+"I, Robot","Asimov, Isaac","I, Robot",Isaac Asimov,4.22,336716,verified,goodreads.com/book/show/41804.I_Robot,high
+The Caves of Steel,"Asimov, Isaac",The Caves of Steel,Isaac Asimov,4.19,115314,verified,goodreads.com/book/show/41811.The_Caves_of_Steel,high
+The Naked Sun,"Asimov, Isaac",The Naked Sun,Isaac Asimov,4.2,65580,verified,goodreads.com/book/show/30016.The_Naked_Sun,"high (search also surfaced an unrelated Summary/Study Guide edition, correctly excluded)"
+The Robots of Dawn,"Asimov, Isaac",The Robots of Dawn,Isaac Asimov,4.2,56234,verified,goodreads.com/book/show/41810.The_Robots_of_Dawn,high
+Robots and Empire,"Asimov, Isaac",Robots and Empire,Isaac Asimov,4.23,37250,verified,goodreads.com/book/show/76688.Robots_and_Empire,high
+Thieves' World,"Asprin, Robert Lynn",Thieves' World,Robert Lynn Asprin,3.85,8144,verified,goodreads.com/book/show/552357.Thieves_World,high
+The Hellbound Heart,"Barker, Clive",The Hellbound Heart,Clive Barker,4.08,72109,verified,goodreads.com/book/show/52635.The_Hellbound_Heart,high
+The Last Unicorn,"Beagle, Peter S.",The Last Unicorn,Peter S. Beagle,4.16,111772,verified,goodreads.com/book/show/29127.The_Last_Unicorn,high
+The Foundation Novels,"Asimov, Isaac",,,,,ambiguous,,"catalogue row is specifically the 7-book bundle (found its Goodreads page, id 23005036) but no rating was surfaced for it; the 4.42/97162 figure found belongs to the smaller 3-book Foundation Trilogy and would misrepresent a 7-book edition"
+Nova Roma,"Anderson, Gentry",,,,,not_found,,Goodreads page exists (goodreads.com/book/show/58230138-nova-roma) but no rating figure was surfaced; self-published/low-visibility title
+The Sword of Shannara,"Brooks, Terry",The Sword of Shannara,Terry Brooks,3.77,102931,verified,goodreads.com/book/show/15575.The_Sword_of_Shannara,high
+The Elfstones of Shannara,"Brooks, Terry",The Elfstones of Shannara,Terry Brooks,3.99,74778,verified,goodreads.com/book/show/41773417-the-elfstones-of-shannara,high
+The Wishsong of Shannara,"Brooks, Terry",The Wishsong of Shannara,Terry Brooks,3.99,55737,verified,goodreads.com/book/show/1362234,high
+Barsoom Series,"Burroughs, Edgar Rice",,,,,ambiguous,,"catalogue row is an 11-book omnibus (vol 1-11); search only surfaced a 13-book ""complete series"" aggregate (3.85/155229) and an unspecified ""Complete Collection"" (4.21/281), neither confirmed as the 11-book edition"
+Pellucidar Series,"Burroughs, Edgar Rice",,,,,ambiguous,,"catalogue row is the 7-book ""Complete & Definitive Edition"" (matched by content) but no rating was surfaced for that specific page"
+Tarzan of the Apes,"Burroughs, Edgar Rice",Tarzan of the Apes,Edgar Rice Burroughs,3.9,48815,verified,goodreads.com/book/show/40425.Tarzan_of_the_Apes,high
+The Dresden Files Collection 1 (1-6),"Butcher, Jim",,,,,ambiguous,,exact matching Goodreads page found (goodreads.com/book/show/10074280-the-dresden-files-collection-1-6) but no rating was surfaced for it; the 4.75/156 figure found belongs to a different SFBC omnibus edition and was not used
+Don Quijote de la Mancha,"Cervantes, Miguel de",Don Quijote de la Mancha,Miguel de Cervantes Saavedra,3.92,314435,verified,goodreads.com/work/editions/121842-el-ingenioso-hidalgo-don-quijote-de-la-mancha (work aggregate),medium (per-edition figures range 3.87-4.20)
+Don Quixote (trans. Edith Grossman),"Cervantes, Miguel de",Don Quixote,Miguel de Cervantes Saavedra (trans. Edith Grossman),3.9,279575,verified,goodreads.com/book/show/3835.Don_Quixote,high (translation-specific catalogue row matched to the translation-specific rating)
+The Long Goodbye,"Chandler, Raymond",The Long Goodbye,Raymond Chandler,4.19,48314,verified,goodreads.com/en/book/show/2054.The_Long_Goodbye,high
+The Big Sleep,"Chandler, Raymond",The Big Sleep,Raymond Chandler,3.94,173193,verified,goodreads.com/book/show/2052.The_Big_Sleep,high
+Nova Roma 2,"Anderson, Gentry; Ladebauche, John, IV",,,,,not_found,,same self-published series as Nova Roma; no rating surfaced
+Never Deal with a Dragon,"Charrette, Robert N.",Never Deal with a Dragon,Robert N. Charrette,3.72,2806,verified,goodreads.com/book/show/351451.Never_Deal_with_a_Dragon,high
+Choose Your Enemies Carefully,"Charrette, Robert N.",Choose Your Enemies Carefully,Robert N. Charrette,3.76,1550,verified,goodreads.com/book/show/351450.Choose_Your_Enemies_Carefully,high
+Find Your Own Truth,"Charrette, Robert N.",Find Your Own Truth,Robert N. Charrette,3.79,1381,verified,goodreads.com/book/show/351455.Find_Your_Own_Truth,high
+Murder on the Orient Express,"Christie, Agatha",Murder on the Orient Express,Agatha Christie,4.2,766674,verified,goodreads.com/book/show/853510.Murder_on_the_Orient_Express,high
+The Murder of Roger Ackroyd,"Christie, Agatha",The Murder of Roger Ackroyd,Agatha Christie,4.26,259815,verified,goodreads.com/book/show/16328.The_Murder_of_Roger_Ackroyd,"high (search also surfaced an unrelated comic-strip adaptation and ELT reader edition, correctly excluded)"
+Shogun,"Clavell, James",Shogun,James Clavell,4.41,219608,verified,goodreads.com/work/editions/1755568-sh-gun,high
+The Poet,"Connelly, Michael",The Poet,Michael Connelly,4.23,112445,verified,goodreads.com/book/show/32506.The_Poet,"high (search also surfaced an unrelated Summary/Study Guide edition, correctly excluded)"
+The Black Company,"Cook, Glen",The Black Company,Glen Cook,3.93,56487,verified,goodreads.com/book/show/140671.The_Black_Company,high
+Shadows Linger,"Cook, Glen",Shadows Linger,Glen Cook,4.18,22011,verified,goodreads.com/book/show/400881.Shadows_Linger,high
+The White Rose,"Cook, Glen",The White Rose,Glen Cook,4.2,22109,verified,goodreads.com/book/show/400906.The_White_Rose,high
+Sharpe's Eagle,"Cornwell, Bernard",Sharpe's Eagle,Bernard Cornwell,4.3,17963,verified,goodreads.com/book/show/557307.Sharpe_s_Eagle,high
+The Winter King,"Cornwell, Bernard",The Winter King,Bernard Cornwell,4.25,57689,verified,goodreads.com/book/show/68520.The_Winter_King,"high (search also surfaced an unrelated Summary/Study Guide edition, correctly excluded)"
+Sojourn,"Salvatore, R.A.",Sojourn,R.A. Salvatore,4.22,75090,verified,user's own Goodreads shelf (rating) + goodreads.com/work/editions/231584-sojourn-dark-elf-3 (count),high
+Exile,"Salvatore, R.A.",Exile,R.A. Salvatore,4.23,73377,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/66678.Exile (count),high
+Homeland,"Salvatore, R.A.",Homeland,R.A. Salvatore,4.26,100901,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/317547 (count),high
+Vector Prime,"Salvatore, R.A.",Vector Prime,R.A. Salvatore,3.85,17515,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/192214.Vector_Prime (count),high
+The Way of Kings,"Sanderson, Brandon",The Way of Kings,Brandon Sanderson,4.66,722106,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/7235533-the-way-of-kings (count),high
+Words of Radiance,"Sanderson, Brandon",Words of Radiance,Brandon Sanderson,4.76,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed from user's shelf; count conflicts across editions (400k-501k range), no single confirmed figure"
+Oathbringer,"Sanderson, Brandon",Oathbringer,Brandon Sanderson,4.6,390403,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/34002132-oathbringer (count),high
+Edgedancer,"Sanderson, Brandon",Edgedancer,Brandon Sanderson,4.11,183615,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/34703445-edgedancer (count),high
+The Pillow Book,Sei Shonagon,The Pillow Book,Sei Shonagon,4.02,10299,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/18185.The_Pillow_Book (count),high
+Hyperion,"Simmons, Dan",Hyperion,Dan Simmons,4.28,317304,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/77566.Hyperion (count),high
+The Hyperion Cantos,"Simmons, Dan",The Hyperion Cantos 4-Book Bundle,Dan Simmons,4.57,,ambiguous,user's own Goodreads shelf (rating) + goodreads.com/book/show/22747319-the-hyperion-cantos-4-book-bundle,"rating confirmed from user's shelf for this exact 4-book bundle edition; only a review count (73) was found, not a ratings count, and the two are not interchangeable"
+Anglo-Saxon England,"Stenton, Frank M.",Anglo-Saxon England,Frank M. Stenton,4.15,379,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/572375.Anglo_Saxon_England (count),"high (catalogue title omits the ""Oxford History of England"" subtitle carried on the user's specific printing)"
+The Lonesome Gods,"L'Amour, Louis",The Lonesome Gods,Louis L'Amour,4.24,9590,verified,"user's own Goodreads shelf (rating, supersedes earlier 4.23 search figure) + prior search (count)",high
+Conagher,"L'Amour, Louis",Conagher,Louis L'Amour,4.19,4147,verified,"user's own Goodreads shelf (rating, supersedes earlier 4.14 search figure) + prior search (count)",high
+The Green Bone Saga,"Lee, Fonda",Jade City,Fonda Lee,4.05,,ambiguous,"user's own Goodreads shelf (rating only, book 1 of 3)","rating from user's shelf; no count found; group has 3 books (Jade City 4.05, Jade War 4.37, Jade Legacy 4.61) needing individual counts"
+Mesopotamia: The Invention of the City,"Leick, Gwendolyn",Mesopotamia: The Invention of the City,Gwendolyn Leick,3.78,,ambiguous,"user's own Goodreads shelf shows 3.78 for their specific edition, conflicting with 3.68/342 found by general search for a different edition",conflicting editions; genuine rating unclear without a matching count to disambiguate
+The Early Chinese Empires: Qin and Han,"Lewis, Mark Edward",The Early Chinese Empires: Qin and Han,Mark Edward Lewis,3.76,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+China's Cosmopolitan Empire: The Tang Dynasty,"Lewis, Mark Edward",China's Cosmopolitan Empire: The Tang Dynasty,Mark Edward Lewis,3.92,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+"The Call of the Wild, White Fang, and Other Stories","London, Jack",,,,,ambiguous,,"user's shelf has a similarly-named 4-work bind-up (""Novels and Stories: Call of the Wild / White Fang / The Sea-Wolf / Klondike"", 4.28) but the catalogue row is specifically a 3-work collection (ncomp=3) -- contents don't match, not confidently the same edition"
+At the Mountains of Madness,"Lovecraft, H. P.",At the Mountains of Madness,H.P. Lovecraft,3.77,,ambiguous,"user's own Goodreads shelf shows 3.77 for their specific edition, conflicting with 3.84/48873 found by general search for the standalone edition",conflicting editions (Lovecraft's Mountains of Madness has many very differently-rated editions); no matching count to disambiguate
+Star Wars: A New Hope,"Lucas, George",Star Wars: A New Hope,George Lucas,4.06,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+The Unifying Force,"Luceno, James",The Unifying Force,James Luceno,4.02,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+The Source,"Lumley, Brian",The Source,Brian Lumley,4.16,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+Vamphyri!,"Lumley, Brian",Vamphyri!,Brian Lumley,4.11,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+Necroscope,"Lumley, Brian",Necroscope,Brian Lumley,4.01,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+Three Kingdoms,"Luo, Guanzhong",,,,,ambiguous,,"catalogue notes specify the Moss Roberts unabridged 4-volume translation; search found multiple ""Romance of the Three Kingdoms"" editions with materially different ratings (3.98-4.40) and none confirmed as the Moss Roberts edition specifically"
+The Mongol Empire,"May, Timothy",The Mongol Empire,Timothy May,3.89,45,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/36978796-the-mongol-empire (count),"high (search also surfaced several unrelated Timothy May titles on similar subjects, correctly excluded)"
+The Cid and His Spain,"Menendez Pidal, Ramon",The Cid and His Spain,Ramon Menendez Pidal,3.5,,ambiguous,user's own Goodreads shelf (rating),"rating from user's shelf; the only count found (6 ratings, via an Amazon listing rather than Goodreads directly) is not reliable enough to use"
+A Concise History of France,"Price, Roger",A Concise History of France,Roger Price,3.03,184,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/480515.A_Concise_History_of_France (count),high
+Fourteen Byzantine Rulers: The Chronographia,"Psellus, Michael",Fourteen Byzantine Rulers: The Chronographia of Michael Psellus,Michael Psellus,4.02,575,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/561445.Fourteen_Byzantine_Rulers (count),high
+The Man of Bronze,"Dent, Lester",The Man of Bronze,Kenneth Robeson,3.79,3044,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/1161498.The_Man_of_Bronze (count),"high (""Kenneth Robeson"" is the house pseudonym Lester Dent wrote Doc Savage under -- a legitimate name variant, not a mismatch)"
+Masters of Rome,"McCullough, Colleen",The October Horse,Colleen McCullough,4.34,6712,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/3421.The_October_Horse (count),"high (this is the ""The October Horse"" volume, #6 in the catalogue's Masters of Rome group)"
+Masters of Rome (Antony and Cleopatra),"McCullough, Colleen",Antony and Cleopatra,Colleen McCullough,4.06,6395,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/579581.Antony_and_Cleopatra (count),high (volume #7 in the catalogue's Masters of Rome group)
+Lonesome Dove,"McMurtry, Larry",Lonesome Dove,Larry McMurtry,4.6,282875,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/256008.Lonesome_Dove (count),high
+Streets of Laredo,"McMurtry, Larry",Streets of Laredo,Larry McMurtry,4.14,30927,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/54812.Streets_of_Laredo (count),high
+Dead Man's Walk,"McMurtry, Larry",Dead Man's Walk,Larry McMurtry,4.08,22782,verified,"user's own Goodreads shelf (rating, supersedes 4.06 general-search figure) + goodreads.com/book/show/54804.Dead_Man_s_Walk (count)",high
+Comanche Moon,"McMurtry, Larry",Comanche Moon,Larry McMurtry,4.17,16669,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/111856 (paperback count),high
+Three Kingdoms,"Luo, Guanzhong",,,,,ambiguous,,"catalogue notes specify the Moss Roberts unabridged 4-volume translation; search found multiple ""Romance of the Three Kingdoms"" editions with materially different ratings (3.98-4.40) and none confirmed as the Moss Roberts edition specifically"
+The Mongol Empire,"May, Timothy",The Mongol Empire,Timothy May,3.89,45,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/36978796-the-mongol-empire (count),"high (search also surfaced several unrelated Timothy May titles on similar subjects, correctly excluded)"
+The Cid and His Spain,"Menendez Pidal, Ramon",The Cid and His Spain,Ramon Menendez Pidal,3.5,,ambiguous,user's own Goodreads shelf (rating),"rating from user's shelf; the only count found (6 ratings, via an Amazon listing rather than Goodreads directly) is not reliable enough to use"
+A Concise History of France,"Price, Roger",A Concise History of France,Roger Price,3.03,184,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/480515.A_Concise_History_of_France (count),high
+Fourteen Byzantine Rulers: The Chronographia,"Psellus, Michael",Fourteen Byzantine Rulers: The Chronographia of Michael Psellus,Michael Psellus,4.02,575,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/561445.Fourteen_Byzantine_Rulers (count),high
+The Man of Bronze,"Dent, Lester",The Man of Bronze,Kenneth Robeson,3.79,3044,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/1161498.The_Man_of_Bronze (count),"high (""Kenneth Robeson"" is the house pseudonym Lester Dent wrote Doc Savage under -- a legitimate name variant, not a mismatch)"
+Masters of Rome,"McCullough, Colleen",The October Horse,Colleen McCullough,4.34,6712,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/3421.The_October_Horse (count),"high (this is the ""The October Horse"" volume, #6 in the catalogue's Masters of Rome group)"
+Masters of Rome (Antony and Cleopatra),"McCullough, Colleen",Antony and Cleopatra,Colleen McCullough,4.06,6395,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/579581.Antony_and_Cleopatra (count),high (volume #7 in the catalogue's Masters of Rome group)
+Lonesome Dove,"McMurtry, Larry",Lonesome Dove,Larry McMurtry,4.6,282875,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/256008.Lonesome_Dove (count),high
+Streets of Laredo,"McMurtry, Larry",Streets of Laredo,Larry McMurtry,4.14,30927,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/54812.Streets_of_Laredo (count),high
+Dead Man's Walk,"McMurtry, Larry",Dead Man's Walk,Larry McMurtry,4.08,22782,verified,"user's own Goodreads shelf (rating, supersedes 4.06 general-search figure) + goodreads.com/book/show/54804.Dead_Man_s_Walk (count)",high
+Comanche Moon,"McMurtry, Larry",Comanche Moon,Larry McMurtry,4.17,16669,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/111856 (paperback count),high
+The First Law Trilogy,"Abercrombie, Joe",The First Law Trilogy,Joe Abercrombie,4.54,,ambiguous,"user's own Goodreads shelf (rating only, omnibus edition)",rating confirmed for the omnibus itself; no count found
+Foundation: The History of England from Its Earliest Beginnings to the Tudors,"Ackroyd, Peter",Foundation: The History of England from Its Earliest Beginnings to the Tudors,Peter Ackroyd,4.05,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+The Oresteia,Aeschylus,"The Oresteia: Agamemnon, The Libation Bearers, The Eumenides",Aeschylus,4.02,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+The Tale of the Heike,Anonymous,The Tale of the Heike,Anonymous,4.05,,ambiguous,user's own Goodreads shelf (rating),"resolves earlier translation ambiguity to this figure, but still no confirmed count"
+The Foundation Novels,"Asimov, Isaac",The Foundation Novels 7-Book Bundle,Isaac Asimov,4.56,,ambiguous,"user's own Goodreads shelf (rating) -- title lists exactly the catalogue's 7 component titles, confirming the exact edition",identity now fully confirmed (was ambiguous); no count found yet
+The Damnation Game,"Barker, Clive",The Damnation Game,Clive Barker,3.81,18910,verified,"user's own Goodreads shelf (rating, supersedes 3.84) + prior search (count)",high
+SPQR: A History of Ancient Rome,"Beard, Mary",SPQR: A History of Ancient Rome,Mary Beard,4.05,68648,verified,"user's own Goodreads shelf (rating, supersedes 4.03) + prior search (count)",high
+The Slob,"Beauregard, Aron",The Slob,Aron Beauregard,3.31,13506,verified,"user's own Goodreads shelf (rating, confirms 3.31) + prior search (count)",high
+Son of the Slob,"Beauregard, Aron",Son of the Slob,Aron Beauregard,3.64,3370,verified,"user's own Goodreads shelf (rating, supersedes 3.67) + prior search (count)",high
+The Tibetan Empire in Central Asia,"Beckwith, Christopher I.",The Tibetan Empire in Central Asia,Christopher I. Beckwith,3.53,55,verified,"user's own Goodreads shelf (rating, supersedes 3.56) + prior search (count)",high
+First Farmers: The Origins of Agricultural Societies,"Bellwood, Peter",First Farmers: The Origins of Agricultural Societies,Peter Bellwood,4.04,70,verified,"user's own Goodreads shelf (rating, supersedes 4.10) + prior search (count)",high
+The Long Ships,"Bengtsson, Frans G.",The Long Ships,Frans G. Bengtsson,4.27,,ambiguous,"user's own Goodreads shelf (rating, confirms 4.27)",rating cross-confirmed twice now; still no count found
+The Demolished Man,"Bester, Alfred",The Demolished Man,Alfred Bester,3.96,34528,verified,"user's own Goodreads shelf (rating, confirms) + prior search (count)",high
+The Willows,"Blackwood, Algernon",The Willows,Algernon Blackwood,4.03,13499,verified,"user's own Goodreads shelf (rating, supersedes 4.07) + prior search (count)",high
+Feudal Society,"Bloch, Marc",Feudal Society,Marc Bloch,4.25,,ambiguous,"user's own Goodreads shelf (rating, resolves earlier ambiguity)",rating confirmed for the catalogue's 2-volume-bundled row; no count found
+Fahrenheit 451,"Bradbury, Ray",Fahrenheit 451,Ray Bradbury,3.97,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+"The Sinews of Power: War, Money and the English State, 1688-1783","Brewer, John","The Sinews of Power: War, Money and the English State, 1688-1783",John Brewer,3.99,174,verified,"user's own Goodreads shelf (rating, supersedes 3.87 aggregate) + prior search (1990 Harvard ed. count)",high
+From Cyrus to Alexander: A History of the Persian Empire,"Briant, Pierre",From Cyrus to Alexander: A History of the Persian Empire,Pierre Briant,4.37,114,verified,"user's own Goodreads shelf (rating, supersedes 4.45) + prior search (count)",high
+Wuthering Heights,"Bronte, Emily",Wuthering Heights,Emily Bronte,3.89,1646792,verified,"user's own Goodreads shelf (rating, supersedes 3.90) + prior search (count)",high
+The Troubled Empire: China in the Yuan and Ming Dynasties,"Brook, Timothy",The Troubled Empire: China in the Yuan and Ming Dynasties,Timothy Brook,3.92,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+Between Two Fires,"Buehlman, Christopher",Between Two Fires,Christopher Buehlman,4.18,98838,verified,"user's own Goodreads shelf (rating, confirms) + prior search (count)",high
+Pellucidar Series,"Burroughs, Edgar Rice",Pellucidar - The Complete Series,Edgar Rice Burroughs,3.79,,ambiguous,"user's own Goodreads shelf (rating only, ""Complete Series"" matches catalogue's 7-book scope)",medium (title framing matches but component count not explicitly confirmed); no count found
+Who Goes There?,"Campbell, John W.",Who Goes There?,John W. Campbell Jr.,3.77,11808,verified,"user's own Goodreads shelf (rating, supersedes 3.78) + prior search (count)",high
+Ender's Game,"Card, Orson Scott",Ender's Game,Orson Scott Card,4.31,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+Ancient Greece: A History in Eleven Cities,"Cartledge, Paul",Ancient Greece: A History in Eleven Cities,Paul Cartledge,3.39,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+The Anglo-Saxon Chronicle,Anonymous,The Anglo-Saxon Chronicle (Illustrated),,4,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed for this illustrated edition, no count found; ""(Illustrated)"" suffix means it may not be the exact held printing"
+De Administrando Imperio,Constantine VII Porphyrogenitus,De Administrando Imperio,Constantine VII Porphyrogenitus,3.93,94,verified,"user's own Goodreads shelf (rating, supersedes 4.01) + prior search (count)",high
+Enemy of God,"Cornwell, Bernard",Enemy of God,Bernard Cornwell,4.42,,ambiguous,"user's own Goodreads shelf (rating only, Warlord Chronicles #2)","rating confirmed, no count found"
+Excalibur,"Cornwell, Bernard",Excalibur,Bernard Cornwell,4.44,,ambiguous,"user's own Goodreads shelf (rating only, Warlord Chronicles #3)","rating confirmed, no count found"
+The Paradise Snare,"Crispin, A. C.",Star Wars: The Paradise Snare,A.C. Crispin,3.9,,ambiguous,"user's own Goodreads shelf (rating only, Han Solo Trilogy #1)","rating confirmed, no count found"
+The Hutt Gambit,"Crispin, A. C.",Star Wars: The Hutt Gambit,A.C. Crispin,3.91,,ambiguous,"user's own Goodreads shelf (rating only, Han Solo Trilogy #2)","rating confirmed, no count found"
+Rebel Dawn,"Crispin, A. C.",Star Wars: Rebel Dawn,A.C. Crispin,3.95,,ambiguous,"user's own Goodreads shelf (rating only, Han Solo Trilogy #3)","rating confirmed, no count found"
+The Conquest of New Spain,"Diaz del Castillo, Bernal",The Conquest of New Spain,Bernal Diaz del Castillo,4.15,2578,verified,"user's own Goodreads shelf (rating, supersedes 4.13) + prior search (count)",high
+Lord Foul's Bane,"Donaldson, Stephen R.",Lord Foul's Bane,Stephen R. Donaldson,3.71,,ambiguous,"user's own Goodreads shelf (rating only, Chronicles of Thomas Covenant #1)","rating confirmed, no count found"
+The Illearth War,"Donaldson, Stephen R.",The Illearth War,Stephen R. Donaldson,4.02,,ambiguous,"user's own Goodreads shelf (rating only, #2)","rating confirmed, no count found"
+The Power That Preserves,"Donaldson, Stephen R.",The Power That Preserves,Stephen R. Donaldson,4.04,,ambiguous,"user's own Goodreads shelf (rating only, #3)","rating confirmed, no count found"
+The Wounded Land,"Donaldson, Stephen R.",The Wounded Land,Stephen R. Donaldson,4.01,,ambiguous,"user's own Goodreads shelf (rating only, Second Chronicles #1)","rating confirmed, no count found"
+The One Tree,"Donaldson, Stephen R.",The One Tree,Stephen R. Donaldson,4,,ambiguous,"user's own Goodreads shelf (rating only, #2)","rating confirmed, no count found"
+White Gold Wielder,"Donaldson, Stephen R.",White Gold Wielder,Stephen R. Donaldson,4.06,,ambiguous,"user's own Goodreads shelf (rating only, #3)","rating confirmed, no count found"
+Burning Bright,"Dowd, Tom",Shadowrun 15: Burning Bright,Tom Dowd,3.82,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+Embracing Defeat: Japan in the Wake of World War II,"Dower, John W.",Embracing Defeat: Japan in the Wake of World War II,John W. Dower,4.16,5343,verified,"user's own Goodreads shelf (rating, confirms) + prior search (count)",high
+The Complete Sherlock Holmes,"Doyle, Arthur Conan",The Complete Sherlock Holmes [Leatherbound],Arthur Conan Doyle,4.64,,ambiguous,"user's own Goodreads shelf (rating only, specific leatherbound edition)","rating confirmed for this edition, no count found"
+The Count of Monte Cristo,"Dumas, Alexandre",The Count of Monte Cristo,Alexandre Dumas,4.34,,ambiguous,user's own Goodreads shelf (rating only),"rating confirmed, no count found"
+The Name of the Rose,"Eco, Umberto",The Name of the Rose,Umberto Eco,4.14,405682,verified,"user's own Goodreads shelf (rating, confirms) + prior search (count)",high
+Queen of Sorcery,"Eddings, David",Queen of Sorcery,David Eddings,4.16,,ambiguous,"user's own Goodreads shelf (rating only, Belgariad #2)","rating confirmed, no count found"
+Magician's Gambit,"Eddings, David",Magician's Gambit,David Eddings,4.15,,ambiguous,"user's own Goodreads shelf (rating only, #3)","rating confirmed, no count found"
+Enchanters' End Game,"Eddings, David",Enchanters' End Game,David Eddings,4.2,,ambiguous,"user's own Goodreads shelf (rating only, #5)","rating confirmed, no count found"
+The First Law Trilogy,"Abercrombie, Joe",,,,,ambiguous,,"user's shelf gives 4.54 for the omnibus, but search only surfaced other editions (UK Kindle 4.47/2429, Canadian Kindle 4.44/1135, boxed set 4.53/11245) none confirmed as the exact 4.54 edition"
+Ender's Game,"Card, Orson Scott",Ender's Game,Orson Scott Card,4.31,1498922,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/375802.Ender_s_Game (count),high
+Lord Foul's Bane,"Donaldson, Stephen R.",Lord Foul's Bane,Stephen R. Donaldson,3.71,50466,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/219205.Lord_Foul_s_Bane (count),high
+The Illearth War,"Donaldson, Stephen R.",The Illearth War,Stephen R. Donaldson,4.02,28881,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/228990.The_Illearth_War (count),"high (search also surfaced an unrelated Summary/Study Guide edition, correctly excluded)"
+The Power That Preserves,"Donaldson, Stephen R.",The Power That Preserves,Stephen R. Donaldson,4.04,25250,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/687215.The_Power_That_Preserves (count),high
+The Wounded Land,"Donaldson, Stephen R.",The Wounded Land,Stephen R. Donaldson,4,20471,verified,"user's own Goodreads shelf (rating 4.01, search shows 4.00 for this edition) + goodreads.com/book/show/404223.The_Wounded_Land (count)",high
+The One Tree,"Donaldson, Stephen R.",The One Tree,Stephen R. Donaldson,4,19001,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/22875.The_One_Tree (count),high
+White Gold Wielder,"Donaldson, Stephen R.",White Gold Wielder,Stephen R. Donaldson,4.06,19617,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/228992.White_Gold_Wielder (count),high
+The Count of Monte Cristo,"Dumas, Alexandre",The Count of Monte Cristo,Alexandre Dumas,4.34,1078352,verified,user's own Goodreads shelf (rating) + goodreads.com/book/show/7126.The_Count_of_Monte_Cristo (count),"high (search also surfaced unrelated abridged/adaptation editions, correctly excluded)"
