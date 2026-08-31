@@ -1,6 +1,6 @@
 # The Long Shelf
 
-A researched catalogue of a personal library — 466 entries, 604 physical books, 269,402 pages.
+A researched catalogue of a personal library — 490 entries, 630 physical books, 279,440 pages.
 
 Live at **https://renangrossi.github.io/thelongshelf/**
 
@@ -9,7 +9,7 @@ Live at **https://renangrossi.github.io/thelongshelf/**
 Two shelves catalogued to the same standard:
 
 - a 338-entry fiction library
-- a 128-entry world history canon
+- a 152-entry world history canon
 
 Every entry gets a representative **print** edition — page counts come from physical books, never from EPUB or Kindle location counts. Omnibuses, collections and multi-volume works are opened up into the books they actually contain, series are regrouped, duplicates are flagged, and 68 award-winning books are listed by prize.
 

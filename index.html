@@ -3,9 +3,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Long Shelf — a researched catalogue of a personal library</title>
-<meta name="description" content="A researched catalogue of 466 library entries: print-edition page counts, series organisation, omnibus breakdowns, awards and ratings.">
+<meta name="description" content="A researched catalogue of 490 library entries: print-edition page counts, series organisation, omnibus breakdowns, awards and ratings.">
 <meta property="og:title" content="The Long Shelf">
-<meta property="og:description" content="604 books. 269,402 pages. Page counts taken from print editions, not ebook files.">
+<meta property="og:description" content="630 books. 279,440 pages. Page counts taken from print editions, not ebook files.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://renangrossi.github.io/thelongshelf/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='3' height='16' x='0' fill='%23C09A3E'/><rect width='3' height='16' x='5' fill='%238C3A32'/><rect width='3' height='16' x='10' fill='%233F7E8C'/></svg>">
@@ -40,8 +40,8 @@
 
 <div class="masthead">
   <p class="eyebrow">A researched personal-library catalogue</p>
-  <h1>The Long Shelf<span class="sub2">466 catalogue entries across two collections. 604 physical books. 269,402 pages, taken from print editions rather than ebook files.</span></h1>
-  <p class="lede">Two shelves: a 338-entry fiction library and a 128-entry world history canon. Every entry gets a representative print edition; every collection, omnibus and multi-volume work is opened up into the books it actually contains; every series is pulled back together.</p>
+  <h1>The Long Shelf<span class="sub2">490 catalogue entries across two collections. 630 physical books. 279,440 pages, taken from print editions rather than ebook files.</span></h1>
+  <p class="lede">Two shelves: a 338-entry fiction library and a 152-entry world history canon. Every entry gets a representative print edition; every collection, omnibus and multi-volume work is opened up into the books it actually contains; every series is pulled back together.</p>
 </div>
 
 <section id="shelves">
@@ -52,7 +52,7 @@
     <div id="shelfFic"></div><div class="board"></div>
   </div>
   <div class="shelfblock">
-    <p class="shelflabel"><span><b>World history canon</b> · 144 volumes</span><span>74,105 pages</span></p>
+    <p class="shelflabel"><span><b>World history canon</b> · 170 volumes</span><span>84,143 pages</span></p>
     <div id="shelfNf"></div><div class="board"></div>
   </div>
 </section>
@@ -62,8 +62,8 @@
   <div class="stats" id="stats"></div>
   <div class="ledger" style="max-width:620px">
     <span class="lbl">Fiction shelf — books counted once</span><span class="val">195,297 pp</span>
-    <span class="lbl">History canon — volumes counted once</span><span class="val">74,105 pp</span>
-    <span class="lbl">A · Combined physical-book total</span><span class="val hi">269,402 pp</span>
+    <span class="lbl">History canon — volumes counted once</span><span class="val">84,143 pp</span>
+    <span class="lbl">A · Combined physical-book total</span><span class="val hi">279,440 pp</span>
     <span class="lbl">B · Printed omnibus editions held (7 fiction files)</span><span class="val">7,668 pp</span>
     <span class="lbl">Books with no reliable page count</span><span class="val">4</span>
   </div>
@@ -85,7 +85,7 @@
       </div>
       <select id="fs" aria-label="Filter by shelf">
         <option value="">Both shelves</option><option value="fiction">Fiction only</option>
-        <option value="nonfiction">History canon only</option>
+        <option value="nonfiction">Non-fiction only</option>
       </select>
       <select id="fk" aria-label="Filter by format">
         <option value="">All formats</option><option value="standalone">Standalone</option>
@@ -104,16 +104,16 @@
   <div class="activefilters" id="activeFilters" aria-live="polite"></div>
   <div class="tblwrap"><table id="tbl">
     <colgroup>
-      <col style="width:100px"><col style="width:158px"><col style="width:220px">
-      <col style="width:170px">
-      <col style="width:150px">
-      <col style="width:110px"><col style="width:90px">
-      <col style="width:150px"><col style="width:76px">
-      <col style="width:280px">
+      <col style="width:118px"><col style="width:128px"><col style="width:170px">
+      <col style="width:120px">
+      <col style="width:110px">
+      <col style="width:72px"><col style="width:68px">
+      <col style="width:110px"><col style="width:56px">
+      <col style="width:200px">
     </colgroup>
     <thead><tr>
       <th data-k="shelf">Shelf</th><th data-k="author">Author</th><th data-k="title">Title</th>
-      <th data-k="group">Series / section · Vol</th>
+      <th data-k="group">Series · Vol</th>
       <th data-k="genre">Genre</th>
       <th data-k="pages" class="num">Pages</th><th data-k="grr" class="num">Rating</th>
       <th data-k="nawards" class="num">Awards</th><th data-k="year" class="num">Year</th>
@@ -124,7 +124,7 @@
 
 <section id="canon">
   <div class="shead"><span class="idx">04</span><h2>The history canon, by civilization</h2>
-    <p class="note">All twenty-one sections in the file's own order. Where the file's summary table disagrees with what the list actually contains, both numbers are shown. Multi-volume entries are broken out underneath.</p></div>
+    <p class="note">All twenty-two sections in the file's own order. Where the file's summary table disagrees with what the list actually contains, both numbers are shown. Multi-volume entries are broken out underneath.</p></div>
   <div class="grid2" id="canonGrid"></div>
 </section>
 
@@ -179,7 +179,7 @@
 
   <div class="warn">
     <p style="margin:0 0 10px"><strong>What was checked, and what wasn't.</strong> A handful of things were confirmed against live sources: the First Law omnibus (Orbit 2016, 1,680 pp), the composition of Asimov's <em>Foundation Novels</em> bundle, the contents of Haggard's <em>Ultimate Collection</em>, the seventeen-title Sackett canon, the Zondervan <em>Story</em> edition, the Bloomsbury <em>Enuma Elish</em> (2024, 352 pp), and the two-volume structure of Seth's Korea.</p>
-    <p style="margin:0">Every other page count comes from bibliographic knowledge of standard editions rather than a record retrieved today. They are good working figures, not audited ones. ISBNs are left blank rather than invented. Checking all 604 books against publisher records individually is a much larger job than one pass — batching by author or by canon section is the honest route.</p>
+    <p style="margin:0">Every other page count comes from bibliographic knowledge of standard editions rather than a record retrieved today. They are good working figures, not audited ones. ISBNs are left blank rather than invented. Checking all 630 books against publisher records individually is a much larger job than one pass — batching by author or by canon section is the honest route.</p>
   </div>
 
   <h3>How editions were selected</h3>
@@ -229,7 +229,7 @@
 </section>
 
 <footer>
-  The Long Shelf · built from a 338-line fiction list and a 128-entry history canon.<br>
+  The Long Shelf · built from a 338-line fiction list and a 152-entry history canon.<br>
   Page counts are researched working figures, not audited bibliographic records. Goodreads ratings are a snapshot and drift daily.
 </footer>
 </div>

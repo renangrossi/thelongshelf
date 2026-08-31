@@ -251,7 +251,7 @@
       return g && vPart ? `${g}<br>${vPart}` : (g || vPart);
     };
     $("tb").innerHTML = rs.length ? rs.map(r=>`<tr>
-      <td><span class="tag ${r.shelf}">${r.shelf==="fiction"?"Fiction":"History"}</span></td>
+      <td><span class="tag ${r.shelf}">${r.shelf==="fiction"?"Fiction":"Non-fiction"}</span></td>
       <td>${esc(r.author)}</td>
       <td class="t-title">${esc(r.title)}${r.ncomp?` <span class="k">· ${r.ncomp} books</span>`:""}</td>
       <td class="muted">${groupVolCell(r)}</td>
@@ -314,7 +314,7 @@
     const un = c.comps.filter(x=>x.pages==null).length;
     return `<div class="card">
       <h3>${esc(c.title)}</h3>
-      <div class="meta"><span class="tag ${c.shelf}">${c.shelf==="fiction"?"Fiction":"History"}</span> ${esc(c.author)} · ${esc(c.edition||"no print edition")}</div>
+      <div class="meta"><span class="tag ${c.shelf}">${c.shelf==="fiction"?"Fiction":"Non-fiction"}</span> ${esc(c.author)} · ${esc(c.edition||"no print edition")}</div>
       <ol class="books">${c.comps.map(b=>`<li><span class="bt">${esc(b.title)}${b.note?`<br><span class="k">${esc(b.note)}</span>`:""}</span>
         <span class="bp">${b.pages?nf(b.pages)+" pp":"—"}</span></li>`).join("")}</ol>
       <div class="ledger">

@@ -160,7 +160,7 @@ input[type=search]:focus,select:focus{outline:2px solid var(--gold);outline-offs
 /* table-layout:fixed only actually distributes the <colgroup> widths below when the table
    has a definite `width` — a `min-width`-only table falls back to sizing columns from
    content again, silently undoing every deliberate width choice below. */
-table{border-collapse:collapse;table-layout:fixed;font-size:14px;width:1854px}
+table{border-collapse:collapse;table-layout:fixed;font-size:14px;width:1152px}
 th{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
   text-align:left;padding:12px;background:var(--panel2);color:var(--faint);cursor:pointer;
   border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
