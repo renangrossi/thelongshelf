@@ -126,7 +126,11 @@
     : `<span class="muted">—</span>`;
   };
   const grCell = r => !r.gr ? `<span class="muted">—</span>`
-    : `<span class="star">${r.gr[0].toFixed(2)}</span><br><span class="muted" style="font-size:11px">${shortN(r.gr[1])}</span>`;
+    // r.gr[1] (ratings count) is optional: a handful of ratings are confirmed from the
+    // owner's own Goodreads shelf but the shelf's list view doesn't expose a count, and
+    // one wasn't otherwise found — show the star rating alone rather than a fabricated count.
+    : `<span class="star">${r.gr[0].toFixed(2)}</span>` + (r.gr[1] != null
+        ? `<br><span class="muted" style="font-size:11px">${shortN(r.gr[1])}</span>` : "");
   const awardCell = r => !r.awards || !r.awards.length ? `<span class="muted">—</span>`
     : r.awards.map(a=>`<span class="aw${a.indexOf("Author:")===0?" auth":""}">${esc(a)}</span>`).join("")
       + (r.awards_via ? `<span class="k">via components</span>` : "");
