@@ -109,14 +109,14 @@
     if(!c) return null;
     const rm = (r.vol||"").trim().match(RANGE_RE);
     const start = (rm && (+rm[2]-+rm[1]+1)===c.comps.length) ? +rm[1] : 1;
-    const lines = c.comps.map((comp,i)=>`Book ${start+i}: ${comp.pages!=null?nf(comp.pages):"—"}`);
-    lines.push(`Total: ${nf(r.comp_total)}`);
+    const lines = c.comps.map((comp,i)=>({label:`Book ${start+i}:`, val: comp.pages!=null?nf(comp.pages):"—"}));
+    lines.push({label:"Total:", val: nf(r.comp_total)});
     return lines;
   };
   const pagesCell = r => {
     const bd = pageBreakdown(r);
     if(bd) return `<span class="pgbreak">${bd.map((l,i)=>
-        `<span${i===bd.length-1?' class="pgtotal"':""}>${esc(l)}</span>`).join("")}</span>`
+        `<span${i===bd.length-1?' class="pgtotal"':""}>${esc(l.label)}<br>${esc(l.val)}</span>`).join("")}</span>`
       + (r.physical!=null ? `<span class="pgphys muted">bound: ${nf(r.physical)} pp</span>` : "");
     return r.pages != null ? nf(r.pages)
     : r.physical != null ? `${nf(r.physical)}<br><span class="muted" style="font-size:11px">omnibus</span>`
@@ -341,13 +341,6 @@
     <ul class="awlist">${g.books.map(b=>`<li>
       <span class="wt">${esc(b.title)}</span><span class="wa">${esc(b.author)}</span>
       ${b.awards.map(a=>`<span class="wx">${esc(a)}</span>`).join("")}</li>`).join("")}</ul></div>`).join("");
-
-  /* ---- ratings ---- */
-  $("rated").innerHTML = D.topRated.map(w=>`<li>
-    <span><span>${esc(w.title)}</span><span class="who">${esc(w.author)}</span></span>
-    <span class="pg">${w.r.toFixed(2)}</span>
-    <span class="bar"><i class="${w.shelf==="nonfiction"?"nf":""}" style="width:${((w.r-3)/2*100).toFixed(1)}%"></i></span>
-    <span class="n" style="grid-column:2/4">${shortN(w.n)} ratings</span></li>`).join("");
 
   /* ---- duplicates ---- */
   $("dups").innerHTML = D.duplicates.map(d=>`<div class="card">

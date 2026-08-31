@@ -160,7 +160,7 @@ input[type=search]:focus,select:focus{outline:2px solid var(--gold);outline-offs
 /* table-layout:fixed only actually distributes the <colgroup> widths below when the table
    has a definite `width` — a `min-width`-only table falls back to sizing columns from
    content again, silently undoing every deliberate width choice below. */
-table{border-collapse:collapse;table-layout:fixed;font-size:14px;width:1152px}
+table{border-collapse:collapse;table-layout:fixed;font-size:14px;width:1176px}
 th{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
   text-align:left;padding:12px;background:var(--panel2);color:var(--faint);cursor:pointer;
   border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
@@ -198,7 +198,7 @@ td.num{font-size:13px}
    ending in a visually distinct total. Sized down from the 13px td.num default the same
    way .volcell is, since it's now often several short lines rather than one number. */
 .pgbreak{display:block;font-size:11px;line-height:1.55}
-.pgbreak span{display:block}
+.pgbreak span{display:block;white-space:nowrap}
 .pgbreak .pgtotal{color:var(--paper);border-top:1px dotted #292E37;margin-top:3px;padding-top:3px}
 .pgphys{display:block;font-size:10px;margin-top:4px}
 /* Pages 64->134px: the old width fit a bare page count, but every "k: pages" line in the
