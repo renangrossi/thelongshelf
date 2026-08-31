@@ -250,9 +250,15 @@ ul.sub .sp{font-family:var(--mono);font-size:11px;color:var(--faint);margin-left
 .rank .who{display:block;font-size:11px;color:var(--faint);font-family:var(--mono)}
 .rank .pg{font-family:var(--mono);font-size:12.5px;color:var(--gold)}
 .rank .n{font-family:var(--mono);font-size:10.5px;color:var(--faint)}
-.bar{grid-column:2/4;height:2px;background:var(--line);margin-top:3px}
-.bar i{display:block;height:100%;background:var(--ox)}
-.bar i.nf{background:var(--teal)}
+/* Scoped to .rank li — a bare .bar selector here collided with the unrelated
+   <div class="bar"> flex wrapper inside .site-header (same class name, two different
+   components), forcing the header's own layout div down to this 2px height and painting
+   its --line background straight through the logo and nav: a stray horizontal line
+   through both. Scoping this to where the page-count/rating bar chart actually lives
+   fixes that without touching .site-header at all. */
+.rank li .bar{grid-column:2/4;height:2px;background:var(--line);margin-top:3px}
+.rank li .bar i{display:block;height:100%;background:var(--ox)}
+.rank li .bar i.nf{background:var(--teal)}
 
 /* ---------- prose ---------- */
 .prose{max-width:72ch}
