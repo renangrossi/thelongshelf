@@ -111,7 +111,7 @@
     if(!c) return null;
     const rm = (r.vol||"").trim().match(RANGE_RE);
     const start = (rm && (+rm[2]-+rm[1]+1)===c.comps.length) ? +rm[1] : 1;
-    const lines = c.comps.map((comp,i)=>`${start+i}: ${comp.pages!=null?nf(comp.pages):"—"}`);
+    const lines = c.comps.map((comp,i)=>`Book ${start+i}: ${comp.pages!=null?nf(comp.pages):"—"}`);
     lines.push(`Total: ${nf(r.comp_total)}`);
     return lines;
   };

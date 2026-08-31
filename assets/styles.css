@@ -24,7 +24,13 @@ a{color:var(--gold);text-underline-offset:3px}
   display:flex;align-items:center;gap:26px}
 .brand{font-family:var(--disp);font-weight:700;font-size:20px;letter-spacing:-.01em;
   white-space:nowrap;font-variation-settings:'SOFT' 20,'WONK' 1;color:var(--paper);
-  text-decoration:none;display:flex;align-items:center;gap:10px}
+  text-decoration:none;display:flex;align-items:center;gap:14px}
+/* ::before is only 4px wide as a layout box, but its box-shadow paints two more 4px bars
+   at +6px and +12px — box-shadow never adds to layout size, so the marks' real painted
+   right edge (16px from the box's left edge) sat 2px past where the flex gap put the next
+   item (4px box + the old 10px gap = 14px), and the third (teal) bar visibly overlapped
+   the "T" of the title text. Widening the gap to 14px (below) clears the full 16px paint
+   width with a hair of margin — the bars/text themselves are unchanged. */
 .brand::before{content:"";width:4px;height:19px;background:var(--gold);
   box-shadow:6px 0 0 var(--ox),12px 0 0 var(--teal);flex:none;border-radius:1px}
 .brand span{margin-left:14px}
