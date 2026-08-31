@@ -154,7 +154,7 @@ input[type=search]:focus,select:focus{outline:2px solid var(--gold);outline-offs
 /* table-layout:fixed only actually distributes the <colgroup> widths below when the table
    has a definite `width` — a `min-width`-only table falls back to sizing columns from
    content again, silently undoing every deliberate width choice below. */
-table{border-collapse:collapse;table-layout:fixed;font-size:14px;width:1756px}
+table{border-collapse:collapse;table-layout:fixed;font-size:14px;width:1784px}
 th{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
   text-align:left;padding:12px;background:var(--panel2);color:var(--faint);cursor:pointer;
   border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
@@ -166,6 +166,14 @@ th.on{color:var(--gold)}
    NOT used, since either would chop a word rather than requiring the column to earn its
    width honestly. */
 td,th{overflow-wrap:normal;word-break:normal;hyphens:none}
+/* Shelf (72px) was sized to the .tag badge's measured width at its declared 9px font-size,
+   which left a real gap of only ~5px before Author at that exact size — and .tag's own
+   padding+border compound with the td's padding, so that gap collapses fast: a headless
+   check that forces .tag to render just 1-2px larger (any browser/OS "minimum font size"
+   accessibility override, a substituted fallback mono font, or subpixel rounding — none of
+   them exotic) already pushes the badge into Author's text. Bumped to 100px so the badge
+   stays clear of Author with real margin even under those common real-world overrides,
+   not just at the one exact font-size a bounding-box check happens to run at. */
 td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 tr:last-child td{border-bottom:none}
 tbody tr:hover{background:#20242D}
