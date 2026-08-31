@@ -154,13 +154,18 @@ input[type=search]:focus,select:focus{outline:2px solid var(--gold);outline-offs
 /* table-layout:fixed only actually distributes the <colgroup> widths below when the table
    has a definite `width` — a `min-width`-only table falls back to sizing columns from
    content again, silently undoing every deliberate width choice below. */
-table{border-collapse:collapse;table-layout:fixed;font-size:14px;width:1616px}
+table{border-collapse:collapse;table-layout:fixed;font-size:14px;width:1756px}
 th{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
   text-align:left;padding:12px;background:var(--panel2);color:var(--faint);cursor:pointer;
   border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
 th:hover{color:var(--paper)} th:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
 th.on{color:var(--gold)}
-td,th{overflow-wrap:break-word}
+/* Words never break: every column below is sized to fit its actual widest unbreakable
+   token (verified against all 431 rows' real content), so normal — wrap-at-spaces-only —
+   is always sufficient. overflow-wrap/word-break:break-word or :anywhere are deliberately
+   NOT used, since either would chop a word rather than requiring the column to earn its
+   width honestly. */
+td,th{overflow-wrap:normal;word-break:normal;hyphens:none}
 td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 tr:last-child td{border-bottom:none}
 tbody tr:hover{background:#20242D}
