@@ -1,8 +1,6 @@
 /* The Long Shelf — rendering */
 (function () {
   const D = window.SHELF_DATA;
-  const KIND = {standalone:"Standalone", series:"Series vol.", omnibus:"Omnibus file",
-    multivolume:"Multi-volume", collection:"Collection", anthology:"Anthology"};
   const esc = s => String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   const nf  = n => n==null ? "—" : n.toLocaleString("en-US");
   const shortN = n => n>=1e6 ? (n/1e6).toFixed(1)+"M" : n>=1e3 ? Math.round(n/1e3)+"k" : n;
@@ -245,23 +243,25 @@
     $("cnt").textContent = anyFilterActive
       ? `${rs.length} of ${D.rows.length} entries`
       : `${D.rows.length} entries`;
+    const groupVolCell = r => {
+      const g = r.group ? esc(r.group) : "";
+      const v = volCell(r);
+      const vPart = v !== "—" ? `<span class="k">${v}</span>` : "";
+      if(!g && !vPart) return `<span class="muted">—</span>`;
+      return g && vPart ? `${g}<br>${vPart}` : (g || vPart);
+    };
     $("tb").innerHTML = rs.length ? rs.map(r=>`<tr>
       <td><span class="tag ${r.shelf}">${r.shelf==="fiction"?"Fiction":"History"}</span></td>
       <td>${esc(r.author)}</td>
       <td class="t-title">${esc(r.title)}${r.ncomp?` <span class="k">· ${r.ncomp} books</span>`:""}</td>
-      <td class="muted">${esc(r.group)||"—"}</td>
-      <td class="num muted volcell">${volCell(r)}</td>
-      <td class="k">${KIND[r.kind]||r.kind}</td>
+      <td class="muted">${groupVolCell(r)}</td>
       <td class="genrecell">${genreCell(r)}</td>
       <td class="num">${pagesCell(r)}</td>
       <td class="num">${grCell(r)}</td>
       <td class="awards">${awardCell(r)}</td>
-      <td class="muted">${esc(r.edition)||"—"}</td>
-      <td class="muted">${esc(r.publisher)||"—"}</td>
       <td class="num muted">${esc(r.year)||"—"}</td>
-      <td class="muted" style="font-family:var(--mono);font-size:11px">${esc(r.isbn)||"—"}</td>
       <td class="notecell">${esc(r.notes)||""}</td></tr>`).join("")
-      : `<tr><td colspan="15" class="muted" style="text-align:center;padding:26px 12px">No entries match these filters.</td></tr>`;
+      : `<tr><td colspan="10" class="muted" style="text-align:center;padding:26px 12px">No entries match these filters.</td></tr>`;
   }
   function sortBy(th){
     const k = th.dataset.k;
