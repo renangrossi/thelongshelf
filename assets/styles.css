@@ -220,7 +220,14 @@ td.num{font-size:13px}
 .tag.nonfiction{color:#8FB9C3;border-color:#345A64}
 
 /* ---------- cards ---------- */
-.grid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1px;
+/* minmax(340px,1fr): the 340px floor is a hard pixel minimum, so at any viewport where
+   .grid2's own content box is narrower than 340px (roughly <388px wide, since .wrap's
+   24px side padding eats into it) the sole card column refused to shrink below 340px and
+   busted out of its container, forcing page-level horizontal scroll (confirmed at 320-360px
+   viewports). min(340px,100%) caps the floor at the container's own width so the column
+   still targets 340px on anything wide enough to offer it, but never demands more than the
+   grid actually has to give. */
+.grid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr));gap:1px;
   background:var(--line);border:1px solid var(--line)}
 .card{background:var(--panel);padding:20px}
 .card h3{font-family:var(--disp);font-size:19px;margin:0 0 4px;font-weight:700;line-height:1.14;

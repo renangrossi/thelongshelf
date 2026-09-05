@@ -38,11 +38,23 @@
     tip.style.left = Math.min(e.clientX + 14, window.innerWidth - 320) + "px";
     tip.style.top  = Math.max(8, e.clientY - 74) + "px";
   });
-  document.body.addEventListener("click", e => {
-    const sp = e.target.closest(".spine"); if(!sp) return;
+  function activateSpine(sp){
     const s = D[sp.dataset.k][+sp.dataset.i];
     $("q").value = s.v || s.t; render();
     $("catalogue").scrollIntoView({behavior:"smooth", block:"start"});
+  }
+  document.body.addEventListener("click", e => {
+    const sp = e.target.closest(".spine"); if(!sp) return;
+    activateSpine(sp);
+  });
+  // Spines are role="button" and tabbable, but a <div> never gets a native Enter/Space
+  // activation the way a real <button> does — without this, keyboard users can Tab to a
+  // spine and land on it, but pressing Enter or Space does nothing at all.
+  document.body.addEventListener("keydown", e => {
+    if(e.key !== "Enter" && e.key !== " ") return;
+    const sp = e.target.closest(".spine"); if(!sp) return;
+    e.preventDefault();
+    activateSpine(sp);
   });
 
   /* ---- table ---- */
@@ -164,13 +176,21 @@
     if(returnFocus) genreBtn.focus();
   }
   genreBtn.addEventListener("click", ()=> genreList.hidden ? openGenreDrop() : closeGenreDrop(false));
-  // Dropdown stays open while ticking boxes; only these three things close it, matching
+  // Dropdown stays open while ticking boxes; only these four things close it, matching
   // standard multi-select-popover behavior (a plain click on a checkbox must NOT close it).
   document.addEventListener("click", e=>{
     if(!genreList.hidden && !genreDrop.contains(e.target)) closeGenreDrop(false);
   });
   genreDrop.addEventListener("keydown", e=>{
     if(e.key === "Escape" && !genreList.hidden){ e.preventDefault(); closeGenreDrop(true); }
+  });
+  // Tabbing off the end of the checklist (or anywhere else outside .genredrop) left the
+  // popover visibly open and overlapping whatever was focused next — the click-outside
+  // listener above only ever fires on a mouse click, never on keyboard focus moving on.
+  // focusout's relatedTarget is the element about to receive focus, so this only closes
+  // when focus is actually leaving .genredrop, not when it's moving around inside it.
+  genreDrop.addEventListener("focusout", e=>{
+    if(!genreList.hidden && !genreDrop.contains(e.relatedTarget)) closeGenreDrop(false);
   });
 
   /* ---- filters: labels, active-filter chips, clear, count ---- */
@@ -363,15 +383,26 @@
         ${g.heading?`<h4>${esc(g.heading)}</h4>`:""}
         <ol class="books">${g.items.map(i=>
           i.match
-            ? `<li class="ro-hit" data-title="${esc(i.match)}"><span class="bt">${esc(i.label)}</span></li>`
+            ? `<li class="ro-hit" tabindex="0" role="button" data-title="${esc(i.match)}"><span class="bt">${esc(i.label)}</span></li>`
             : `<li class="ro-miss"><span class="bt">${esc(i.label)}</span><span class="ro-tag">${i.owned===false?"not owned":"not yet catalogued"}</span></li>`
         ).join("")}</ol></div>`).join("")}
       </div>`;
     }).join("");
-    $("readingOrders").addEventListener("click", e=>{
-      const li = e.target.closest(".ro-hit"); if(!li) return;
+    function activateRoHit(li){
       $("q").value = li.dataset.title; render();
       $("catalogue").scrollIntoView({behavior:"smooth", block:"start"});
+    }
+    $("readingOrders").addEventListener("click", e=>{
+      const li = e.target.closest(".ro-hit"); if(!li) return;
+      activateRoHit(li);
+    });
+    // Same reasoning as the shelf spines: tabindex/role="button" make these focusable, but
+    // a <li> gets no native Enter/Space activation, so it needs its own keydown handler.
+    $("readingOrders").addEventListener("keydown", e=>{
+      if(e.key !== "Enter" && e.key !== " ") return;
+      const li = e.target.closest(".ro-hit"); if(!li) return;
+      e.preventDefault();
+      activateRoHit(li);
     });
   }
 
