@@ -1,0 +1,13 @@
+# GitHub Pages build config. This site is plain static HTML/CSS/JS with no
+# Jekyll templating of its own — index.html, 404.html and assets/ are always
+# served byte-for-byte as committed, front matter or not, Jekyll or none.
+#
+# This file exists for one reason: to keep the repo's working files — the
+# Goodreads CSV exports and the Node scripts that generate them — out of the
+# *published* site while still keeping them versioned in the repo itself.
+# Without it, GitHub Pages' default Jekyll build copies everything at the
+# repo root into the live site, which is how those files ended up publicly
+# fetchable at their literal paths before this was added.
+exclude:
+  - scripts/
+  - "*.csv"

@@ -1,7 +1,14 @@
 /* The Long Shelf — nangrossi.github.io/thelongshelf/ */
 :root{
   --shelf:#13151A; --panel:#1A1D24; --panel2:#21252E; --line:#2D323C;
-  --paper:#EDE8DB; --ink:#B8B2A3; --faint:#7C776B;
+  --paper:#EDE8DB; --ink:#B8B2A3;
+  /* --faint was #7C776B, same hue/saturation as this but darker (L 45%). Used at 9-11px
+     for th/.meta/.k/.rank .who/footer etc — all well under WCAG's 18px "large text"
+     cutoff, so they need the 4.5:1 normal-text minimum. #7C776B measured 3.4-4.1:1 against
+     the panel/panel2/shelf backgrounds it actually sits on, failing AA everywhere it's
+     used. This is the same color lightened to L 54.5%, which clears 4.5:1 against all of
+     them with a real margin (4.71 on panel2, the worst case) rather than skimming the line. */
+  --faint:#948E82;
   --ox:#8C3A32; --gold:#C09A3E; --teal:#3F7E8C;
   --disp:'Fraunces',Georgia,'Times New Roman',serif;
   --body:'Newsreader',Georgia,serif;

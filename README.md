@@ -19,12 +19,19 @@ Every entry gets a representative **print** edition — page counts come from ph
 .
 ├── index.html          # the whole site
 ├── 404.html
-├── .nojekyll           # tells GitHub Pages to skip Jekyll processing
+├── _config.yml         # tells GitHub Pages' Jekyll build to publish only
+│                        # index.html/404.html/assets — not scripts/ or the
+│                        # CSVs below, which stay in the repo but off the
+│                        # live site
 └── assets/
     ├── styles.css
     ├── app.js          # rendering + search/sort/filter
     └── data.js         # the catalogue itself (window.SHELF_DATA)
 ```
+
+`scripts/` and the `*.csv` files in the repo root are working files for maintaining the
+catalogue (see "Updating the catalogue" below) — versioned here for the record, but
+excluded from the published site by `_config.yml`.
 
 All paths are relative, so the site works from a project subpath like `/thelongshelf/`.
 
