@@ -167,7 +167,12 @@ input[type=search]:focus,select:focus{outline:2px solid var(--gold);outline-offs
 /* table-layout:fixed only actually distributes the <colgroup> widths below when the table
    has a definite `width` — a `min-width`-only table falls back to sizing columns from
    content again, silently undoing every deliberate width choice below. */
-table{border-collapse:collapse;table-layout:fixed;font-size:14px;width:1176px}
+/* 1176->1136px: at viewports where .wrap can't offer the table its full natural width
+   (roughly under ~1250px), .tblwrap's own scrollbar was cutting in a few px too early —
+   the table needed slightly less than .tblwrap actually had at the common ~1200px window
+   width this was reported at. Notes (below) gives up the 40px; every other column is
+   untouched. */
+table{border-collapse:collapse;table-layout:fixed;font-size:14px;width:1136px}
 th{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
   text-align:left;padding:12px;background:var(--panel2);color:var(--faint);cursor:pointer;
   border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
@@ -219,7 +224,19 @@ td.num{font-size:13px}
 .genrecell{max-width:190px;font-size:13px;color:var(--ink)}
 .aw{display:block;font-family:var(--mono);font-size:10px;line-height:1.35;color:#D6C58F;margin-bottom:3px}
 .aw.auth{color:var(--faint)}
-.notecell{max-width:340px;font-size:13px;color:var(--ink);line-height:1.5}
+/* Column width dropped 200->160px (see table{width} above); padding tightened 12px->9px
+   each side to give a few of those px straight back to the text instead of the gutter, so
+   the readable width only loses ~34px (176->142) rather than the full 40px column cut.
+   overflow-wrap is scoped to break-word here ONLY (every other column keeps the sitewide
+   never-break rule) because a couple of real notes contain a single slash- or hyphen-joined
+   token (e.g. "Haubold/Helle/Jiménez/Wisnom", ~213px at this font) with no space to wrap
+   at — wider than any reasonable Notes column, old or new. Left as overflow:visible, that
+   token silently poked out past the table's own right edge and kept .tblwrap's scrollbar
+   alive no matter how the column width was tuned, which is what the never-break rule
+   quietly assumed could never happen. Breaking only when a word truly has nowhere else to
+   go affects those handful of rows and nothing else. */
+.notecell{max-width:340px;font-size:13px;color:var(--ink);line-height:1.5;padding-left:9px;padding-right:9px;
+  overflow-wrap:break-word}
 .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
 .tag{font-family:var(--mono);font-size:9px;letter-spacing:.09em;text-transform:uppercase;
   padding:2px 6px;border:1px solid;white-space:nowrap;display:inline-block}
