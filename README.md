@@ -1,6 +1,6 @@
 # The Long Shelf
 
-A researched catalogue of a personal library — 526 entries, 673 physical books, 300,954 pages.
+A researched catalogue of a personal library — 526 entries, 673 physical books, 301,713 pages.
 
 Live at **https://renangrossi.github.io/thelongshelf/**
 
