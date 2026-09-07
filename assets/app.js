@@ -140,12 +140,31 @@
     : r.comp_total ? `<span class="muted">${nf(r.comp_total)}</span><br><span class="muted" style="font-size:11px">sum of ${r.ncomp}</span>`
     : `<span class="muted">—</span>`;
   };
-  const grCell = r => !r.gr ? `<span class="muted">—</span>`
+  /* Rating: for collection/multi-volume rows where no single Goodreads page covers
+     the combined work — same D.collections match as the Pages breakdown — show each
+     component's own title and its own Goodreads rating instead of one number for the
+     row. Averaging the components into a single figure was tried and rejected: that
+     number would never actually appear on Goodreads for anything, so it's more honest
+     to show the real, individually-verified ratings than a computed stand-in. Only
+     fires when at least one component actually carries a gr, so the rest of the
+     collection rows (no per-component ratings looked up) keep the plain behavior below. */
+  const grBreakdown = r => {
+    if(!r.ncomp) return null;
+    const c = collByKey.get(r.title+"|"+r.author);
+    if(!c || !c.comps.some(comp=>comp.gr)) return null;
+    return c.comps.map(comp=>({title: comp.title, val: comp.gr ? comp.gr[0].toFixed(2) : "—"}));
+  };
+  const grCell = r => {
+    const bd = grBreakdown(r);
+    if(bd) return `<span class="grbreak">${bd.map(l=>
+        `<span>${esc(l.title)}<br><span class="star">${esc(l.val)}</span></span>`).join("")}</span>`;
+    return !r.gr ? `<span class="muted">—</span>`
     // r.gr[1] (ratings count) is optional: a handful of ratings are confirmed from the
     // owner's own Goodreads shelf but the shelf's list view doesn't expose a count, and
     // one wasn't otherwise found — show the star rating alone rather than a fabricated count.
     : `<span class="star">${r.gr[0].toFixed(2)}</span>` + (r.gr[1] != null
         ? `<br><span class="muted" style="font-size:11px">${shortN(r.gr[1])}</span>` : "");
+  };
   const awardCell = r => !r.awards || !r.awards.length ? `<span class="muted">—</span>`
     : r.awards.map(a=>`<span class="aw${a.indexOf("Author:")===0?" auth":""}">${esc(a)}</span>`).join("")
       + (r.awards_via ? `<span class="k">via components</span>` : "");
