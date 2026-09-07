@@ -65,4 +65,4 @@ All the data lives in `assets/data.js` as a single `window.SHELF_DATA` object. E
 
 ## Caveats
 
-Page counts are researched working figures, not audited bibliographic records. Goodreads ratings are a snapshot and drift daily; 496 of 526 books have one, because a rating that wasn't actually looked up is left blank rather than invented — a handful of collections Goodreads has no combined page for show each component book's own rating in the table instead of a computed stand-in. See the Method section on the site for the full accounting.
+Page counts are researched working figures, not audited bibliographic records. Goodreads ratings are a snapshot and drift daily; 514 of 526 books have one, because a rating that wasn't actually looked up is left blank rather than invented — a handful of collections Goodreads has no combined page for show each component book's own rating in the table instead of a computed stand-in. See the Method section on the site for the full accounting.

@@ -112,58 +112,54 @@
     return x ? `${esc(v)} of ${x}` : esc(v);
   };
 
-  /* Pages: the 30 omnibus/collection rows that carry ncomp+comp_total get their real
-     per-book breakdown from D.collections (matched 1:1 by title+author — verified against
-     every current row, none unmatched), numbered from the row's own vol range start so a
-     row like "Byzantium: The Apogee and Byzantium: The Decline and Fall" (vol "2–3") reads
-     "2: …  3: …" rather than restarting at 1. A component with no known page count (2 of
-     the 30 rows have exactly one) shows "—" rather than an invented figure; the total is
-     the existing comp_total, already the sum of the known components only. */
+  /* Pages · Rating: one merged column. The 30 omnibus/collection rows that carry
+     ncomp+comp_total get a real per-book breakdown from D.collections (matched 1:1 by
+     title+author — verified against every current row, none unmatched): each line is
+     one component's own title, its page count, and — for the handful individually
+     looked up — its own Goodreads rating in gold. Real titles replace the old numbered
+     "Book N:" labels now that pages and ratings share a line, since a name reads better
+     than a bare position once the cell is already multi-line. Averaging the components'
+     ratings into one figure for the row was tried and rejected: that number would never
+     actually appear on Goodreads for anything, so real per-book ratings are shown
+     instead, "—" where a component has no page count or no looked-up rating. The total
+     is the existing comp_total (already the sum of the known components only) — pages
+     only, since there's no such thing as a total rating. Rows without a breakdown keep
+     a plain pages-then-rating pair, each independently "—" if unknown. */
   const collByKey = new Map(D.collections.map(c => [c.title+"|"+c.author, c]));
-  const pageBreakdown = r => {
+  const prBreakdown = r => {
     if(!r.ncomp || r.comp_total==null) return null;
     const c = collByKey.get(r.title+"|"+r.author);
     if(!c) return null;
-    const rm = (r.vol||"").trim().match(RANGE_RE);
-    const start = (rm && (+rm[2]-+rm[1]+1)===c.comps.length) ? +rm[1] : 1;
-    const lines = c.comps.map((comp,i)=>({label:`Book ${start+i}:`, val: comp.pages!=null?nf(comp.pages):"—"}));
-    lines.push({label:"Total:", val: nf(r.comp_total)});
-    return lines;
+    return c.comps.map(comp => ({
+      title: comp.title,
+      pages: comp.pages!=null ? nf(comp.pages) : "—",
+      gr: comp.gr ? comp.gr[0].toFixed(2) : null,
+    }));
   };
-  const pagesCell = r => {
-    const bd = pageBreakdown(r);
-    if(bd) return `<span class="pgbreak">${bd.map((l,i)=>
-        `<span${i===bd.length-1?' class="pgtotal"':""}>${esc(l.label)}<br>${esc(l.val)}</span>`).join("")}</span>`
-      + (r.physical!=null ? `<span class="pgphys muted">bound: ${nf(r.physical)} pp</span>` : "");
-    return r.pages != null ? nf(r.pages)
-    : r.physical != null ? `${nf(r.physical)}<br><span class="muted" style="font-size:11px">omnibus</span>`
-    : r.comp_total ? `<span class="muted">${nf(r.comp_total)}</span><br><span class="muted" style="font-size:11px">sum of ${r.ncomp}</span>`
-    : `<span class="muted">—</span>`;
-  };
-  /* Rating: for collection/multi-volume rows where no single Goodreads page covers
-     the combined work — same D.collections match as the Pages breakdown — show each
-     component's own title and its own Goodreads rating instead of one number for the
-     row. Averaging the components into a single figure was tried and rejected: that
-     number would never actually appear on Goodreads for anything, so it's more honest
-     to show the real, individually-verified ratings than a computed stand-in. Only
-     fires when at least one component actually carries a gr, so the rest of the
-     collection rows (no per-component ratings looked up) keep the plain behavior below. */
-  const grBreakdown = r => {
-    if(!r.ncomp) return null;
-    const c = collByKey.get(r.title+"|"+r.author);
-    if(!c || !c.comps.some(comp=>comp.gr)) return null;
-    return c.comps.map(comp=>({title: comp.title, val: comp.gr ? comp.gr[0].toFixed(2) : "—"}));
-  };
-  const grCell = r => {
-    const bd = grBreakdown(r);
-    if(bd) return `<span class="grbreak">${bd.map(l=>
-        `<span>${esc(l.title)}<br><span class="star">${esc(l.val)}</span></span>`).join("")}</span>`;
-    return !r.gr ? `<span class="muted">—</span>`
-    // r.gr[1] (ratings count) is optional: a handful of ratings are confirmed from the
-    // owner's own Goodreads shelf but the shelf's list view doesn't expose a count, and
-    // one wasn't otherwise found — show the star rating alone rather than a fabricated count.
-    : `<span class="star">${r.gr[0].toFixed(2)}</span>` + (r.gr[1] != null
-        ? `<br><span class="muted" style="font-size:11px">${shortN(r.gr[1])}</span>` : "");
+  const pagesRatingCell = r => {
+    const bd = prBreakdown(r);
+    if(bd){
+      const lines = bd.map(l=>`<span>${esc(l.title)}<br>${l.pages} pp${l.gr?` · <span class="star">${l.gr}</span>`:""}</span>`).join("");
+      // A row can carry its own direct rating (e.g. Gibbon, Haggard's Ultimate Collection —
+      // a real Goodreads page for the combined work) even though its components don't have
+      // one each; without this, r.gr would be silently overridden by the breakdown branch
+      // and never shown anywhere. Attached to the Total line, since that's the one line that
+      // already represents the whole collection rather than a single component.
+      const totalGr = r.gr ? ` · <span class="star">${r.gr[0].toFixed(2)}</span>` : "";
+      return `<span class="prbreak">${lines}<span class="prtotal">Total<br>${nf(r.comp_total)} pp${totalGr}</span></span>`
+        + (r.physical!=null ? `<span class="pgphys muted">bound: ${nf(r.physical)} pp</span>` : "");
+    }
+    const pages = r.pages != null ? `${nf(r.pages)} pp`
+      : r.physical != null ? `${nf(r.physical)} pp<br><span class="muted" style="font-size:11px">omnibus</span>`
+      : r.comp_total ? `<span class="muted">${nf(r.comp_total)} pp</span><br><span class="muted" style="font-size:11px">sum of ${r.ncomp}</span>`
+      : `<span class="muted">—</span>`;
+    const rating = !r.gr ? `<span class="muted">—</span>`
+      // r.gr[1] (ratings count) is optional: a handful of ratings are confirmed from the
+      // owner's own Goodreads shelf but the shelf's list view doesn't expose a count, and
+      // one wasn't otherwise found — show the star rating alone rather than a fabricated count.
+      : `<span class="star">${r.gr[0].toFixed(2)}</span>` + (r.gr[1] != null
+          ? ` <span class="muted" style="font-size:11px">${shortN(r.gr[1])}</span>` : "");
+    return `<span class="prplain">${pages}<br>${rating}</span>`;
   };
   const awardCell = r => !r.awards || !r.awards.length ? `<span class="muted">—</span>`
     : r.awards.map(a=>`<span class="aw${a.indexOf("Author:")===0?" auth":""}">${esc(a)}</span>`).join("")
@@ -171,7 +167,6 @@
   const genreCell = r => !r.genre || !r.genre.length ? `<span class="muted">—</span>`
     : esc(r.genre.join(" · "));
   function sortVal(r){
-    if(sortK==="grr") return r.gr ? r.gr[0] : -1;
     if(sortK==="nawards") return r.awards ? r.awards.length : 0;
     if(sortK==="pages") return r.pages!=null ? r.pages : (r.physical!=null ? r.physical : (r.comp_total || -1));
     return (r[sortK]||"").toString().toLowerCase();
@@ -300,17 +295,16 @@
       <td class="t-title">${esc(r.title)}${r.ncomp?` <span class="k">· ${r.ncomp} books</span>`:""}</td>
       <td class="muted">${groupVolCell(r)}</td>
       <td class="genrecell">${genreCell(r)}</td>
-      <td class="num">${pagesCell(r)}</td>
-      <td class="num">${grCell(r)}</td>
+      <td class="num">${pagesRatingCell(r)}</td>
       <td class="awards">${awardCell(r)}</td>
       <td class="num muted">${esc(r.year)||"—"}</td>
       <td class="notecell">${esc(r.notes)||""}</td></tr>`).join("")
-      : `<tr><td colspan="10" class="muted" style="text-align:center;padding:26px 12px">No entries match these filters.</td></tr>`;
+      : `<tr><td colspan="9" class="muted" style="text-align:center;padding:26px 12px">No entries match these filters.</td></tr>`;
   }
   function sortBy(th){
     const k = th.dataset.k;
     if(sortK===k) sortDir *= -1;
-    else { sortK = k; sortDir = (k==="pages"||k==="grr"||k==="nawards") ? -1 : 1; }
+    else { sortK = k; sortDir = (k==="pages"||k==="nawards") ? -1 : 1; }
     document.querySelectorAll("#tbl th").forEach(x=>{ x.classList.remove("on"); x.removeAttribute("aria-sort"); });
     th.classList.add("on");
     th.setAttribute("aria-sort", sortDir>0 ? "ascending" : "descending");
