@@ -146,15 +146,15 @@
   const pagesRatingCell = r => {
     const bd = prBreakdown(r);
     if(bd){
-      const lines = bd.map(l=>`<span>Book ${l.n}: ${esc(l.title)} ${l.pages!=null?`${l.pages}pgs`:"—"}`
+      const lines = bd.map(l=>`<span>Book ${l.n}: ${esc(l.title)} ${l.pages!=null?`${l.pages} pgs`:"—"}`
           + `${l.gr?` <span class="star">${l.gr}</span>`:""}</span>`).join("");
       const totalGr = r.gr ? ` <span class="star">${r.gr[0].toFixed(2)}</span>` : "";
-      return `<span class="prbreak">${lines}<span class="prtotal">Total: ${nf(r.comp_total)}pgs${totalGr}</span></span>`
-        + (r.physical!=null ? `<span class="pgphys muted">bound: ${nf(r.physical)}pgs</span>` : "");
+      return `<span class="prbreak">${lines}<span class="prtotal">Total: ${nf(r.comp_total)} pgs${totalGr}</span></span>`
+        + (r.physical!=null ? `<span class="pgphys muted">bound: ${nf(r.physical)} pgs</span>` : "");
     }
-    const pages = r.pages != null ? `${nf(r.pages)}pgs`
-      : r.physical != null ? `${nf(r.physical)}pgs <span class="muted" style="font-size:11px">omnibus</span>`
-      : r.comp_total ? `<span class="muted">${nf(r.comp_total)}pgs</span> <span class="muted" style="font-size:11px">sum of ${r.ncomp}</span>`
+    const pages = r.pages != null ? `${nf(r.pages)} pgs`
+      : r.physical != null ? `${nf(r.physical)} pgs <span class="muted" style="font-size:11px">omnibus</span>`
+      : r.comp_total ? `<span class="muted">${nf(r.comp_total)} pgs</span> <span class="muted" style="font-size:11px">sum of ${r.ncomp}</span>`
       : `<span class="muted">—</span>`;
     const rating = !r.gr ? `<span class="muted">—</span>`
       // r.gr[1] (ratings count) is optional: a handful of ratings are confirmed from the
