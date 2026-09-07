@@ -175,10 +175,22 @@ input[type=search]:focus,select:focus{outline:2px solid var(--gold);outline-offs
 /* Pages and Rating are one merged column (140px): unlike most columns, its breakdown
    content (see .prbreak below) is real book titles, not short labels/numbers — "never
    break words" alone won't save a column sized only for a bare page count or "4.15",
-   so this is widened to fit the breakdown's widest single word with real margin. Total
-   table width is the sum of the current <colgroup> in index.html, recomputed here
-   rather than adjusted by a delta so it can't quietly drift out of sync with it. */
-table{border-collapse:collapse;table-layout:fixed;font-size:14px;width:1112px}
+   so this is widened to fit the breakdown's widest single word with real margin. 1112px
+   is the sum of the other eight <colgroup> widths in index.html (952px) plus Notes'
+   own 160px, recomputed here rather than adjusted by a delta so it can't quietly drift
+   out of sync with it. */
+/* width:max(1112px,100%), not a flat 1112px: at viewports wide enough for .wrap to offer
+   .tblwrap more than 1112px (roughly above ~1160px window width, up to .wrap's 1240px
+   cap), a flat width left the table short of .tblwrap's actual right edge — dead
+   horizontal space between Notes and the scrollbar. Notes is the one <col> in index.html
+   left without a width (see colgroup), so table-layout:fixed hands it 100% of whatever
+   width the table has beyond the other eight columns' fixed 952px total; it, and only
+   it, stretches to close that gap, so the scrollbar's actual width (which varies by OS/
+   browser) is accounted for automatically rather than guessed at. Below ~1160px this
+   still floors at exactly 1112px — identical to every column's old width, Notes included,
+   since 1112-952 was already its original 160px — leaving .tblwrap's existing
+   horizontal-scroll fallback untouched. */
+table{border-collapse:collapse;table-layout:fixed;font-size:14px;width:max(1112px,100%)}
 th{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
   text-align:left;padding:12px;background:var(--panel2);color:var(--faint);cursor:pointer;
   border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
