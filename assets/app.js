@@ -114,44 +114,47 @@
 
   /* Pages · Rating: one merged column. The 30 omnibus/collection rows that carry
      ncomp+comp_total get a real per-book breakdown from D.collections (matched 1:1 by
-     title+author — verified against every current row, none unmatched): each line is
-     one component's own title, its page count, and — for the handful individually
-     looked up — its own Goodreads rating in gold. Real titles replace the old numbered
-     "Book N:" labels now that pages and ratings share a line, since a name reads better
-     than a bare position once the cell is already multi-line. Averaging the components'
-     ratings into one figure for the row was tried and rejected: that number would never
-     actually appear on Goodreads for anything, so real per-book ratings are shown
-     instead, "—" where a component has no page count or no looked-up rating. The total
-     is the existing comp_total (already the sum of the known components only) — pages
-     only, since there's no such thing as a total rating. Rows without a breakdown keep
-     a plain pages-then-rating pair, each independently "—" if unknown. */
+     title+author — verified against every current row, none unmatched), one line each:
+     "Book N: Title NNNpgs rating" — numbered from the row's own vol range start so a
+     row like "Byzantium: The Apogee and Byzantium: The Decline and Fall" (vol "2–3")
+     reads "Book 2: … Book 3: …" rather than restarting at 1, with the rating (where
+     individually looked up) in gold. Averaging the components' ratings into one figure
+     for the row was tried and rejected: that number would never actually appear on
+     Goodreads for anything, so real per-book ratings are shown instead, simply omitted
+     where a component has no looked-up rating, "—" where it has no known page count
+     either. The total is the existing comp_total (already the sum of the known
+     components only) — pages only, since there's no such thing as a total rating; a row
+     that also carries its own direct rating for the combined work (Gibbon's Decline and
+     Fall, Haggard's Ultimate Collection both have a real Goodreads page of their own)
+     has it attached there instead of being lost underneath the breakdown branch. Rows
+     without a breakdown keep a plain "NNNpgs rating" pair, "—" for whichever of the two
+     is unknown. */
   const collByKey = new Map(D.collections.map(c => [c.title+"|"+c.author, c]));
   const prBreakdown = r => {
     if(!r.ncomp || r.comp_total==null) return null;
     const c = collByKey.get(r.title+"|"+r.author);
     if(!c) return null;
-    return c.comps.map(comp => ({
+    const rm = (r.vol||"").trim().match(RANGE_RE);
+    const start = (rm && (+rm[2]-+rm[1]+1)===c.comps.length) ? +rm[1] : 1;
+    return c.comps.map((comp,i) => ({
+      n: start+i,
       title: comp.title,
-      pages: comp.pages!=null ? nf(comp.pages) : "—",
+      pages: comp.pages!=null ? nf(comp.pages) : null,
       gr: comp.gr ? comp.gr[0].toFixed(2) : null,
     }));
   };
   const pagesRatingCell = r => {
     const bd = prBreakdown(r);
     if(bd){
-      const lines = bd.map(l=>`<span>${esc(l.title)}<br>${l.pages} pp${l.gr?` · <span class="star">${l.gr}</span>`:""}</span>`).join("");
-      // A row can carry its own direct rating (e.g. Gibbon, Haggard's Ultimate Collection —
-      // a real Goodreads page for the combined work) even though its components don't have
-      // one each; without this, r.gr would be silently overridden by the breakdown branch
-      // and never shown anywhere. Attached to the Total line, since that's the one line that
-      // already represents the whole collection rather than a single component.
-      const totalGr = r.gr ? ` · <span class="star">${r.gr[0].toFixed(2)}</span>` : "";
-      return `<span class="prbreak">${lines}<span class="prtotal">Total<br>${nf(r.comp_total)} pp${totalGr}</span></span>`
-        + (r.physical!=null ? `<span class="pgphys muted">bound: ${nf(r.physical)} pp</span>` : "");
+      const lines = bd.map(l=>`<span>Book ${l.n}: ${esc(l.title)} ${l.pages!=null?`${l.pages}pgs`:"—"}`
+          + `${l.gr?` <span class="star">${l.gr}</span>`:""}</span>`).join("");
+      const totalGr = r.gr ? ` <span class="star">${r.gr[0].toFixed(2)}</span>` : "";
+      return `<span class="prbreak">${lines}<span class="prtotal">Total: ${nf(r.comp_total)}pgs${totalGr}</span></span>`
+        + (r.physical!=null ? `<span class="pgphys muted">bound: ${nf(r.physical)}pgs</span>` : "");
     }
-    const pages = r.pages != null ? `${nf(r.pages)} pp`
-      : r.physical != null ? `${nf(r.physical)} pp<br><span class="muted" style="font-size:11px">omnibus</span>`
-      : r.comp_total ? `<span class="muted">${nf(r.comp_total)} pp</span><br><span class="muted" style="font-size:11px">sum of ${r.ncomp}</span>`
+    const pages = r.pages != null ? `${nf(r.pages)}pgs`
+      : r.physical != null ? `${nf(r.physical)}pgs <span class="muted" style="font-size:11px">omnibus</span>`
+      : r.comp_total ? `<span class="muted">${nf(r.comp_total)}pgs</span> <span class="muted" style="font-size:11px">sum of ${r.ncomp}</span>`
       : `<span class="muted">—</span>`;
     const rating = !r.gr ? `<span class="muted">—</span>`
       // r.gr[1] (ratings count) is optional: a handful of ratings are confirmed from the
@@ -159,7 +162,7 @@
       // one wasn't otherwise found — show the star rating alone rather than a fabricated count.
       : `<span class="star">${r.gr[0].toFixed(2)}</span>` + (r.gr[1] != null
           ? ` <span class="muted" style="font-size:11px">${shortN(r.gr[1])}</span>` : "");
-    return `<span class="prplain">${pages}<br>${rating}</span>`;
+    return `<span class="prplain">${pages} ${rating}</span>`;
   };
   const awardCell = r => !r.awards || !r.awards.length ? `<span class="muted">—</span>`
     : r.awards.map(a=>`<span class="aw${a.indexOf("Author:")===0?" auth":""}">${esc(a)}</span>`).join("")
