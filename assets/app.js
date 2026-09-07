@@ -6,6 +6,11 @@
   const shortN = n => n>=1e6 ? (n/1e6).toFixed(1)+"M" : n>=1e3 ? Math.round(n/1e3)+"k" : n;
   const $ = id => document.getElementById(id);
   const S = D.stats;
+  // Computed live from the rows themselves, never from a precomputed snapshot: a
+  // hardcoded S.rated silently drifted to 36 while the real count reached 385 over
+  // many later commits that added ratings without ever touching that one field.
+  // Deriving it here means it can't go stale again no matter how D.rows changes.
+  const ratedCount = D.rows.filter(r=>r.gr).length;
 
   /* ---- stats ---- */
   $("stats").innerHTML = [
@@ -13,7 +18,7 @@
     [S.fic_entries,"Fiction files"],[S.nf_entries,"Canon entries"],
     [S.fic_omnibus,"Fiction omnibus files"],[S.nf_multivol,"Multi-volume canon works"],
     [S.multi_series,"Multi-volume series"],[S.sections,"Canon sections"],
-    [S.awarded,"Award-winning books"],[S.rated,"Books with a rating"],
+    [S.awarded,"Award-winning books"],[ratedCount,"Books with a rating"],
     [nf(S.pages),"Pages, deduplicated"],[S.unknown,"Unknown page counts"]
   ].map(([v,l])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("");
 
