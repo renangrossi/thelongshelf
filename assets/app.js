@@ -11,6 +11,12 @@
   // many later commits that added ratings without ever touching that one field.
   // Deriving it here means it can't go stale again no matter how D.rows changes.
   const ratedCount = D.rows.filter(r=>r.gr).length;
+  // Same failure mode had also hit S.awarded: it sat at a stale 68 while D.rows only
+  // backed 62 (a row with only an "Author: Nobel…" entry still counts here, matching
+  // the "Award winners only" filter's own r.awards.length check) — the "Award-winning
+  // books" stat tile and the Awards section's opening line both disagreed with what
+  // that very filter actually returned when clicked. Both now read from this instead.
+  const awardedCount = D.rows.filter(r=>r.awards && r.awards.length).length;
 
   /* ---- stats ---- */
   $("stats").innerHTML = [
@@ -18,7 +24,7 @@
     [S.fic_entries,"Fiction files"],[S.nf_entries,"Canon entries"],
     [S.fic_omnibus,"Fiction omnibus files"],[S.nf_multivol,"Multi-volume canon works"],
     [S.multi_series,"Multi-volume series"],[S.sections,"Canon sections"],
-    [S.awarded,"Award-winning books"],[ratedCount,"Books with a rating"],
+    [awardedCount,"Award-winning books"],[ratedCount,"Books with a rating"],
     [nf(S.pages),"Pages, deduplicated"],[S.unknown,"Unknown page counts"]
   ].map(([v,l])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("");
 
@@ -169,9 +175,20 @@
       + (r.awards_via ? `<span class="k">via components</span>` : "");
   const genreCell = r => !r.genre || !r.genre.length ? `<span class="muted">—</span>`
     : esc(r.genre.join(" · "));
+  // Year is a string ("2016", "c. 180", "1954–55", "1605/1615", "" when unknown) because a
+  // handful of ancient/ambiguous entries can't be a bare integer. Sorted as a plain string,
+  // every "c. NNN" row (the two circa-dated classical works) landed after every 4-digit
+  // year — "c" simply sorts above any digit — so "latest first" put 180 AD and 720 AD
+  // above 2025. Parsing the leading integer instead orders those correctly and, as a side
+  // effect, also does the sensible thing with a range or dual date ("1954–55",
+  // "1605/1615": sorts on its first year) since both already start with the digits that
+  // matter. -1 for a blank/unparseable year keeps unknowns at the ascending end, the same
+  // convention "pages" uses below.
+  const yearVal = y => { const m = /\d+/.exec(y || ""); return m ? +m[0] : -1; };
   function sortVal(r){
     if(sortK==="nawards") return r.awards ? r.awards.length : 0;
     if(sortK==="pages") return r.pages!=null ? r.pages : (r.physical!=null ? r.physical : (r.comp_total || -1));
+    if(sortK==="year") return yearVal(r.year);
     return (r[sortK]||"").toString().toLowerCase();
   }
 
@@ -376,6 +393,9 @@
   ranklist("long", D.longest); ranklist("short", D.shortest);
 
   /* ---- awards ---- */
+  // Keeps the section's own opening line in sync with awardedCount above instead of
+  // repeating the number as static prose that can quietly go stale the same way S.awarded did.
+  if ($("awardedCount")) $("awardedCount").textContent = awardedCount;
   $("awardsGrid").innerHTML = D.awardGroups.map(g=>`<div class="card">
     <h3>${esc(g.label)}</h3>
     <div class="meta">${g.books.length} book${g.books.length===1?"":"s"}</div>
